@@ -1,0 +1,762 @@
+fileFormatVersion: 2
+guid: e2e365a9445eb4545bc11fca00f5983a
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Esprit_Malin
+    100002: //RootNode
+    100004: EspritMalinOs_B0
+    100006: EspritMalinOs_B1
+    100008: EspritMalinOs_B2
+    100010: EspritMalinOs_B3
+    100012: EspritMalinOs_B4
+    100014: EspritMalinOs_BrasD0
+    100016: EspritMalinOs_BrasD1
+    100018: EspritMalinOs_BrasD2
+    100020: EspritMalinOs_BrasG0
+    100022: EspritMalinOs_BrasG1
+    100024: EspritMalinOs_BrasG2
+    100026: EspritMalinOs_BrasG3
+    100028: EspritMalinOs_DoigtD10
+    100030: EspritMalinOs_DoigtD11
+    100032: EspritMalinOs_DoigtD12
+    100034: EspritMalinOs_DoigtD20
+    100036: EspritMalinOs_DoigtD21
+    100038: EspritMalinOs_DoigtD22
+    100040: EspritMalinOs_DoigtD30
+    100042: EspritMalinOs_DoigtD31
+    100044: EspritMalinOs_DoigtD32
+    100046: EspritMalinOs_DoigtG10
+    100048: EspritMalinOs_DoigtG11
+    100050: EspritMalinOs_DoigtG12
+    100052: EspritMalinOs_DoigtG20
+    100054: EspritMalinOs_DoigtG21
+    100056: EspritMalinOs_DoigtG22
+    100058: EspritMalinOs_DoigtG30
+    100060: EspritMalinOs_DoigtG31
+    100062: EspritMalinOs_DoigtG32
+    100064: EspritMalinOs_E
+    100066: EspritMalinOs_M
+    100068: EspritMalinOs_MainD
+    100070: EspritMalinOs_Q0
+    100072: EspritMalinOs_Q1
+    100074: EspritMalinOs_Q2
+    100076: EspritMalinOs_Q3
+    100078: EspritMalinOs_SurcilD0
+    100080: EspritMalinOs_SurcilD1
+    100082: EspritMalinOs_SurcilD2
+    100084: EspritMalinOs_SurcilDG
+    100086: EspritMalinOs_SurcilG0
+    100088: EspritMalinOs_SurcilG1
+    100090: EspritMalinOs_SurcilG2
+    100092: EspritMalinOs_SurcilGG
+    400000: Esprit_Malin
+    400002: //RootNode
+    400004: EspritMalinOs_B0
+    400006: EspritMalinOs_B1
+    400008: EspritMalinOs_B2
+    400010: EspritMalinOs_B3
+    400012: EspritMalinOs_B4
+    400014: EspritMalinOs_BrasD0
+    400016: EspritMalinOs_BrasD1
+    400018: EspritMalinOs_BrasD2
+    400020: EspritMalinOs_BrasG0
+    400022: EspritMalinOs_BrasG1
+    400024: EspritMalinOs_BrasG2
+    400026: EspritMalinOs_BrasG3
+    400028: EspritMalinOs_DoigtD10
+    400030: EspritMalinOs_DoigtD11
+    400032: EspritMalinOs_DoigtD12
+    400034: EspritMalinOs_DoigtD20
+    400036: EspritMalinOs_DoigtD21
+    400038: EspritMalinOs_DoigtD22
+    400040: EspritMalinOs_DoigtD30
+    400042: EspritMalinOs_DoigtD31
+    400044: EspritMalinOs_DoigtD32
+    400046: EspritMalinOs_DoigtG10
+    400048: EspritMalinOs_DoigtG11
+    400050: EspritMalinOs_DoigtG12
+    400052: EspritMalinOs_DoigtG20
+    400054: EspritMalinOs_DoigtG21
+    400056: EspritMalinOs_DoigtG22
+    400058: EspritMalinOs_DoigtG30
+    400060: EspritMalinOs_DoigtG31
+    400062: EspritMalinOs_DoigtG32
+    400064: EspritMalinOs_E
+    400066: EspritMalinOs_M
+    400068: EspritMalinOs_MainD
+    400070: EspritMalinOs_Q0
+    400072: EspritMalinOs_Q1
+    400074: EspritMalinOs_Q2
+    400076: EspritMalinOs_Q3
+    400078: EspritMalinOs_SurcilD0
+    400080: EspritMalinOs_SurcilD1
+    400082: EspritMalinOs_SurcilD2
+    400084: EspritMalinOs_SurcilDG
+    400086: EspritMalinOs_SurcilG0
+    400088: EspritMalinOs_SurcilG1
+    400090: EspritMalinOs_SurcilG2
+    400092: EspritMalinOs_SurcilGG
+    4300000: Esprit_Malin
+    7400000: Apparition
+    7400002: Vole
+    7400004: Capture_Esprit
+    7400006: Percute
+    7400008: Capture
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Esprit_Malin
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Apparition
+      takeName: Take 001
+      firstFrame: 5
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Esprit_Malin
+        weight: 1
+      - path: EspritMalinOs_M
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B3
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B4
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD10
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD10/EspritMalinOs_DoigtD11
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD10/EspritMalinOs_DoigtD11/EspritMalinOs_DoigtD12
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD20
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD20/EspritMalinOs_DoigtD21
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD20/EspritMalinOs_DoigtD21/EspritMalinOs_DoigtD22
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD30
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD30/EspritMalinOs_DoigtD31
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD30/EspritMalinOs_DoigtD31/EspritMalinOs_DoigtD32
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG10
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG10/EspritMalinOs_DoigtG11
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG10/EspritMalinOs_DoigtG11/EspritMalinOs_DoigtG12
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG20
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG20/EspritMalinOs_DoigtG21
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG20/EspritMalinOs_DoigtG21/EspritMalinOs_DoigtG22
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG30
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG30/EspritMalinOs_DoigtG31
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG30/EspritMalinOs_DoigtG31/EspritMalinOs_DoigtG32
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_E
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_Q0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_Q0/EspritMalinOs_Q1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_Q0/EspritMalinOs_Q1/EspritMalinOs_Q2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_Q0/EspritMalinOs_Q1/EspritMalinOs_Q2/EspritMalinOs_Q3
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilDG
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilDG/EspritMalinOs_SurcilD0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilDG/EspritMalinOs_SurcilD0/EspritMalinOs_SurcilD1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilDG/EspritMalinOs_SurcilD0/EspritMalinOs_SurcilD1/EspritMalinOs_SurcilD2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilGG
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilGG/EspritMalinOs_SurcilG0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilGG/EspritMalinOs_SurcilG0/EspritMalinOs_SurcilG1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilGG/EspritMalinOs_SurcilG0/EspritMalinOs_SurcilG1/EspritMalinOs_SurcilG2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Vole
+      takeName: Take 001
+      firstFrame: 75
+      lastFrame: 105
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Esprit_Malin
+        weight: 1
+      - path: EspritMalinOs_M
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B3
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B4
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD10
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD10/EspritMalinOs_DoigtD11
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD10/EspritMalinOs_DoigtD11/EspritMalinOs_DoigtD12
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD20
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD20/EspritMalinOs_DoigtD21
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD20/EspritMalinOs_DoigtD21/EspritMalinOs_DoigtD22
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD30
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD30/EspritMalinOs_DoigtD31
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD30/EspritMalinOs_DoigtD31/EspritMalinOs_DoigtD32
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG10
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG10/EspritMalinOs_DoigtG11
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG10/EspritMalinOs_DoigtG11/EspritMalinOs_DoigtG12
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG20
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG20/EspritMalinOs_DoigtG21
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG20/EspritMalinOs_DoigtG21/EspritMalinOs_DoigtG22
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG30
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG30/EspritMalinOs_DoigtG31
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG30/EspritMalinOs_DoigtG31/EspritMalinOs_DoigtG32
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_E
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_Q0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_Q0/EspritMalinOs_Q1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_Q0/EspritMalinOs_Q1/EspritMalinOs_Q2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_Q0/EspritMalinOs_Q1/EspritMalinOs_Q2/EspritMalinOs_Q3
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilDG
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilDG/EspritMalinOs_SurcilD0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilDG/EspritMalinOs_SurcilD0/EspritMalinOs_SurcilD1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilDG/EspritMalinOs_SurcilD0/EspritMalinOs_SurcilD1/EspritMalinOs_SurcilD2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilGG
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilGG/EspritMalinOs_SurcilG0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilGG/EspritMalinOs_SurcilG0/EspritMalinOs_SurcilG1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilGG/EspritMalinOs_SurcilG0/EspritMalinOs_SurcilG1/EspritMalinOs_SurcilG2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Capture_Esprit
+      takeName: Take 001
+      firstFrame: 110
+      lastFrame: 170
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Esprit_Malin
+        weight: 1
+      - path: EspritMalinOs_M
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B3
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B4
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD10
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD10/EspritMalinOs_DoigtD11
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD10/EspritMalinOs_DoigtD11/EspritMalinOs_DoigtD12
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD20
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD20/EspritMalinOs_DoigtD21
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD20/EspritMalinOs_DoigtD21/EspritMalinOs_DoigtD22
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD30
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD30/EspritMalinOs_DoigtD31
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD30/EspritMalinOs_DoigtD31/EspritMalinOs_DoigtD32
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG10
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG10/EspritMalinOs_DoigtG11
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG10/EspritMalinOs_DoigtG11/EspritMalinOs_DoigtG12
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG20
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG20/EspritMalinOs_DoigtG21
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG20/EspritMalinOs_DoigtG21/EspritMalinOs_DoigtG22
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG30
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG30/EspritMalinOs_DoigtG31
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG30/EspritMalinOs_DoigtG31/EspritMalinOs_DoigtG32
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_E
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_Q0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_Q0/EspritMalinOs_Q1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_Q0/EspritMalinOs_Q1/EspritMalinOs_Q2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_Q0/EspritMalinOs_Q1/EspritMalinOs_Q2/EspritMalinOs_Q3
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilDG
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilDG/EspritMalinOs_SurcilD0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilDG/EspritMalinOs_SurcilD0/EspritMalinOs_SurcilD1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilDG/EspritMalinOs_SurcilD0/EspritMalinOs_SurcilD1/EspritMalinOs_SurcilD2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilGG
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilGG/EspritMalinOs_SurcilG0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilGG/EspritMalinOs_SurcilG0/EspritMalinOs_SurcilG1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilGG/EspritMalinOs_SurcilG0/EspritMalinOs_SurcilG1/EspritMalinOs_SurcilG2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Percute
+      takeName: Take 001
+      firstFrame: 175
+      lastFrame: 215
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Esprit_Malin
+        weight: 1
+      - path: EspritMalinOs_M
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B3
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B4
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD10
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD10/EspritMalinOs_DoigtD11
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD10/EspritMalinOs_DoigtD11/EspritMalinOs_DoigtD12
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD20
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD20/EspritMalinOs_DoigtD21
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD20/EspritMalinOs_DoigtD21/EspritMalinOs_DoigtD22
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD30
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD30/EspritMalinOs_DoigtD31
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD30/EspritMalinOs_DoigtD31/EspritMalinOs_DoigtD32
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG10
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG10/EspritMalinOs_DoigtG11
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG10/EspritMalinOs_DoigtG11/EspritMalinOs_DoigtG12
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG20
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG20/EspritMalinOs_DoigtG21
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG20/EspritMalinOs_DoigtG21/EspritMalinOs_DoigtG22
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG30
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG30/EspritMalinOs_DoigtG31
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG30/EspritMalinOs_DoigtG31/EspritMalinOs_DoigtG32
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_E
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_Q0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_Q0/EspritMalinOs_Q1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_Q0/EspritMalinOs_Q1/EspritMalinOs_Q2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_Q0/EspritMalinOs_Q1/EspritMalinOs_Q2/EspritMalinOs_Q3
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilDG
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilDG/EspritMalinOs_SurcilD0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilDG/EspritMalinOs_SurcilD0/EspritMalinOs_SurcilD1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilDG/EspritMalinOs_SurcilD0/EspritMalinOs_SurcilD1/EspritMalinOs_SurcilD2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilGG
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilGG/EspritMalinOs_SurcilG0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilGG/EspritMalinOs_SurcilG0/EspritMalinOs_SurcilG1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilGG/EspritMalinOs_SurcilG0/EspritMalinOs_SurcilG1/EspritMalinOs_SurcilG2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Capture
+      takeName: Take 001
+      firstFrame: 220
+      lastFrame: 255
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Esprit_Malin
+        weight: 1
+      - path: EspritMalinOs_M
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B3
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_B4
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD10
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD10/EspritMalinOs_DoigtD11
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD10/EspritMalinOs_DoigtD11/EspritMalinOs_DoigtD12
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD20
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD20/EspritMalinOs_DoigtD21
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD20/EspritMalinOs_DoigtD21/EspritMalinOs_DoigtD22
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD30
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD30/EspritMalinOs_DoigtD31
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasD0/EspritMalinOs_BrasD1/EspritMalinOs_BrasD2/EspritMalinOs_MainD/EspritMalinOs_DoigtD30/EspritMalinOs_DoigtD31/EspritMalinOs_DoigtD32
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG10
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG10/EspritMalinOs_DoigtG11
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG10/EspritMalinOs_DoigtG11/EspritMalinOs_DoigtG12
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG20
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG20/EspritMalinOs_DoigtG21
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG20/EspritMalinOs_DoigtG21/EspritMalinOs_DoigtG22
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG30
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG30/EspritMalinOs_DoigtG31
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_BrasG0/EspritMalinOs_BrasG1/EspritMalinOs_BrasG2/EspritMalinOs_BrasG3/EspritMalinOs_DoigtG30/EspritMalinOs_DoigtG31/EspritMalinOs_DoigtG32
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_E
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_Q0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_Q0/EspritMalinOs_Q1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_Q0/EspritMalinOs_Q1/EspritMalinOs_Q2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_Q0/EspritMalinOs_Q1/EspritMalinOs_Q2/EspritMalinOs_Q3
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilDG
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilDG/EspritMalinOs_SurcilD0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilDG/EspritMalinOs_SurcilD0/EspritMalinOs_SurcilD1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilDG/EspritMalinOs_SurcilD0/EspritMalinOs_SurcilD1/EspritMalinOs_SurcilD2
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilGG
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilGG/EspritMalinOs_SurcilG0
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilGG/EspritMalinOs_SurcilG0/EspritMalinOs_SurcilG1
+        weight: 1
+      - path: EspritMalinOs_M/EspritMalinOs_SurcilGG/EspritMalinOs_SurcilG0/EspritMalinOs_SurcilG1/EspritMalinOs_SurcilG2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
