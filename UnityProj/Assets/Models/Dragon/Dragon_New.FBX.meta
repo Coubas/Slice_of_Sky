@@ -1,0 +1,932 @@
+fileFormatVersion: 2
+guid: 8c30b205638b8744680aba21e3592df4
+timeCreated: 1440611564
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Dragon
+    100002: //RootNode
+    100004: Dragon_Os_AvantBrasD
+    100006: Dragon_Os_AvantBrasG
+    100008: Dragon_Os_BandeauJambeD0
+    100010: Dragon_Os_BandeauJambeD1
+    100012: Dragon_Os_BandeauJambeD2
+    100014: Dragon_Os_BandeauJambeD3
+    100016: Dragon_Os_BandeauJambeG0
+    100018: Dragon_Os_BandeauJambeG1
+    100020: Dragon_Os_BandeauJambeG2
+    100022: Dragon_Os_BandeauJambeG3
+    100024: Dragon_Os_BandeauMainD0
+    100026: Dragon_Os_BandeauMainD1
+    100028: Dragon_Os_BandeauMainD2
+    100030: Dragon_Os_BandeauMainD3
+    100032: Dragon_Os_BandeauMainG0
+    100034: Dragon_Os_BandeauMainG1
+    100036: Dragon_Os_BandeauMainG2
+    100038: Dragon_Os_BandeauMainG3
+    100040: Dragon_Os_Bassin
+    100042: Dragon_Os_Bouche
+    100044: Dragon_Os_BrasD
+    100046: Dragon_Os_BrasG
+    100048: Dragon_Os_ClaviculeD
+    100050: Dragon_Os_ClaviculeG
+    100052: Dragon_Os_Colonne0
+    100054: Dragon_Os_Colonne1
+    100056: Dragon_Os_Colonne2
+    100058: Dragon_Os_Colonne3
+    100060: Dragon_Os_Colonne4
+    100062: Dragon_Os_Colonne5
+    100064: Dragon_Os_Cou0
+    100066: Dragon_Os_Cou1
+    100068: Dragon_Os_Cou2
+    100070: Dragon_Os_Cou3
+    100072: Dragon_Os_Cou4
+    100074: Dragon_Os_CuisseD
+    100076: Dragon_Os_CuisseG
+    100078: Dragon_Os_DoigtD10
+    100080: Dragon_Os_DoigtD11
+    100082: Dragon_Os_DoigtD20
+    100084: Dragon_Os_DoigtD21
+    100086: Dragon_Os_DoigtD30
+    100088: Dragon_Os_DoigtD31
+    100090: Dragon_Os_DoigtD40
+    100092: Dragon_Os_DoigtD41
+    100094: Dragon_Os_DoigtG10
+    100096: Dragon_Os_DoigtG11
+    100098: Dragon_Os_DoigtG20
+    100100: Dragon_Os_DoigtG21
+    100102: Dragon_Os_DoigtG30
+    100104: Dragon_Os_DoigtG31
+    100106: Dragon_Os_DoigtG40
+    100108: Dragon_Os_DoigtG41
+    100110: Dragon_Os_Epaules
+    100112: Dragon_Os_HancheD
+    100114: Dragon_Os_HancheG
+    100116: Dragon_Os_LanterneD10
+    100118: Dragon_Os_LanterneD11
+    100120: Dragon_Os_LanterneD12
+    100122: Dragon_Os_LanterneD13
+    100124: Dragon_Os_LanterneD20
+    100126: Dragon_Os_LanterneD21
+    100128: Dragon_Os_LanterneD30
+    100130: Dragon_Os_LanterneD31
+    100132: Dragon_Os_LanterneG10
+    100134: Dragon_Os_LanterneG11
+    100136: Dragon_Os_LanterneG12
+    100138: Dragon_Os_LanterneG13
+    100140: Dragon_Os_LanterneG20
+    100142: Dragon_Os_LanterneG21
+    100144: Dragon_Os_LanterneG30
+    100146: Dragon_Os_LanterneG31
+    100148: Dragon_Os_MainD
+    100150: Dragon_Os_MainG
+    100152: Dragon_Os_Maitre
+    100154: Dragon_Os_MoustacheD0
+    100156: Dragon_Os_MoustacheD1
+    100158: Dragon_Os_MoustacheD2
+    100160: Dragon_Os_MoustacheD3
+    100162: Dragon_Os_MoustacheD4
+    100164: Dragon_Os_MoustacheD5
+    100166: Dragon_Os_MoustacheD6
+    100168: Dragon_Os_MoustacheD7
+    100170: Dragon_Os_MoustacheD8
+    100172: Dragon_Os_MoustacheG0
+    100174: Dragon_Os_MoustacheG1
+    100176: Dragon_Os_MoustacheG2
+    100178: Dragon_Os_MoustacheG3
+    100180: Dragon_Os_MoustacheG4
+    100182: Dragon_Os_MoustacheG5
+    100184: Dragon_Os_MoustacheG6
+    100186: Dragon_Os_MoustacheG7
+    100188: Dragon_Os_MoustacheG8
+    100190: Dragon_Os_Museau
+    100192: Dragon_Os_OrteiG11
+    100194: Dragon_Os_OrteilD10
+    100196: Dragon_Os_OrteilD11
+    100198: Dragon_Os_OrteilD20
+    100200: Dragon_Os_OrteilD21
+    100202: Dragon_Os_OrteilD30
+    100204: Dragon_Os_OrteilD31
+    100206: Dragon_Os_OrteilD40
+    100208: Dragon_Os_OrteilD41
+    100210: Dragon_Os_OrteilG10
+    100212: Dragon_Os_OrteilG20
+    100214: Dragon_Os_OrteilG21
+    100216: Dragon_Os_OrteilG30
+    100218: Dragon_Os_OrteilG31
+    100220: Dragon_Os_OrteilG40
+    100222: Dragon_Os_OrteilG41
+    100224: Dragon_Os_PiedD
+    100226: Dragon_Os_PiedG
+    100228: Dragon_Os_Poil10
+    100230: Dragon_Os_Poil11
+    100232: Dragon_Os_Poil20
+    100234: Dragon_Os_Poil21
+    100236: Dragon_Os_Poil30
+    100238: Dragon_Os_Poil31
+    100240: Dragon_Os_Poil40
+    100242: Dragon_Os_Poil41
+    100244: Dragon_Os_Poil50
+    100246: Dragon_Os_Poil51
+    100248: Dragon_Os_Poil60
+    100250: Dragon_Os_Poil61
+    100252: Dragon_Os_Poil70
+    100254: Dragon_Os_Poil71
+    100256: Dragon_Os_Poil80
+    100258: Dragon_Os_Poil81
+    100260: Dragon_Os_PoilA1
+    100262: Dragon_Os_PoilA2
+    100264: Dragon_Os_PoilB1
+    100266: Dragon_Os_PoilB2
+    100268: Dragon_Os_PoilC1
+    100270: Dragon_Os_PoilC2
+    100272: Dragon_Os_PoilC3
+    100274: Dragon_Os_PoilC4
+    100276: Dragon_Os_PoilD1
+    100278: Dragon_Os_PoilD2
+    100280: Dragon_Os_PoilD3
+    100282: Dragon_Os_PoilD4
+    100284: Dragon_Os_PoilE1
+    100286: Dragon_Os_PoilE2
+    100288: Dragon_Os_PoilE3
+    100290: Dragon_Os_PoilF1
+    100292: Dragon_Os_PoilF2
+    100294: Dragon_Os_PoilF3
+    100296: Dragon_Os_PoilG1
+    100298: Dragon_Os_PoilG2
+    100300: Dragon_Os_PoilH1
+    100302: Dragon_Os_PoilH2
+    100304: Dragon_Os_PoilI1
+    100306: Dragon_Os_PoilI2
+    100308: Dragon_Os_PoilJ1
+    100310: Dragon_Os_PoilJ2
+    100312: Dragon_Os_PoilK1
+    100314: Dragon_Os_PoilK2
+    100316: Dragon_Os_PoilL1
+    100318: Dragon_Os_PoilL2
+    100320: Dragon_Os_PoilM1
+    100322: Dragon_Os_PoilM2
+    100324: Dragon_Os_PoilN1
+    100326: Dragon_Os_PoilN2
+    100328: Dragon_Os_PoilO1
+    100330: Dragon_Os_PoilO2
+    100332: Dragon_Os_PoilO3
+    100334: Dragon_Os_PoilP1
+    100336: Dragon_Os_PoilP2
+    100338: Dragon_Os_PoilP3
+    100340: Dragon_Os_PoilQ1
+    100342: Dragon_Os_PoilQ2
+    100344: Dragon_Os_PoilQ3
+    100346: Dragon_Os_PoilR1
+    100348: Dragon_Os_PoilR2
+    100350: Dragon_Os_PoilS1
+    100352: Dragon_Os_PoilS2
+    100354: Dragon_Os_PoilT1
+    100356: Dragon_Os_PoilT2
+    100358: Dragon_Os_PoilU1
+    100360: Dragon_Os_PoilU2
+    100362: Dragon_Os_PoilV1
+    100364: Dragon_Os_PoilV2
+    100366: Dragon_Os_PoilV3
+    100368: Dragon_Os_PoilW1
+    100370: Dragon_Os_PoilW2
+    100372: Dragon_Os_PoilW3
+    100374: Dragon_Os_PoilX1
+    100376: Dragon_Os_PoilX2
+    100378: Dragon_Os_PoilX3
+    100380: Dragon_Os_PoilY1
+    100382: Dragon_Os_PoilY2
+    100384: Dragon_Os_PoilZ1
+    100386: Dragon_Os_PoilZ2
+    100388: Dragon_Os_Queue0
+    100390: Dragon_Os_Queue1
+    100392: Dragon_Os_Queue10
+    100394: Dragon_Os_Queue2
+    100396: Dragon_Os_Queue3
+    100398: Dragon_Os_Queue4
+    100400: Dragon_Os_Queue5
+    100402: Dragon_Os_Queue6
+    100404: Dragon_Os_Queue7
+    100406: Dragon_Os_Queue8
+    100408: Dragon_Os_Queue9
+    100410: Dragon_Os_Tete
+    100412: Dragon_Os_TibiasD
+    100414: Dragon_Os_TibiasG
+    400000: Dragon
+    400002: //RootNode
+    400004: Dragon_Os_AvantBrasD
+    400006: Dragon_Os_AvantBrasG
+    400008: Dragon_Os_BandeauJambeD0
+    400010: Dragon_Os_BandeauJambeD1
+    400012: Dragon_Os_BandeauJambeD2
+    400014: Dragon_Os_BandeauJambeD3
+    400016: Dragon_Os_BandeauJambeG0
+    400018: Dragon_Os_BandeauJambeG1
+    400020: Dragon_Os_BandeauJambeG2
+    400022: Dragon_Os_BandeauJambeG3
+    400024: Dragon_Os_BandeauMainD0
+    400026: Dragon_Os_BandeauMainD1
+    400028: Dragon_Os_BandeauMainD2
+    400030: Dragon_Os_BandeauMainD3
+    400032: Dragon_Os_BandeauMainG0
+    400034: Dragon_Os_BandeauMainG1
+    400036: Dragon_Os_BandeauMainG2
+    400038: Dragon_Os_BandeauMainG3
+    400040: Dragon_Os_Bassin
+    400042: Dragon_Os_Bouche
+    400044: Dragon_Os_BrasD
+    400046: Dragon_Os_BrasG
+    400048: Dragon_Os_ClaviculeD
+    400050: Dragon_Os_ClaviculeG
+    400052: Dragon_Os_Colonne0
+    400054: Dragon_Os_Colonne1
+    400056: Dragon_Os_Colonne2
+    400058: Dragon_Os_Colonne3
+    400060: Dragon_Os_Colonne4
+    400062: Dragon_Os_Colonne5
+    400064: Dragon_Os_Cou0
+    400066: Dragon_Os_Cou1
+    400068: Dragon_Os_Cou2
+    400070: Dragon_Os_Cou3
+    400072: Dragon_Os_Cou4
+    400074: Dragon_Os_CuisseD
+    400076: Dragon_Os_CuisseG
+    400078: Dragon_Os_DoigtD10
+    400080: Dragon_Os_DoigtD11
+    400082: Dragon_Os_DoigtD20
+    400084: Dragon_Os_DoigtD21
+    400086: Dragon_Os_DoigtD30
+    400088: Dragon_Os_DoigtD31
+    400090: Dragon_Os_DoigtD40
+    400092: Dragon_Os_DoigtD41
+    400094: Dragon_Os_DoigtG10
+    400096: Dragon_Os_DoigtG11
+    400098: Dragon_Os_DoigtG20
+    400100: Dragon_Os_DoigtG21
+    400102: Dragon_Os_DoigtG30
+    400104: Dragon_Os_DoigtG31
+    400106: Dragon_Os_DoigtG40
+    400108: Dragon_Os_DoigtG41
+    400110: Dragon_Os_Epaules
+    400112: Dragon_Os_HancheD
+    400114: Dragon_Os_HancheG
+    400116: Dragon_Os_LanterneD10
+    400118: Dragon_Os_LanterneD11
+    400120: Dragon_Os_LanterneD12
+    400122: Dragon_Os_LanterneD13
+    400124: Dragon_Os_LanterneD20
+    400126: Dragon_Os_LanterneD21
+    400128: Dragon_Os_LanterneD30
+    400130: Dragon_Os_LanterneD31
+    400132: Dragon_Os_LanterneG10
+    400134: Dragon_Os_LanterneG11
+    400136: Dragon_Os_LanterneG12
+    400138: Dragon_Os_LanterneG13
+    400140: Dragon_Os_LanterneG20
+    400142: Dragon_Os_LanterneG21
+    400144: Dragon_Os_LanterneG30
+    400146: Dragon_Os_LanterneG31
+    400148: Dragon_Os_MainD
+    400150: Dragon_Os_MainG
+    400152: Dragon_Os_Maitre
+    400154: Dragon_Os_MoustacheD0
+    400156: Dragon_Os_MoustacheD1
+    400158: Dragon_Os_MoustacheD2
+    400160: Dragon_Os_MoustacheD3
+    400162: Dragon_Os_MoustacheD4
+    400164: Dragon_Os_MoustacheD5
+    400166: Dragon_Os_MoustacheD6
+    400168: Dragon_Os_MoustacheD7
+    400170: Dragon_Os_MoustacheD8
+    400172: Dragon_Os_MoustacheG0
+    400174: Dragon_Os_MoustacheG1
+    400176: Dragon_Os_MoustacheG2
+    400178: Dragon_Os_MoustacheG3
+    400180: Dragon_Os_MoustacheG4
+    400182: Dragon_Os_MoustacheG5
+    400184: Dragon_Os_MoustacheG6
+    400186: Dragon_Os_MoustacheG7
+    400188: Dragon_Os_MoustacheG8
+    400190: Dragon_Os_Museau
+    400192: Dragon_Os_OrteiG11
+    400194: Dragon_Os_OrteilD10
+    400196: Dragon_Os_OrteilD11
+    400198: Dragon_Os_OrteilD20
+    400200: Dragon_Os_OrteilD21
+    400202: Dragon_Os_OrteilD30
+    400204: Dragon_Os_OrteilD31
+    400206: Dragon_Os_OrteilD40
+    400208: Dragon_Os_OrteilD41
+    400210: Dragon_Os_OrteilG10
+    400212: Dragon_Os_OrteilG20
+    400214: Dragon_Os_OrteilG21
+    400216: Dragon_Os_OrteilG30
+    400218: Dragon_Os_OrteilG31
+    400220: Dragon_Os_OrteilG40
+    400222: Dragon_Os_OrteilG41
+    400224: Dragon_Os_PiedD
+    400226: Dragon_Os_PiedG
+    400228: Dragon_Os_Poil10
+    400230: Dragon_Os_Poil11
+    400232: Dragon_Os_Poil20
+    400234: Dragon_Os_Poil21
+    400236: Dragon_Os_Poil30
+    400238: Dragon_Os_Poil31
+    400240: Dragon_Os_Poil40
+    400242: Dragon_Os_Poil41
+    400244: Dragon_Os_Poil50
+    400246: Dragon_Os_Poil51
+    400248: Dragon_Os_Poil60
+    400250: Dragon_Os_Poil61
+    400252: Dragon_Os_Poil70
+    400254: Dragon_Os_Poil71
+    400256: Dragon_Os_Poil80
+    400258: Dragon_Os_Poil81
+    400260: Dragon_Os_PoilA1
+    400262: Dragon_Os_PoilA2
+    400264: Dragon_Os_PoilB1
+    400266: Dragon_Os_PoilB2
+    400268: Dragon_Os_PoilC1
+    400270: Dragon_Os_PoilC2
+    400272: Dragon_Os_PoilC3
+    400274: Dragon_Os_PoilC4
+    400276: Dragon_Os_PoilD1
+    400278: Dragon_Os_PoilD2
+    400280: Dragon_Os_PoilD3
+    400282: Dragon_Os_PoilD4
+    400284: Dragon_Os_PoilE1
+    400286: Dragon_Os_PoilE2
+    400288: Dragon_Os_PoilE3
+    400290: Dragon_Os_PoilF1
+    400292: Dragon_Os_PoilF2
+    400294: Dragon_Os_PoilF3
+    400296: Dragon_Os_PoilG1
+    400298: Dragon_Os_PoilG2
+    400300: Dragon_Os_PoilH1
+    400302: Dragon_Os_PoilH2
+    400304: Dragon_Os_PoilI1
+    400306: Dragon_Os_PoilI2
+    400308: Dragon_Os_PoilJ1
+    400310: Dragon_Os_PoilJ2
+    400312: Dragon_Os_PoilK1
+    400314: Dragon_Os_PoilK2
+    400316: Dragon_Os_PoilL1
+    400318: Dragon_Os_PoilL2
+    400320: Dragon_Os_PoilM1
+    400322: Dragon_Os_PoilM2
+    400324: Dragon_Os_PoilN1
+    400326: Dragon_Os_PoilN2
+    400328: Dragon_Os_PoilO1
+    400330: Dragon_Os_PoilO2
+    400332: Dragon_Os_PoilO3
+    400334: Dragon_Os_PoilP1
+    400336: Dragon_Os_PoilP2
+    400338: Dragon_Os_PoilP3
+    400340: Dragon_Os_PoilQ1
+    400342: Dragon_Os_PoilQ2
+    400344: Dragon_Os_PoilQ3
+    400346: Dragon_Os_PoilR1
+    400348: Dragon_Os_PoilR2
+    400350: Dragon_Os_PoilS1
+    400352: Dragon_Os_PoilS2
+    400354: Dragon_Os_PoilT1
+    400356: Dragon_Os_PoilT2
+    400358: Dragon_Os_PoilU1
+    400360: Dragon_Os_PoilU2
+    400362: Dragon_Os_PoilV1
+    400364: Dragon_Os_PoilV2
+    400366: Dragon_Os_PoilV3
+    400368: Dragon_Os_PoilW1
+    400370: Dragon_Os_PoilW2
+    400372: Dragon_Os_PoilW3
+    400374: Dragon_Os_PoilX1
+    400376: Dragon_Os_PoilX2
+    400378: Dragon_Os_PoilX3
+    400380: Dragon_Os_PoilY1
+    400382: Dragon_Os_PoilY2
+    400384: Dragon_Os_PoilZ1
+    400386: Dragon_Os_PoilZ2
+    400388: Dragon_Os_Queue0
+    400390: Dragon_Os_Queue1
+    400392: Dragon_Os_Queue10
+    400394: Dragon_Os_Queue2
+    400396: Dragon_Os_Queue3
+    400398: Dragon_Os_Queue4
+    400400: Dragon_Os_Queue5
+    400402: Dragon_Os_Queue6
+    400404: Dragon_Os_Queue7
+    400406: Dragon_Os_Queue8
+    400408: Dragon_Os_Queue9
+    400410: Dragon_Os_Tete
+    400412: Dragon_Os_TibiasD
+    400414: Dragon_Os_TibiasG
+    4300000: Dragon
+    7400000: Idle
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Dragon
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dragon
+        weight: 1
+      - path: Dragon_Os_Maitre
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeD
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeD/Dragon_Os_BrasD
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeD/Dragon_Os_BrasD/Dragon_Os_AvantBrasD
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeD/Dragon_Os_BrasD/Dragon_Os_AvantBrasD/Dragon_Os_MainD
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeD/Dragon_Os_BrasD/Dragon_Os_AvantBrasD/Dragon_Os_MainD/Dragon_Os_BandeauMainD0
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeD/Dragon_Os_BrasD/Dragon_Os_AvantBrasD/Dragon_Os_MainD/Dragon_Os_BandeauMainD0/Dragon_Os_BandeauMainD1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeD/Dragon_Os_BrasD/Dragon_Os_AvantBrasD/Dragon_Os_MainD/Dragon_Os_BandeauMainD0/Dragon_Os_BandeauMainD1/Dragon_Os_BandeauMainD2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeD/Dragon_Os_BrasD/Dragon_Os_AvantBrasD/Dragon_Os_MainD/Dragon_Os_BandeauMainD0/Dragon_Os_BandeauMainD1/Dragon_Os_BandeauMainD2/Dragon_Os_BandeauMainD3
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeD/Dragon_Os_BrasD/Dragon_Os_AvantBrasD/Dragon_Os_MainD/Dragon_Os_DoigtD10
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeD/Dragon_Os_BrasD/Dragon_Os_AvantBrasD/Dragon_Os_MainD/Dragon_Os_DoigtD10/Dragon_Os_DoigtD11
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeD/Dragon_Os_BrasD/Dragon_Os_AvantBrasD/Dragon_Os_MainD/Dragon_Os_DoigtD20
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeD/Dragon_Os_BrasD/Dragon_Os_AvantBrasD/Dragon_Os_MainD/Dragon_Os_DoigtD20/Dragon_Os_DoigtD21
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeD/Dragon_Os_BrasD/Dragon_Os_AvantBrasD/Dragon_Os_MainD/Dragon_Os_DoigtD30
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeD/Dragon_Os_BrasD/Dragon_Os_AvantBrasD/Dragon_Os_MainD/Dragon_Os_DoigtD30/Dragon_Os_DoigtD31
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeD/Dragon_Os_BrasD/Dragon_Os_AvantBrasD/Dragon_Os_MainD/Dragon_Os_DoigtD40
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeD/Dragon_Os_BrasD/Dragon_Os_AvantBrasD/Dragon_Os_MainD/Dragon_Os_DoigtD40/Dragon_Os_DoigtD41
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeG
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeG/Dragon_Os_BrasG
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeG/Dragon_Os_BrasG/Dragon_Os_AvantBrasG
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeG/Dragon_Os_BrasG/Dragon_Os_AvantBrasG/Dragon_Os_MainG
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeG/Dragon_Os_BrasG/Dragon_Os_AvantBrasG/Dragon_Os_MainG/Dragon_Os_BandeauMainG0
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeG/Dragon_Os_BrasG/Dragon_Os_AvantBrasG/Dragon_Os_MainG/Dragon_Os_BandeauMainG0/Dragon_Os_BandeauMainG1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeG/Dragon_Os_BrasG/Dragon_Os_AvantBrasG/Dragon_Os_MainG/Dragon_Os_BandeauMainG0/Dragon_Os_BandeauMainG1/Dragon_Os_BandeauMainG2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeG/Dragon_Os_BrasG/Dragon_Os_AvantBrasG/Dragon_Os_MainG/Dragon_Os_BandeauMainG0/Dragon_Os_BandeauMainG1/Dragon_Os_BandeauMainG2/Dragon_Os_BandeauMainG3
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeG/Dragon_Os_BrasG/Dragon_Os_AvantBrasG/Dragon_Os_MainG/Dragon_Os_DoigtG10
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeG/Dragon_Os_BrasG/Dragon_Os_AvantBrasG/Dragon_Os_MainG/Dragon_Os_DoigtG10/Dragon_Os_DoigtG11
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeG/Dragon_Os_BrasG/Dragon_Os_AvantBrasG/Dragon_Os_MainG/Dragon_Os_DoigtG20
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeG/Dragon_Os_BrasG/Dragon_Os_AvantBrasG/Dragon_Os_MainG/Dragon_Os_DoigtG20/Dragon_Os_DoigtG21
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeG/Dragon_Os_BrasG/Dragon_Os_AvantBrasG/Dragon_Os_MainG/Dragon_Os_DoigtG30
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeG/Dragon_Os_BrasG/Dragon_Os_AvantBrasG/Dragon_Os_MainG/Dragon_Os_DoigtG30/Dragon_Os_DoigtG31
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeG/Dragon_Os_BrasG/Dragon_Os_AvantBrasG/Dragon_Os_MainG/Dragon_Os_DoigtG40
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_ClaviculeG/Dragon_Os_BrasG/Dragon_Os_AvantBrasG/Dragon_Os_MainG/Dragon_Os_DoigtG40/Dragon_Os_DoigtG41
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheD
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheD/Dragon_Os_CuisseD
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheD/Dragon_Os_CuisseD/Dragon_Os_TibiasD
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheD/Dragon_Os_CuisseD/Dragon_Os_TibiasD/Dragon_Os_PiedD
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheD/Dragon_Os_CuisseD/Dragon_Os_TibiasD/Dragon_Os_PiedD/Dragon_Os_BandeauJambeD0
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheD/Dragon_Os_CuisseD/Dragon_Os_TibiasD/Dragon_Os_PiedD/Dragon_Os_BandeauJambeD0/Dragon_Os_BandeauJambeD1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheD/Dragon_Os_CuisseD/Dragon_Os_TibiasD/Dragon_Os_PiedD/Dragon_Os_BandeauJambeD0/Dragon_Os_BandeauJambeD1/Dragon_Os_BandeauJambeD2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheD/Dragon_Os_CuisseD/Dragon_Os_TibiasD/Dragon_Os_PiedD/Dragon_Os_BandeauJambeD0/Dragon_Os_BandeauJambeD1/Dragon_Os_BandeauJambeD2/Dragon_Os_BandeauJambeD3
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheD/Dragon_Os_CuisseD/Dragon_Os_TibiasD/Dragon_Os_PiedD/Dragon_Os_OrteilD10
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheD/Dragon_Os_CuisseD/Dragon_Os_TibiasD/Dragon_Os_PiedD/Dragon_Os_OrteilD10/Dragon_Os_OrteilD11
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheD/Dragon_Os_CuisseD/Dragon_Os_TibiasD/Dragon_Os_PiedD/Dragon_Os_OrteilD20
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheD/Dragon_Os_CuisseD/Dragon_Os_TibiasD/Dragon_Os_PiedD/Dragon_Os_OrteilD20/Dragon_Os_OrteilD21
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheD/Dragon_Os_CuisseD/Dragon_Os_TibiasD/Dragon_Os_PiedD/Dragon_Os_OrteilD30
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheD/Dragon_Os_CuisseD/Dragon_Os_TibiasD/Dragon_Os_PiedD/Dragon_Os_OrteilD30/Dragon_Os_OrteilD31
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheD/Dragon_Os_CuisseD/Dragon_Os_TibiasD/Dragon_Os_PiedD/Dragon_Os_OrteilD40
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheD/Dragon_Os_CuisseD/Dragon_Os_TibiasD/Dragon_Os_PiedD/Dragon_Os_OrteilD40/Dragon_Os_OrteilD41
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheG
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheG/Dragon_Os_CuisseG
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheG/Dragon_Os_CuisseG/Dragon_Os_TibiasG
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheG/Dragon_Os_CuisseG/Dragon_Os_TibiasG/Dragon_Os_PiedG
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheG/Dragon_Os_CuisseG/Dragon_Os_TibiasG/Dragon_Os_PiedG/Dragon_Os_BandeauJambeG0
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheG/Dragon_Os_CuisseG/Dragon_Os_TibiasG/Dragon_Os_PiedG/Dragon_Os_BandeauJambeG0/Dragon_Os_BandeauJambeG1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheG/Dragon_Os_CuisseG/Dragon_Os_TibiasG/Dragon_Os_PiedG/Dragon_Os_BandeauJambeG0/Dragon_Os_BandeauJambeG1/Dragon_Os_BandeauJambeG2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheG/Dragon_Os_CuisseG/Dragon_Os_TibiasG/Dragon_Os_PiedG/Dragon_Os_BandeauJambeG0/Dragon_Os_BandeauJambeG1/Dragon_Os_BandeauJambeG2/Dragon_Os_BandeauJambeG3
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheG/Dragon_Os_CuisseG/Dragon_Os_TibiasG/Dragon_Os_PiedG/Dragon_Os_OrteilG10
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheG/Dragon_Os_CuisseG/Dragon_Os_TibiasG/Dragon_Os_PiedG/Dragon_Os_OrteilG10/Dragon_Os_OrteiG11
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheG/Dragon_Os_CuisseG/Dragon_Os_TibiasG/Dragon_Os_PiedG/Dragon_Os_OrteilG20
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheG/Dragon_Os_CuisseG/Dragon_Os_TibiasG/Dragon_Os_PiedG/Dragon_Os_OrteilG20/Dragon_Os_OrteilG21
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheG/Dragon_Os_CuisseG/Dragon_Os_TibiasG/Dragon_Os_PiedG/Dragon_Os_OrteilG30
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheG/Dragon_Os_CuisseG/Dragon_Os_TibiasG/Dragon_Os_PiedG/Dragon_Os_OrteilG30/Dragon_Os_OrteilG31
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheG/Dragon_Os_CuisseG/Dragon_Os_TibiasG/Dragon_Os_PiedG/Dragon_Os_OrteilG40
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_HancheG/Dragon_Os_CuisseG/Dragon_Os_TibiasG/Dragon_Os_PiedG/Dragon_Os_OrteilG40/Dragon_Os_OrteilG41
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_PoilP1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_PoilP1/Dragon_Os_PoilP2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_PoilP1/Dragon_Os_PoilP2/Dragon_Os_PoilP3
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_PoilQ1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_PoilQ1/Dragon_Os_PoilQ2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_PoilQ1/Dragon_Os_PoilQ2/Dragon_Os_PoilQ3
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_PoilR1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_PoilR1/Dragon_Os_PoilR2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_PoilO1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_PoilO1/Dragon_Os_PoilO2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_PoilO1/Dragon_Os_PoilO2/Dragon_Os_PoilO3
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_PoilM1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_PoilM1/Dragon_Os_PoilM2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_PoilN1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_PoilN1/Dragon_Os_PoilN2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_PoilL1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_PoilL1/Dragon_Os_PoilL2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_PoilK1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_PoilK1/Dragon_Os_PoilK2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_PoilJ1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_PoilJ1/Dragon_Os_PoilJ2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_PoilI1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_PoilI1/Dragon_Os_PoilI2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_PoilH1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_PoilH1/Dragon_Os_PoilH2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8/Dragon_Os_PoilA1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8/Dragon_Os_PoilA1/Dragon_Os_PoilA2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8/Dragon_Os_PoilG1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8/Dragon_Os_PoilG1/Dragon_Os_PoilG2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8/Dragon_Os_Queue9
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8/Dragon_Os_Queue9/Dragon_Os_PoilB1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8/Dragon_Os_Queue9/Dragon_Os_PoilB1/Dragon_Os_PoilB2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8/Dragon_Os_Queue9/Dragon_Os_Queue10
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8/Dragon_Os_Queue9/Dragon_Os_Queue10/Dragon_Os_PoilC1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8/Dragon_Os_Queue9/Dragon_Os_Queue10/Dragon_Os_PoilC1/Dragon_Os_PoilC2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8/Dragon_Os_Queue9/Dragon_Os_Queue10/Dragon_Os_PoilC1/Dragon_Os_PoilC2/Dragon_Os_PoilC3
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8/Dragon_Os_Queue9/Dragon_Os_Queue10/Dragon_Os_PoilC1/Dragon_Os_PoilC2/Dragon_Os_PoilC3/Dragon_Os_PoilC4
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8/Dragon_Os_Queue9/Dragon_Os_Queue10/Dragon_Os_PoilD1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8/Dragon_Os_Queue9/Dragon_Os_Queue10/Dragon_Os_PoilD1/Dragon_Os_PoilD2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8/Dragon_Os_Queue9/Dragon_Os_Queue10/Dragon_Os_PoilD1/Dragon_Os_PoilD2/Dragon_Os_PoilD3
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8/Dragon_Os_Queue9/Dragon_Os_Queue10/Dragon_Os_PoilD1/Dragon_Os_PoilD2/Dragon_Os_PoilD3/Dragon_Os_PoilD4
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8/Dragon_Os_Queue9/Dragon_Os_Queue10/Dragon_Os_PoilE1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8/Dragon_Os_Queue9/Dragon_Os_Queue10/Dragon_Os_PoilE1/Dragon_Os_PoilE2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8/Dragon_Os_Queue9/Dragon_Os_Queue10/Dragon_Os_PoilE1/Dragon_Os_PoilE2/Dragon_Os_PoilE3
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8/Dragon_Os_Queue9/Dragon_Os_Queue10/Dragon_Os_PoilF1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8/Dragon_Os_Queue9/Dragon_Os_Queue10/Dragon_Os_PoilF1/Dragon_Os_PoilF2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_Colonne5/Dragon_Os_Bassin/Dragon_Os_Queue0/Dragon_Os_Queue1/Dragon_Os_Queue2/Dragon_Os_Queue3/Dragon_Os_Queue4/Dragon_Os_Queue5/Dragon_Os_Queue6/Dragon_Os_Queue7/Dragon_Os_Queue8/Dragon_Os_Queue9/Dragon_Os_Queue10/Dragon_Os_PoilF1/Dragon_Os_PoilF2/Dragon_Os_PoilF3
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_PoilS1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_PoilS1/Dragon_Os_PoilS2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_PoilT1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_Colonne4/Dragon_Os_PoilT1/Dragon_Os_PoilT2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_PoilU1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_Colonne2/Dragon_Os_Colonne3/Dragon_Os_PoilU1/Dragon_Os_PoilU2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_PoilV1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_PoilV1/Dragon_Os_PoilV2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_Colonne1/Dragon_Os_PoilV1/Dragon_Os_PoilV2/Dragon_Os_PoilV3
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_PoilW1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_PoilW1/Dragon_Os_PoilW2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Colonne0/Dragon_Os_PoilW1/Dragon_Os_PoilW2/Dragon_Os_PoilW3
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Poil50
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Poil50/Dragon_Os_Poil51
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Bouche
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_LanterneD10
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_LanterneD10/Dragon_Os_LanterneD11
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_LanterneD10/Dragon_Os_LanterneD11/Dragon_Os_LanterneD12
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_LanterneD10/Dragon_Os_LanterneD11/Dragon_Os_LanterneD12/Dragon_Os_LanterneD13
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_LanterneD20
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_LanterneD20/Dragon_Os_LanterneD21
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_LanterneD30
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_LanterneD30/Dragon_Os_LanterneD31
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_LanterneG10
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_LanterneG10/Dragon_Os_LanterneG11
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_LanterneG10/Dragon_Os_LanterneG11/Dragon_Os_LanterneG12
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_LanterneG10/Dragon_Os_LanterneG11/Dragon_Os_LanterneG12/Dragon_Os_LanterneG13
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_LanterneG20
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_LanterneG20/Dragon_Os_LanterneG21
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_LanterneG30
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_LanterneG30/Dragon_Os_LanterneG31
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Museau
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Museau/Dragon_Os_MoustacheD0
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Museau/Dragon_Os_MoustacheD0/Dragon_Os_MoustacheD1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Museau/Dragon_Os_MoustacheD0/Dragon_Os_MoustacheD1/Dragon_Os_MoustacheD2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Museau/Dragon_Os_MoustacheD0/Dragon_Os_MoustacheD1/Dragon_Os_MoustacheD2/Dragon_Os_MoustacheD3
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Museau/Dragon_Os_MoustacheD0/Dragon_Os_MoustacheD1/Dragon_Os_MoustacheD2/Dragon_Os_MoustacheD3/Dragon_Os_MoustacheD4
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Museau/Dragon_Os_MoustacheD0/Dragon_Os_MoustacheD1/Dragon_Os_MoustacheD2/Dragon_Os_MoustacheD3/Dragon_Os_MoustacheD4/Dragon_Os_MoustacheD5
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Museau/Dragon_Os_MoustacheD0/Dragon_Os_MoustacheD1/Dragon_Os_MoustacheD2/Dragon_Os_MoustacheD3/Dragon_Os_MoustacheD4/Dragon_Os_MoustacheD5/Dragon_Os_MoustacheD6
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Museau/Dragon_Os_MoustacheD0/Dragon_Os_MoustacheD1/Dragon_Os_MoustacheD2/Dragon_Os_MoustacheD3/Dragon_Os_MoustacheD4/Dragon_Os_MoustacheD5/Dragon_Os_MoustacheD6/Dragon_Os_MoustacheD7
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Museau/Dragon_Os_MoustacheD0/Dragon_Os_MoustacheD1/Dragon_Os_MoustacheD2/Dragon_Os_MoustacheD3/Dragon_Os_MoustacheD4/Dragon_Os_MoustacheD5/Dragon_Os_MoustacheD6/Dragon_Os_MoustacheD7/Dragon_Os_MoustacheD8
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Museau/Dragon_Os_MoustacheG0
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Museau/Dragon_Os_MoustacheG0/Dragon_Os_MoustacheG1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Museau/Dragon_Os_MoustacheG0/Dragon_Os_MoustacheG1/Dragon_Os_MoustacheG2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Museau/Dragon_Os_MoustacheG0/Dragon_Os_MoustacheG1/Dragon_Os_MoustacheG2/Dragon_Os_MoustacheG3
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Museau/Dragon_Os_MoustacheG0/Dragon_Os_MoustacheG1/Dragon_Os_MoustacheG2/Dragon_Os_MoustacheG3/Dragon_Os_MoustacheG4
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Museau/Dragon_Os_MoustacheG0/Dragon_Os_MoustacheG1/Dragon_Os_MoustacheG2/Dragon_Os_MoustacheG3/Dragon_Os_MoustacheG4/Dragon_Os_MoustacheG5
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Museau/Dragon_Os_MoustacheG0/Dragon_Os_MoustacheG1/Dragon_Os_MoustacheG2/Dragon_Os_MoustacheG3/Dragon_Os_MoustacheG4/Dragon_Os_MoustacheG5/Dragon_Os_MoustacheG6
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Museau/Dragon_Os_MoustacheG0/Dragon_Os_MoustacheG1/Dragon_Os_MoustacheG2/Dragon_Os_MoustacheG3/Dragon_Os_MoustacheG4/Dragon_Os_MoustacheG5/Dragon_Os_MoustacheG6/Dragon_Os_MoustacheG7
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Museau/Dragon_Os_MoustacheG0/Dragon_Os_MoustacheG1/Dragon_Os_MoustacheG2/Dragon_Os_MoustacheG3/Dragon_Os_MoustacheG4/Dragon_Os_MoustacheG5/Dragon_Os_MoustacheG6/Dragon_Os_MoustacheG7/Dragon_Os_MoustacheG8
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Poil60
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Poil60/Dragon_Os_Poil61
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Poil70
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Poil70/Dragon_Os_Poil71
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Poil80
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Cou4/Dragon_Os_Tete/Dragon_Os_Poil80/Dragon_Os_Poil81
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Poil40
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Cou3/Dragon_Os_Poil40/Dragon_Os_Poil41
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Poil20
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Poil20/Dragon_Os_Poil21
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Poil30
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Cou2/Dragon_Os_Poil30/Dragon_Os_Poil31
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Poil10
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_Cou0/Dragon_Os_Cou1/Dragon_Os_Poil10/Dragon_Os_Poil11
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_PoilX1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_PoilX1/Dragon_Os_PoilX2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_PoilX1/Dragon_Os_PoilX2/Dragon_Os_PoilX3
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_PoilY1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_PoilY1/Dragon_Os_PoilY2
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_PoilZ1
+        weight: 1
+      - path: Dragon_Os_Maitre/Dragon_Os_Epaules/Dragon_Os_PoilZ1/Dragon_Os_PoilZ2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
