@@ -463,7 +463,7 @@ public class PlayerController : MonoBehaviour {
 
 		dragonHead.transform.position = transform.position;
 		dragonHead.transform.rotation = transform.rotation;
-		dragonHead.transform.Rotate(new Vector3(-90.0f, .0f, .0f));
+		dragonHead.transform.Rotate(new Vector3(.0f, 90.0f, .0f));
 
 		//------------------------------------------------------------------------------------------------------------------------------------------------------------
 		//Shoot
