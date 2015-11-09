@@ -36,7 +36,11 @@ public class SnakeAI : MonoBehaviour
 
 		currentLenght = initialLenght;
 
-		maxLenght = Mathf.FloorToInt((currentLenght + 2) * bodyMargin);
+		float mult = 1.0f;
+		if (bodyMargin > 1.0f)
+			mult = bodyMargin;
+
+		maxLenght = Mathf.FloorToInt((currentLenght + 2) * mult);
 	}
 
 	void Update()
@@ -90,26 +94,50 @@ public class SnakeAI : MonoBehaviour
 
 			float index = dist;// *_speed;
 
-			if (positions.Count > Mathf.FloorToInt(index) + 2)
+			if(index < 0)
 			{
-				float t = index - Mathf.FloorToInt(index);
+				float t = Mathf.Abs(index);
 
 				//Position
-				Vector3 pointBefore = (Vector3)positions[Mathf.FloorToInt(index)];
-				Vector3 pointAfter = (Vector3)positions[Mathf.FloorToInt(index) + 1];
-
+				Vector3 pointBefore = transform.position;
+				Vector3 pointAfter = (Vector3)positions[0];
+				
 				Vector3 targetPos = Vector3.Lerp(pointBefore, pointAfter, t);
-
+				
 				//Forward
-				Vector3 forwardBefore = (Vector3)forwards[Mathf.FloorToInt(index)];
-				Vector3 forwardAfter = (Vector3)forwards[Mathf.FloorToInt(index) + 1];
-
+				Vector3 forwardBefore = transform.forward;
+				Vector3 forwardAfter = (Vector3)forwards[0];
+				
 				Vector3 targetForw = Vector3.Lerp(forwardBefore, forwardAfter, t);
-
+				
 				bodyPart.transform.forward = targetForw;
 				bodyPart.transform.position = targetPos;
 				bodyPart.transform.Rotate(new Vector3(0.0f, 0.0f, -180.0f));
 				bodyPart.transform.Rotate(new Vector3(0.0f, -90.0f, 0.0f));
+			}
+			else
+			{
+				if (positions.Count > Mathf.FloorToInt(index) + 2)
+				{
+					float t = index - Mathf.FloorToInt(index);
+
+					//Position
+					Vector3 pointBefore = (Vector3)positions[Mathf.FloorToInt(index)];
+					Vector3 pointAfter = (Vector3)positions[Mathf.FloorToInt(index) + 1];
+
+					Vector3 targetPos = Vector3.Lerp(pointBefore, pointAfter, t);
+
+					//Forward
+					Vector3 forwardBefore = (Vector3)forwards[Mathf.FloorToInt(index)];
+					Vector3 forwardAfter = (Vector3)forwards[Mathf.FloorToInt(index) + 1];
+
+					Vector3 targetForw = Vector3.Lerp(forwardBefore, forwardAfter, t);
+
+					bodyPart.transform.forward = targetForw;
+					bodyPart.transform.position = targetPos;
+					bodyPart.transform.Rotate(new Vector3(0.0f, 0.0f, -180.0f));
+					bodyPart.transform.Rotate(new Vector3(0.0f, -90.0f, 0.0f));
+				}
 			}
 		}
 	}

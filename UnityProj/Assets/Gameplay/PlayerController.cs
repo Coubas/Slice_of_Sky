@@ -224,8 +224,10 @@ public class PlayerController : MonoBehaviour {
 			}
 
 			xCursorTimer += Time.fixedDeltaTime;
+			if(xCursorTimer > 1.0f)
+				xCursorTimer = 1.0f;
 			//xCursor = AIUtils.easingFunction(xCursor, xCursorTimer, 5.0f);
-			xCursor = AIUtils.QuadEaseOut(xCursorTimer, .0f, 1.0f, 1.0f);
+			xCursor = AIUtils.QuadEaseOut(xCursorTimer, .0f, x, 1.0f);
 			if (xCursor > 1.0f)
 				xCursor = 1.0f;
 		}
@@ -244,8 +246,10 @@ public class PlayerController : MonoBehaviour {
 			}
 
 			yCursorTimer += Time.fixedDeltaTime;
+			if(yCursorTimer > 1.0f)
+				yCursorTimer = 1.0f;
 			//yCursor = AIUtils.easingFunction(yCursor, yCursorTimer, 10.0f);
-			yCursor = AIUtils.QuadEaseOut(yCursorTimer, .0f, 1.0f, 1.0f);
+			yCursor = AIUtils.QuadEaseOut(yCursorTimer, .0f, y, 1.0f);
 			if (yCursor > 1.0f)
 				yCursor = 1.0f;
 		}
@@ -258,8 +262,8 @@ public class PlayerController : MonoBehaviour {
 		prevX = x;
 		prevY = y;
 
-		x *= xCursor;
-		y *= yCursor;
+		x *= Mathf.Abs(xCursor);
+		y *= Mathf.Abs(yCursor);
 
 		//------------------------------------------------------------------------------------------------------------------------------------------------------------
 		//Rotate
@@ -463,7 +467,7 @@ public class PlayerController : MonoBehaviour {
 
 		dragonHead.transform.position = transform.position;
 		dragonHead.transform.rotation = transform.rotation;
-		dragonHead.transform.Rotate(new Vector3(.0f, 90.0f, .0f));
+		dragonHead.transform.Rotate(new Vector3(.0f, 90.0f, 180.0f));
 
 		//------------------------------------------------------------------------------------------------------------------------------------------------------------
 		//Shoot

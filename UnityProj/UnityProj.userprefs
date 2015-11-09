@@ -1,9 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Gameplay\PlayerController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Gameplay\DragonCamera.cs">
     <Files>
-      <File FileName="Assets\Gameplay\SnakeAI.cs" Line="111" Column="5" />
-      <File FileName="Assets\Gameplay\PlayerController.cs" Line="466" Column="50" />
+      <File FileName="Assets\OneMinuteGui\Scripts\MenuManager.cs" Line="160" Column="25" />
+      <File FileName="Assets\Gameplay\SnakeAI.cs" Line="88" Column="1" />
+      <File FileName="Assets\Gameplay\PlayerController.cs" Line="90" Column="1" />
+      <File FileName="Assets\Gameplay\DragonCamera.cs" Line="28" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
