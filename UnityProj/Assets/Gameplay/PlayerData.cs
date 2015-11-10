@@ -6,7 +6,10 @@ public class PlayerData : MonoBehaviour {
 
 	public ArrayList scores;
 	public int highScore;
+    public bool isHighScore;
 	public bool invertYAxis = false;
+
+    public int[] gaugesStocks;
 
 	public class ScoreData
 	{
@@ -45,9 +48,36 @@ public class PlayerData : MonoBehaviour {
 	
 	}
 
+    public void Load()
+    {
+        SaveLoadManager.Load();
+        SaveLoadManager.GetSavedData(ref invertYAxis, ref highScore, ref gaugesStocks);
+    }
+
 	public void addScore(int _level, int _score, int[] _spiritsCollected)
 	{
 		scores.Add(new ScoreData(_level, _score, _spiritsCollected));
+
+        //HighScore management
+        if(_score >= highScore)
+        {
+            highScore = _score;
+            isHighScore = true;
+        }
+        else
+        {
+            isHighScore = false;
+        }
+
+        //Update collected spirits count
+        for(int i = 0; i < _spiritsCollected.Length; ++i)
+        {
+            gaugesStocks[i] += _spiritsCollected[i];
+        }
+
+        //Save the game
+        SaveLoadManager.SetSavedData(invertYAxis, highScore, gaugesStocks);
+        SaveLoadManager.Save();
 	}
 
 	public ScoreData getLastScore()

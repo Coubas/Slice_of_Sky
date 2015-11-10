@@ -114,6 +114,8 @@ namespace beffio.OneMinuteGUI
 	//Added by Coubz
 	public void StartGame()
 	{
+        //Load the saved data before launching the game
+        PlayerData.PD.Load();
 		Application.LoadLevel(1);
 	}
 
