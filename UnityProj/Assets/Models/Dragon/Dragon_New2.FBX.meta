@@ -223,6 +223,57 @@ ModelImporter:
     100430: DragonOs_TibiasD
     100432: DragonOs_TibiasG
     100434: DragonOs_Master
+    100436: DragonOs_0
+    100438: DragonOs_1
+    100440: DragonOs_10
+    100442: DragonOs_11
+    100444: DragonOs_12
+    100446: DragonOs_13
+    100448: DragonOs_14
+    100450: DragonOs_15
+    100452: DragonOs_16
+    100454: DragonOs_17
+    100456: DragonOs_2
+    100458: DragonOs_3
+    100460: DragonOs_4
+    100462: DragonOs_5
+    100464: DragonOs_6
+    100466: DragonOs_7
+    100468: DragonOs_8
+    100470: DragonOs_9
+    100472: DragonOs_BandeauAD004
+    100474: DragonOs_BandeauBD004
+    100476: DragonOs_BandeauBD005
+    100478: DragonOs_BandeauBD006
+    100480: DragonOs_BandeauBD007
+    100482: DragonOs_BandeauBD008
+    100484: DragonOs_BandeauBD009
+    100486: DragonOs_CuisseD
+    100488: DragonOs_CuisseG
+    100490: DragonOs_DMoustache0
+    100492: DragonOs_DMoustache1
+    100494: DragonOs_DMoustache2
+    100496: DragonOs_DMoustache3
+    100498: DragonOs_EpauleD
+    100500: DragonOs_EpauleG
+    100502: DragonOs_FemurD001
+    100504: DragonOs_GMoustache0
+    100506: DragonOs_GMoustache1
+    100508: DragonOs_GMoustache2
+    100510: DragonOs_GMoustache3
+    100512: DragonOs_Lanterne22
+    100514: DragonOs_Lanterne23
+    100516: DragonOs_Lanterne24
+    100518: DragonOs_OrteilD032
+    100520: DragonOs_OrteilD033
+    100522: DragonOs_OrteilD034
+    100524: DragonOs_OrteilD035
+    100526: DragonOs_OrteilD036
+    100528: DragonOs_OrteilD037
+    100530: DragonOs_OrteilD038
+    100532: DragonOs_OrteilD039
+    100534: DragonOs_PiedD001
+    100536: DragonOs_TibiasD001
     400000: Dragon
     400002: //RootNode
     400004: DragonOs_AvantBrasD
@@ -441,6 +492,57 @@ ModelImporter:
     400430: DragonOs_TibiasD
     400432: DragonOs_TibiasG
     400434: DragonOs_Master
+    400436: DragonOs_0
+    400438: DragonOs_1
+    400440: DragonOs_10
+    400442: DragonOs_11
+    400444: DragonOs_12
+    400446: DragonOs_13
+    400448: DragonOs_14
+    400450: DragonOs_15
+    400452: DragonOs_16
+    400454: DragonOs_17
+    400456: DragonOs_2
+    400458: DragonOs_3
+    400460: DragonOs_4
+    400462: DragonOs_5
+    400464: DragonOs_6
+    400466: DragonOs_7
+    400468: DragonOs_8
+    400470: DragonOs_9
+    400472: DragonOs_BandeauAD004
+    400474: DragonOs_BandeauBD004
+    400476: DragonOs_BandeauBD005
+    400478: DragonOs_BandeauBD006
+    400480: DragonOs_BandeauBD007
+    400482: DragonOs_BandeauBD008
+    400484: DragonOs_BandeauBD009
+    400486: DragonOs_CuisseD
+    400488: DragonOs_CuisseG
+    400490: DragonOs_DMoustache0
+    400492: DragonOs_DMoustache1
+    400494: DragonOs_DMoustache2
+    400496: DragonOs_DMoustache3
+    400498: DragonOs_EpauleD
+    400500: DragonOs_EpauleG
+    400502: DragonOs_FemurD001
+    400504: DragonOs_GMoustache0
+    400506: DragonOs_GMoustache1
+    400508: DragonOs_GMoustache2
+    400510: DragonOs_GMoustache3
+    400512: DragonOs_Lanterne22
+    400514: DragonOs_Lanterne23
+    400516: DragonOs_Lanterne24
+    400518: DragonOs_OrteilD032
+    400520: DragonOs_OrteilD033
+    400522: DragonOs_OrteilD034
+    400524: DragonOs_OrteilD035
+    400526: DragonOs_OrteilD036
+    400528: DragonOs_OrteilD037
+    400530: DragonOs_OrteilD038
+    400532: DragonOs_OrteilD039
+    400534: DragonOs_PiedD001
+    400536: DragonOs_TibiasD001
     4300000: Dragon
     9500000: //RootNode
     13700000: Dragon
@@ -500,8 +602,10 @@ ModelImporter:
     legStretch: .0500000007
     feetSpacing: 0
     rootMotionBoneName: 
+    hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
+  humanoidOversampling: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
