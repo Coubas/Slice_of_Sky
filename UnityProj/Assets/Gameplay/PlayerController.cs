@@ -67,8 +67,10 @@ public class PlayerController : MonoBehaviour {
 	private float nextShotTimer;
 
 	void Start () {
-		Input.gyro.enabled = true;
-		refRotSet = false;
+#if UNITY_ANDROID
+    		Input.gyro.enabled = true;
+	    	refRotSet = false;
+#endif
 
 		xCursor = .0f;
 		xCursorTimer = .0f;
@@ -467,12 +469,13 @@ public class PlayerController : MonoBehaviour {
 
 		dragonHead.transform.position = transform.position;
 		dragonHead.transform.rotation = transform.rotation;
-		dragonHead.transform.Rotate(new Vector3(.0f, 90.0f, 180.0f));
+		dragonHead.transform.Rotate(new Vector3(.0f, 0.0f, -90.0f));
+		dragonHead.transform.Rotate(new Vector3(.0f, -90.0f, 0.0f));
 
-		//------------------------------------------------------------------------------------------------------------------------------------------------------------
-		//Shoot
-		//------------------------------------------------------------------------------------------------------------------------------------------------------------
-		if (Input.GetButton("Fire1") && Time.time > nextShotTimer)
+        //------------------------------------------------------------------------------------------------------------------------------------------------------------
+        //Shoot
+        //------------------------------------------------------------------------------------------------------------------------------------------------------------
+        if (Input.GetButton("Fire1") && Time.time > nextShotTimer)
 		{
 			nextShotTimer = Time.time + shootTimer;
 			GameObject clone = Instantiate(projectile, projectileSpawner.position, projectileSpawner.rotation) as GameObject;

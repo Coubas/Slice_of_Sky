@@ -85,7 +85,7 @@ public class SnakeAI : MonoBehaviour
 	}
 
 	//Scipt called by the head after her move to update the snake parts
-	public void placeBodyPart( float _speed )
+	public void placeBodyPart( float _speed)
 	{
 		for (int i = 0; i < currentLenght; ++i)
 		{
@@ -101,18 +101,21 @@ public class SnakeAI : MonoBehaviour
 				//Position
 				Vector3 pointBefore = transform.position;
 				Vector3 pointAfter = (Vector3)positions[0];
+
+                float distBeforeAfter = Vector3.Distance(pointBefore, pointAfter);
+                t /= distBeforeAfter;
 				
-				Vector3 targetPos = Vector3.Lerp(pointBefore, pointAfter, t);
+				Vector3 targetPos = Vector3.Lerp(pointAfter, pointBefore, t);
 				
 				//Forward
 				Vector3 forwardBefore = transform.forward;
 				Vector3 forwardAfter = (Vector3)forwards[0];
 				
-				Vector3 targetForw = Vector3.Lerp(forwardBefore, forwardAfter, t);
+				Vector3 targetForw = Vector3.Lerp(forwardAfter, forwardBefore, t);
 				
 				bodyPart.transform.forward = targetForw;
 				bodyPart.transform.position = targetPos;
-				bodyPart.transform.Rotate(new Vector3(0.0f, 0.0f, -180.0f));
+				bodyPart.transform.Rotate(new Vector3(0.0f, 0.0f, -90.0f));
 				bodyPart.transform.Rotate(new Vector3(0.0f, -90.0f, 0.0f));
 			}
 			else
@@ -135,7 +138,7 @@ public class SnakeAI : MonoBehaviour
 
 					bodyPart.transform.forward = targetForw;
 					bodyPart.transform.position = targetPos;
-					bodyPart.transform.Rotate(new Vector3(0.0f, 0.0f, -180.0f));
+					bodyPart.transform.Rotate(new Vector3(0.0f, 0.0f, -90.0f));
 					bodyPart.transform.Rotate(new Vector3(0.0f, -90.0f, 0.0f));
 				}
 			}
