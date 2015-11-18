@@ -196,7 +196,16 @@ public class SnakeAI : MonoBehaviour
 				_spirit.GetComponent<Spirit>().afraid = false;
 				_spirit.GetComponent<Spirit>().freezed = false;
 
-				return;
+                Transform form1 = _spirit.transform.FindChild("InWorld");
+                Transform form2 = _spirit.transform.FindChild("OnDragon");
+
+                if(form1 && form2)
+                {
+                    form1.gameObject.SetActive(false);
+                    form2.gameObject.SetActive(true);
+                }
+
+                return;
 			}
 		}
 	}

@@ -35,12 +35,18 @@ public class Spirit : MonoBehaviour {
 	public float freezeDuration;
 	private float unfreezeTime;
 
+    public float collectedRadius;
+    public float collectedRotSpeed;
+    private float collectedTimer;
+
 	void Start () {
 		GameMaster.GM.spiritCount++;
 		GameMaster.GM.spirits.Add(gameObject);
 
 		fallingSpeed = Random.Range(fallingSpeedMin, fallingSpeedMax);
 		waitBeforeFall = Random.Range(.0f, maxWaitingBeforeFall);
+
+        collectedTimer = .0f;
 	}
 	
 	void Update () 
@@ -49,7 +55,15 @@ public class Spirit : MonoBehaviour {
 			return;
 
 		if (collected)
+        {
+            collectedTimer += Time.deltaTime;
+            Vector3 pos = transform.parent.position;
+            Vector3 parentUp = transform.parent.up;
+            Vector3 up = Quaternion.AngleAxis(collectedRotSpeed * collectedTimer, transform.parent.right) * parentUp;
+            Debug.DrawLine(pos, pos + up * collectedRadius, Color.red);
+            transform.position = pos + up * collectedRadius;
 			return;
+        }
 
 		if (freezed)
 		{
