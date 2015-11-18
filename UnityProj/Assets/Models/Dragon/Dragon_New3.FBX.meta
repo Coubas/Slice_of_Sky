@@ -231,7 +231,9 @@ ModelImporter:
     3300000: Taille_1_Os
     4300000: Dragon
     4300002: Taille_1_Os
+    7400000: Idle
     9500000: //RootNode
+    11100000: //RootNode
     13700000: Dragon
   materials:
     importMaterials: 1
@@ -250,9 +252,251 @@ ModelImporter:
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
-    animationWrapMode: 0
+    animationWrapMode: 2
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 5
+      lastFrame: 50
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dragon
+        weight: 1
+      - path: DragonOs_0
+        weight: 1
+      - path: DragonOs_0/DragonOs_DMoustache0
+        weight: 1
+      - path: DragonOs_0/DragonOs_DMoustache0/DragonOs_DMoustache1
+        weight: 1
+      - path: DragonOs_0/DragonOs_DMoustache0/DragonOs_DMoustache1/DragonOs_DMoustache2
+        weight: 1
+      - path: DragonOs_0/DragonOs_DMoustache0/DragonOs_DMoustache1/DragonOs_DMoustache2/DragonOs_DMoustache3
+        weight: 1
+      - path: DragonOs_0/DragonOs_GMoustache0
+        weight: 1
+      - path: DragonOs_0/DragonOs_GMoustache0/DragonOs_GMoustache1
+        weight: 1
+      - path: DragonOs_0/DragonOs_GMoustache0/DragonOs_GMoustache1/DragonOs_GMoustache2
+        weight: 1
+      - path: DragonOs_0/DragonOs_GMoustache0/DragonOs_GMoustache1/DragonOs_GMoustache2/DragonOs_GMoustache3
+        weight: 1
+      - path: DragonOs_0/DragonOs_Lanterne10
+        weight: 1
+      - path: DragonOs_0/DragonOs_Lanterne10/DragonOs_Lanterne11
+        weight: 1
+      - path: DragonOs_0/DragonOs_Lanterne10/DragonOs_Lanterne11/DragonOs_Lanterne12
+        weight: 1
+      - path: DragonOs_0/DragonOs_Lanterne10/DragonOs_Lanterne11/DragonOs_Lanterne12/DragonOs_Lanterne13
+        weight: 1
+      - path: DragonOs_0/DragonOs_Lanterne10/DragonOs_Lanterne11/DragonOs_Lanterne12/DragonOs_Lanterne13/DragonOs_Lanterne14
+        weight: 1
+      - path: DragonOs_0/DragonOs_Lanterne20
+        weight: 1
+      - path: DragonOs_0/DragonOs_Lanterne20/DragonOs_Lanterne21
+        weight: 1
+      - path: DragonOs_0/DragonOs_Lanterne20/DragonOs_Lanterne21/DragonOs_Lanterne22
+        weight: 1
+      - path: DragonOs_0/DragonOs_Lanterne20/DragonOs_Lanterne21/DragonOs_Lanterne22/DragonOs_Lanterne23
+        weight: 1
+      - path: DragonOs_0/DragonOs_Lanterne20/DragonOs_Lanterne21/DragonOs_Lanterne22/DragonOs_Lanterne23/DragonOs_Lanterne24
+        weight: 1
+      - path: DragonOs_0/DragonOs_Machoire
+        weight: 1
+      - path: DragonOs_0/DragonOs_Machoire/DragonOs_Bouche
+        weight: 1
+      - path: DragonOs_1
+        weight: 1
+      - path: DragonOs_2
+        weight: 1
+      - path: DragonOs_3
+        weight: 1
+      - path: DragonOs_4
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleD
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleD/DragonOs_BrasD
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleD/DragonOs_BrasD/DragonOs_AvantBrasD
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleD/DragonOs_BrasD/DragonOs_AvantBrasD/DragonOs_BandeauAD
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleD/DragonOs_BrasD/DragonOs_AvantBrasD/DragonOs_BandeauAD/DragonOs_BandeauAD0
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleD/DragonOs_BrasD/DragonOs_AvantBrasD/DragonOs_BandeauAD/DragonOs_BandeauAD0/DragonOs_BandeauAD1
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleD/DragonOs_BrasD/DragonOs_AvantBrasD/DragonOs_BandeauAD/DragonOs_BandeauAD0/DragonOs_BandeauAD1/DragonOs_BandeauAD2
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleD/DragonOs_BrasD/DragonOs_AvantBrasD/DragonOs_BandeauAD/DragonOs_BandeauAD0/DragonOs_BandeauAD1/DragonOs_BandeauAD2/DragonOs_BandeauAD3
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleD/DragonOs_BrasD/DragonOs_AvantBrasD/DragonOs_MainD
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleD/DragonOs_BrasD/DragonOs_AvantBrasD/DragonOs_MainD/DragonOs_DoigtD00
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleD/DragonOs_BrasD/DragonOs_AvantBrasD/DragonOs_MainD/DragonOs_DoigtD00/DragonOs_DoigtD01
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleD/DragonOs_BrasD/DragonOs_AvantBrasD/DragonOs_MainD/DragonOs_DoigtD10
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleD/DragonOs_BrasD/DragonOs_AvantBrasD/DragonOs_MainD/DragonOs_DoigtD10/DragonOs_DoigtD11
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleD/DragonOs_BrasD/DragonOs_AvantBrasD/DragonOs_MainD/DragonOs_DoigtD20
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleD/DragonOs_BrasD/DragonOs_AvantBrasD/DragonOs_MainD/DragonOs_DoigtD20/DragonOs_DoigtD21
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleD/DragonOs_BrasD/DragonOs_AvantBrasD/DragonOs_MainD/DragonOs_DoigtD30
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleD/DragonOs_BrasD/DragonOs_AvantBrasD/DragonOs_MainD/DragonOs_DoigtD30/DragonOs_DoigtD31
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleG
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleG/DragonOs_BrasG
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleG/DragonOs_BrasG/DragonOs_AvantBrasG
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleG/DragonOs_BrasG/DragonOs_AvantBrasG/DragonOs_BandeauAD004
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleG/DragonOs_BrasG/DragonOs_AvantBrasG/DragonOs_BandeauAD004/DragonOs_BandeauAG0
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleG/DragonOs_BrasG/DragonOs_AvantBrasG/DragonOs_BandeauAD004/DragonOs_BandeauAG0/DragonOs_BandeauAG1
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleG/DragonOs_BrasG/DragonOs_AvantBrasG/DragonOs_BandeauAD004/DragonOs_BandeauAG0/DragonOs_BandeauAG1/DragonOs_BandeauAG2
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleG/DragonOs_BrasG/DragonOs_AvantBrasG/DragonOs_BandeauAD004/DragonOs_BandeauAG0/DragonOs_BandeauAG1/DragonOs_BandeauAG2/DragonOs_BandeauAG3
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleG/DragonOs_BrasG/DragonOs_AvantBrasG/DragonOs_MainG
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleG/DragonOs_BrasG/DragonOs_AvantBrasG/DragonOs_MainG/DragonOs_DoigtG00
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleG/DragonOs_BrasG/DragonOs_AvantBrasG/DragonOs_MainG/DragonOs_DoigtG00/DragonOs_DoigtG01
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleG/DragonOs_BrasG/DragonOs_AvantBrasG/DragonOs_MainG/DragonOs_DoigtG10
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleG/DragonOs_BrasG/DragonOs_AvantBrasG/DragonOs_MainG/DragonOs_DoigtG10/DragonOs_DoigtG11
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleG/DragonOs_BrasG/DragonOs_AvantBrasG/DragonOs_MainG/DragonOs_DoigtG20
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleG/DragonOs_BrasG/DragonOs_AvantBrasG/DragonOs_MainG/DragonOs_DoigtG20/DragonOs_DoigtG21
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleG/DragonOs_BrasG/DragonOs_AvantBrasG/DragonOs_MainG/DragonOs_DoigtG30
+        weight: 1
+      - path: DragonOs_4/DragonOs_EpauleG/DragonOs_BrasG/DragonOs_AvantBrasG/DragonOs_MainG/DragonOs_DoigtG30/DragonOs_DoigtG31
+        weight: 1
+      - path: DragonOs_5
+        weight: 1
+      - path: DragonOs_6
+        weight: 1
+      - path: DragonOs_7
+        weight: 1
+      - path: DragonOs_8
+        weight: 1
+      - path: DragonOs_9
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseD
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseD/DragonOs_FemurD001
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseD/DragonOs_FemurD001/DragonOs_TibiasD001
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseD/DragonOs_FemurD001/DragonOs_TibiasD001/DragonOs_BandeauBD004
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseD/DragonOs_FemurD001/DragonOs_TibiasD001/DragonOs_BandeauBD004/DragonOs_BandeauBD005
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseD/DragonOs_FemurD001/DragonOs_TibiasD001/DragonOs_BandeauBD004/DragonOs_BandeauBD005/DragonOs_BandeauBD006
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseD/DragonOs_FemurD001/DragonOs_TibiasD001/DragonOs_BandeauBD004/DragonOs_BandeauBD005/DragonOs_BandeauBD006/DragonOs_BandeauBD007
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseD/DragonOs_FemurD001/DragonOs_TibiasD001/DragonOs_BandeauBD004/DragonOs_BandeauBD005/DragonOs_BandeauBD006/DragonOs_BandeauBD007/DragonOs_BandeauBD008
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseD/DragonOs_FemurD001/DragonOs_TibiasD001/DragonOs_PiedD001
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseD/DragonOs_FemurD001/DragonOs_TibiasD001/DragonOs_PiedD001/DragonOs_OrteilD032
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseD/DragonOs_FemurD001/DragonOs_TibiasD001/DragonOs_PiedD001/DragonOs_OrteilD032/DragonOs_OrteilD033
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseD/DragonOs_FemurD001/DragonOs_TibiasD001/DragonOs_PiedD001/DragonOs_OrteilD034
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseD/DragonOs_FemurD001/DragonOs_TibiasD001/DragonOs_PiedD001/DragonOs_OrteilD034/DragonOs_OrteilD035
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseD/DragonOs_FemurD001/DragonOs_TibiasD001/DragonOs_PiedD001/DragonOs_OrteilD036
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseD/DragonOs_FemurD001/DragonOs_TibiasD001/DragonOs_PiedD001/DragonOs_OrteilD036/DragonOs_OrteilD037
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseD/DragonOs_FemurD001/DragonOs_TibiasD001/DragonOs_PiedD001/DragonOs_OrteilD038
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseD/DragonOs_FemurD001/DragonOs_TibiasD001/DragonOs_PiedD001/DragonOs_OrteilD038/DragonOs_OrteilD039
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseG
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseG/DragonOs_FemurG
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseG/DragonOs_FemurG/DragonOs_TibiasG
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseG/DragonOs_FemurG/DragonOs_TibiasG/DragonOs_BandeauBD009
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseG/DragonOs_FemurG/DragonOs_TibiasG/DragonOs_BandeauBD009/DragonOs_BandeauBG0
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseG/DragonOs_FemurG/DragonOs_TibiasG/DragonOs_BandeauBD009/DragonOs_BandeauBG0/DragonOs_BandeauBG1
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseG/DragonOs_FemurG/DragonOs_TibiasG/DragonOs_BandeauBD009/DragonOs_BandeauBG0/DragonOs_BandeauBG1/DragonOs_BandeauBG2
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseG/DragonOs_FemurG/DragonOs_TibiasG/DragonOs_BandeauBD009/DragonOs_BandeauBG0/DragonOs_BandeauBG1/DragonOs_BandeauBG2/DragonOs_BandeauBG3
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseG/DragonOs_FemurG/DragonOs_TibiasG/DragonOs_PiedG
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseG/DragonOs_FemurG/DragonOs_TibiasG/DragonOs_PiedG/DragonOs_OrteilG00
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseG/DragonOs_FemurG/DragonOs_TibiasG/DragonOs_PiedG/DragonOs_OrteilG00/DragonOs_OrteilG01
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseG/DragonOs_FemurG/DragonOs_TibiasG/DragonOs_PiedG/DragonOs_OrteilG10
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseG/DragonOs_FemurG/DragonOs_TibiasG/DragonOs_PiedG/DragonOs_OrteilG10/DragonOs_OrteilG11
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseG/DragonOs_FemurG/DragonOs_TibiasG/DragonOs_PiedG/DragonOs_OrteilG20
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseG/DragonOs_FemurG/DragonOs_TibiasG/DragonOs_PiedG/DragonOs_OrteilG20/DragonOs_OrteilG21
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseG/DragonOs_FemurG/DragonOs_TibiasG/DragonOs_PiedG/DragonOs_OrteilG30
+        weight: 1
+      - path: DragonOs_9/DragonOs_CuisseG/DragonOs_FemurG/DragonOs_TibiasG/DragonOs_PiedG/DragonOs_OrteilG30/DragonOs_OrteilG31
+        weight: 1
+      - path: DragonOs_10
+        weight: 1
+      - path: DragonOs_11
+        weight: 1
+      - path: DragonOs_12
+        weight: 1
+      - path: DragonOs_13
+        weight: 1
+      - path: DragonOs_14
+        weight: 1
+      - path: DragonOs_15
+        weight: 1
+      - path: DragonOs_16
+        weight: 1
+      - path: DragonOs_17
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -291,7 +535,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
