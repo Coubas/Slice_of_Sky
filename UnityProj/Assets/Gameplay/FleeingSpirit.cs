@@ -65,6 +65,7 @@ public class FleeingSpirit : MonoBehaviour {
 				realDir.Normalize();
 			}
 
+            transform.LookAt(transform.position + realDir);
 			transform.Translate(realDir * speed * Time.timeScale, Space.World);
 		}
 	}

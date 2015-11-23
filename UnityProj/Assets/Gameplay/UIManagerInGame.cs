@@ -45,7 +45,8 @@ public class UIManagerInGame : MonoBehaviour {
 			else if (combo == 0)
 			{
 				Combo.text = "";
-			}
+                prevCombo = 0;
+            }
 		}
 
 		UpdateSpeedGauges();

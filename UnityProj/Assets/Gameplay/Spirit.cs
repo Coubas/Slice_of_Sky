@@ -24,8 +24,14 @@ public class Spirit : MonoBehaviour {
 	public float maxWaitingBeforeFall;
 	private float fallingSpeed;
 	private float waitBeforeFall;
-	
-	private bool registered;
+
+    private float maxDist;
+    private Vector3 destination;
+    public float speedMin;
+    public float speedMax;
+    private float speed;
+
+    private bool registered;
 
 	public float afraidDist;
 	public float afraidSpeed;
@@ -46,6 +52,10 @@ public class Spirit : MonoBehaviour {
 		fallingSpeed = Random.Range(fallingSpeedMin, fallingSpeedMax);
 		waitBeforeFall = Random.Range(.0f, maxWaitingBeforeFall);
 
+        maxDist = GameMaster.GM.maxDistDecor;
+        speed = Random.Range(speedMin, speedMax);
+        getDestination();
+
         collectedTimer = .0f;
 	}
 	
@@ -60,7 +70,6 @@ public class Spirit : MonoBehaviour {
             Vector3 pos = transform.parent.position;
             Vector3 parentUp = transform.parent.up;
             Vector3 up = Quaternion.AngleAxis(collectedRotSpeed * collectedTimer, transform.parent.right) * parentUp;
-            Debug.DrawLine(pos, pos + up * collectedRadius, Color.red);
             transform.position = pos + up * collectedRadius;
 			return;
         }
@@ -81,15 +90,35 @@ public class Spirit : MonoBehaviour {
 
 		if (fallingSpirit)
 		{
-			if (waitBeforeFall <= .0f)
-				fall(fallingSpeed);
-			else
-				waitBeforeFall -= Time.deltaTime;
+            //         //Make the spirit fall
+            //if (waitBeforeFall <= .0f)
+            //	fall(fallingSpeed);
+            //else
+            //	waitBeforeFall -= Time.deltaTime;
 
-			if (transform.position.y < -GameMaster.GM.maxDistDecor)
-			{
-				transform.Translate(.0f, GameMaster.GM.maxDistDecor * 2.0f, .0f, Space.World);
-			}
+            //if (transform.position.y < -GameMaster.GM.maxDistDecor)
+            //{
+            //	transform.Translate(.0f, GameMaster.GM.maxDistDecor * 2.0f, .0f, Space.World);
+            //}
+
+            Vector3 toDest = destination - transform.position;
+            toDest.Normalize();
+            
+            transform.LookAt(destination);
+
+            if (Vector3.Distance(transform.position, destination) > 1.0f)
+            {
+                Quaternion xRot = Quaternion.AngleAxis(25.0f, Vector3.Cross(toDest, Vector3.up));
+                Quaternion roundRot = Quaternion.AngleAxis(Mathf.RoundToInt(Time.time * 272.0f) % 360, toDest);
+                toDest = xRot * toDest;
+                toDest = roundRot * toDest;
+                toDest.Normalize();
+                transform.Translate(toDest * speed, Space.World);
+            }
+            else
+            {
+                getDestination();
+            }
 		}
 	}
 
@@ -105,6 +134,10 @@ public class Spirit : MonoBehaviour {
 			unfreezeTime = Time.time + freezeDuration;
 			Destroy(other.gameObject);
 		}
+        else
+        {
+            getDestination();
+        }
 	}
 
 	void fall(float _speed)
@@ -124,14 +157,20 @@ public class Spirit : MonoBehaviour {
 		getAfraidTarget();
 	}
 
+    void getDestination()
+    {
+        destination = new Vector3(Random.Range(-maxDist, maxDist), Random.Range(-maxDist, maxDist), Random.Range(-maxDist, maxDist));
+    }
+
 	void makeAfraidMove()
 	{
 		float dist = Vector3.Distance(transform.position, afraidTarget);
 		if (dist > Random.Range(0.1f, afraidDist * .75f))
 		{
 			Vector3 dir = afraidTarget - transform.position;
-			//Debug.DrawRay(transform.position, dir, Color.green);
-			//dir.Normalize();
+            //Debug.DrawRay(transform.position, dir, Color.green);
+            //dir.Normalize();
+            transform.LookAt(afraidTarget);
 			transform.Translate(dir * afraidSpeed, Space.World);
 		}
 		else
