@@ -40,6 +40,7 @@ public class Spirit : MonoBehaviour {
 
 	public float freezeDuration;
 	private float unfreezeTime;
+    public Transform freezeEffect;
 
     public float collectedRadius;
     public float collectedRotSpeed;
@@ -77,7 +78,10 @@ public class Spirit : MonoBehaviour {
 		if (freezed)
 		{
 			if (Time.time > unfreezeTime)
+            {
 				freezed = false;
+                freezeEffect.gameObject.SetActive(false);
+            }
 			else
 				return;
 		}
@@ -132,7 +136,9 @@ public class Spirit : MonoBehaviour {
 		{
 			freezed = true;
 			unfreezeTime = Time.time + freezeDuration;
-			Destroy(other.gameObject);
+            freezeEffect.gameObject.SetActive(true);
+
+            Destroy(other.gameObject);
 		}
         else
         {
