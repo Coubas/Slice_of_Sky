@@ -19,16 +19,19 @@ public class EventManager : MonoBehaviour {
 		if (GameMaster.GM.gamePaused)
 			return;
 
-		if (timeUntilNextEvent > .0f)
-		{
-			timeUntilNextEvent -= Time.deltaTime;
-		}
-		else if (!eventCurrentlyHappening)
-		{
-			int id = Random.Range(0, events.Length);
-			events[id].Begin();
-			eventCurrentlyHappening = true;
-		}
+        if(PlayerData.PD.gaugesLvl[0] > 0 && PlayerData.PD.gaugesLvl[1] > 0)
+        {
+		    if (timeUntilNextEvent > .0f)
+		    {
+			    timeUntilNextEvent -= Time.deltaTime;
+		    }
+		    else if (!eventCurrentlyHappening)
+		    {
+			    int id = Random.Range(0, events.Length);
+			    events[id].Begin();
+			    eventCurrentlyHappening = true;
+		    }
+        }
 	}
 
 	public void eventEnded()

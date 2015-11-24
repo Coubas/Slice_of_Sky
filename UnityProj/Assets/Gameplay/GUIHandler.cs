@@ -8,11 +8,11 @@ public class GUIHandler : MonoBehaviour
 	GUIStyle styleRegularAlignRight;
 	GUIStyle styleRegularAlignCenter;
 	//Invert y axe checkbox
-	GUIContent content = new GUIContent();
-	Rect checkBoxRect;
-	Rect labelRect;
-	public Texture2D checkBoxTexture;
-	public string label = "Invert Y Axis";
+	//GUIContent content = new GUIContent();
+	//Rect checkBoxRect;
+	//Rect labelRect;
+	//public Texture2D checkBoxTexture;
+	//public string label = "Invert Y Axis";
 	//Score
 	Rect scoreRect;
 	//Timer
@@ -45,8 +45,8 @@ public class GUIHandler : MonoBehaviour
 		styleRegularAlignCenter.alignment = TextAnchor.MiddleCenter;
 
 		//Invert y axe checkbox
-		checkBoxRect = new Rect(Screen.width - 200, Screen.height - 34, 32, 32);
-		labelRect = new Rect(Screen.width - 168, Screen.height - 24, 64, 16);
+		//checkBoxRect = new Rect(Screen.width - 200, Screen.height - 34, 32, 32);
+		//labelRect = new Rect(Screen.width - 168, Screen.height - 24, 64, 16);
 
 		//Score
 		scoreRect = new Rect(5, 5, 128, 64);
@@ -78,7 +78,7 @@ public class GUIHandler : MonoBehaviour
 	void inGameGUI()
 	{
 		//Invert y axe checkbox
-		GUI.Label(labelRect, label, styleSmall);
+		//GUI.Label(labelRect, label, styleSmall);
 
 		//Score
 		GUI.Box(scoreRect, "Score : \n" + GameMaster.GM.score, styleRegular);

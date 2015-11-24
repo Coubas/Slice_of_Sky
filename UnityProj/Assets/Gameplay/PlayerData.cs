@@ -10,8 +10,9 @@ public class PlayerData : MonoBehaviour {
 	public bool invertYAxis = false;
 
     public int[] gaugesStocks;
+    public int[] gaugesLvl;
 
-	public class ScoreData
+    public class ScoreData
 	{
 		public int level;
 		public int score;
@@ -51,7 +52,7 @@ public class PlayerData : MonoBehaviour {
     public void Load()
     {
         SaveLoadManager.Load();
-        SaveLoadManager.GetSavedData(ref invertYAxis, ref highScore, ref gaugesStocks);
+        SaveLoadManager.GetSavedData(ref invertYAxis, ref highScore, ref gaugesStocks, ref gaugesLvl);
     }
 
 	public void addScore(int _level, int _score, int[] _spiritsCollected)
@@ -73,10 +74,17 @@ public class PlayerData : MonoBehaviour {
         for(int i = 0; i < _spiritsCollected.Length; ++i)
         {
             gaugesStocks[i] += _spiritsCollected[i];
+
+            int toAdd = _spiritsCollected[i];
+            while (toAdd >= (5 + gaugesLvl[i] * 5))
+            {
+                toAdd -= 5 + gaugesLvl[i] * 5;
+                gaugesLvl[i]++;
+            }
         }
 
         //Save the game
-        SaveLoadManager.SetSavedData(invertYAxis, highScore, gaugesStocks);
+        SaveLoadManager.SetSavedData(invertYAxis, highScore, gaugesStocks, gaugesLvl);
         SaveLoadManager.Save();
 	}
 

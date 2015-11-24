@@ -56,17 +56,25 @@ public class UIManagerInGame : MonoBehaviour {
 	{
 		for (int i = 0; i < playerControler.gauges.gauges.Length; ++i)
 		{
-			SubGauge currentGauge = playerControler.gauges.gauges[i];
-			if (currentGauge.active)
-			{
-				speedGaugeBorder[i].color = Color.white;
-				speedGaugeFill[i].fillAmount = (currentGauge.currentAmount / currentGauge.totalAmount);
-			}
-			else
-			{
-				speedGaugeBorder[i].color = Color.grey;
-				speedGaugeFill[i].fillAmount = .0f;
-			}
+            if (PlayerData.PD.gaugesLvl[1] > 0)
+            {
+                SubGauge currentGauge = playerControler.gauges.gauges[i];
+                if (currentGauge.active)
+                {
+                    speedGaugeBorder[i].color = Color.white;
+                    speedGaugeFill[i].fillAmount = (currentGauge.currentAmount / currentGauge.totalAmount);
+                }
+                else
+                {
+                    speedGaugeBorder[i].color = Color.grey;
+                    speedGaugeFill[i].fillAmount = .0f;
+                }
+            }
+            else
+            {
+                speedGaugeBorder[i].enabled = false;
+                speedGaugeFill[i].enabled = false;
+            }
 		}
 	}
 }

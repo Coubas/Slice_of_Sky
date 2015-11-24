@@ -36,8 +36,9 @@ public class PlayerController : MonoBehaviour {
 
 	//Speed up
 	public float speedUpCursor;
-	private float goingDownTimer;
+	//private float goingDownTimer;
 
+    public bool canSpeed;
 	public float boostedSpeed;
 	public float normalSpeed;
 	public float speedBoostCursor;
@@ -59,7 +60,8 @@ public class PlayerController : MonoBehaviour {
 	private Vector3 smoothVelocity;
 	private Vector3 oldForward;
 
-	//Projectiles
+    //Projectiles
+    public bool canShoot;
 	public GameObject projectile;
 	public Transform projectileSpawner;
 	public float shootTimer;
@@ -84,8 +86,11 @@ public class PlayerController : MonoBehaviour {
 		adjustXRotTimer = .0f;
 
 		speedUpCursor = 1.0f;
-		goingDownTimer = .0f;
-	}
+		//goingDownTimer = .0f;
+
+        canShoot = PlayerData.PD.gaugesLvl[0] > 0;
+        canSpeed = PlayerData.PD.gaugesLvl[1] > 0;
+    }
 	
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -404,7 +409,7 @@ public class PlayerController : MonoBehaviour {
 		//Debug.Log(transform.forward.y);
 
 		//Speed up boost
-		if (Input.GetButton("Jump") == true && gauges.CanUseBoost())
+		if (canSpeed && Input.GetButton("Jump") == true && gauges.CanUseBoost())
 		{
 			if (speedBoostTimer < 1.0f) speedBoostTimer += Time.fixedDeltaTime;
 			speedBoostCursor = AIUtils.QuadEaseOut(speedBoostTimer, 0.0f, 1.0f, 1.0f);
@@ -475,7 +480,7 @@ public class PlayerController : MonoBehaviour {
         //------------------------------------------------------------------------------------------------------------------------------------------------------------
         //Shoot
         //------------------------------------------------------------------------------------------------------------------------------------------------------------
-        if (Input.GetButton("Fire1") && Time.time > nextShotTimer)
+        if (canShoot && Input.GetButton("Fire1") && Time.time > nextShotTimer)
 		{
 			nextShotTimer = Time.time + shootTimer;
 			GameObject clone = Instantiate(projectile, projectileSpawner.position, projectileSpawner.rotation) as GameObject;

@@ -10,12 +10,26 @@ public class GameData
     public bool     invertYAxis;
     public int      highScore;
     public int[]    gaugesStocks;
+    public int[]    gaugesLvl;
 
     public GameData()
     {
         invertYAxis = false;
         highScore = 0;
         gaugesStocks = new int[5];
+        gaugesLvl = new int[5];
+    }
+
+    public override string ToString()
+    {
+        string output = "GameData \n { \n";
+        output += "\t Invert Y = " + invertYAxis.ToString() + "\n";
+        output += "\t High score = " + highScore.ToString() + "\n";
+        output += "\t Spirits collected = " + gaugesStocks[0] + gaugesStocks[1] + gaugesStocks[2] + gaugesStocks[3] + gaugesStocks[4] + "\n";
+        output += "\t Lantern lvl = " + gaugesLvl[0] + gaugesLvl[1] + gaugesLvl[2] + gaugesLvl[3] + gaugesLvl[4] + "\n";
+        output += "} \n";
+
+        return output;
     }
 }
 
@@ -24,18 +38,20 @@ public static class SaveLoadManager
 
     public static GameData savedData = new GameData();
 
-    public static void SetSavedData(bool _invertYAxis, int _highScore, int[] _gaugesStocks)
+    public static void SetSavedData(bool _invertYAxis, int _highScore, int[] _gaugesStocks, int[] _gaugesLvl)
     {
         savedData.invertYAxis = _invertYAxis;
         savedData.highScore = _highScore;
         savedData.gaugesStocks = _gaugesStocks;
+        savedData.gaugesLvl = _gaugesLvl;
     }
 
-    public static void GetSavedData(ref bool _invertYAxis, ref int _highScore, ref int[] _gaugesStocks)
+    public static void GetSavedData(ref bool _invertYAxis, ref int _highScore, ref int[] _gaugesStocks, ref int[] _gaugesLvl)
     {
         _invertYAxis = savedData.invertYAxis;
         _highScore = savedData.highScore;
         _gaugesStocks = savedData.gaugesStocks;
+        _gaugesLvl = savedData.gaugesLvl;
     }
 
     //it's static so we can call it from anywhere
@@ -43,6 +59,7 @@ public static class SaveLoadManager
     {
         BinaryFormatter bf = new BinaryFormatter();
         //Application.persistentDataPath is a string, so if you wanted you can put that into debug.log if you want to know where save games are located
+        Debug.Log("Data : " + savedData.ToString());
         Debug.Log("Data saved here : " + Application.persistentDataPath);
         FileStream file = File.Create(Application.persistentDataPath + "/savedData.gd"); //you can call it anything you want
         bf.Serialize(file, savedData);
@@ -58,7 +75,8 @@ public static class SaveLoadManager
             savedData = (GameData)bf.Deserialize(file);
             file.Close();
 
-            Debug.Log("Data Loaded");
+            Debug.Log("Data Loaded from : " + Application.persistentDataPath);
+            Debug.Log("Data : " + savedData.ToString());
         }
     }
 }

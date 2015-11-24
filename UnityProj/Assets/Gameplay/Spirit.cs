@@ -30,9 +30,7 @@ public class Spirit : MonoBehaviour {
     public float speedMin;
     public float speedMax;
     private float speed;
-
-    private bool registered;
-
+    
 	public float afraidDist;
 	public float afraidSpeed;
 	public Vector3 posBeforeAfraid;
@@ -41,6 +39,7 @@ public class Spirit : MonoBehaviour {
 	public float freezeDuration;
 	private float unfreezeTime;
     public Transform freezeEffect;
+    private Vector3 initnialScale;
 
     public float collectedRadius;
     public float collectedRotSpeed;
@@ -50,8 +49,8 @@ public class Spirit : MonoBehaviour {
 		GameMaster.GM.spiritCount++;
 		GameMaster.GM.spirits.Add(gameObject);
 
-		fallingSpeed = Random.Range(fallingSpeedMin, fallingSpeedMax);
-		waitBeforeFall = Random.Range(.0f, maxWaitingBeforeFall);
+		//fallingSpeed = Random.Range(fallingSpeedMin, fallingSpeedMax);
+		//waitBeforeFall = Random.Range(.0f, maxWaitingBeforeFall);
 
         maxDist = GameMaster.GM.maxDistDecor;
         speed = Random.Range(speedMin, speedMax);
@@ -81,9 +80,17 @@ public class Spirit : MonoBehaviour {
             {
 				freezed = false;
                 freezeEffect.gameObject.SetActive(false);
+                freezeEffect.localScale = initnialScale;
             }
 			else
-				return;
+            {
+                //Scale down the freeze effect over time
+                float leftDuration = unfreezeTime - Time.time;
+                float scale = Mathf.Lerp(0.2f, 1.0f, leftDuration / freezeDuration);
+                freezeEffect.localScale = initnialScale * scale;
+
+                return;
+            }
 		}
 
 		if (afraid)
@@ -134,9 +141,13 @@ public class Spirit : MonoBehaviour {
 		}
 		else if (other.CompareTag("Projectile") && !collected)
 		{
-			freezed = true;
-			unfreezeTime = Time.time + freezeDuration;
-            freezeEffect.gameObject.SetActive(true);
+            if(!GetComponent<FleeingSpirit>())
+            {
+			    freezed = true;
+			    unfreezeTime = Time.time + freezeDuration;
+                freezeEffect.gameObject.SetActive(true);
+                initnialScale = freezeEffect.localScale;
+            }
 
             Destroy(other.gameObject);
 		}
