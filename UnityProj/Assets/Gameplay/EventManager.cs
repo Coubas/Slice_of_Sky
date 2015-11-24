@@ -19,7 +19,7 @@ public class EventManager : MonoBehaviour {
 		if (GameMaster.GM.gamePaused)
 			return;
 
-        if(PlayerData.PD.gaugesLvl[0] > 0 && PlayerData.PD.gaugesLvl[1] > 0)
+        if(PlayerData.PD.gaugesLvl.Length > 0 && PlayerData.PD.gaugesLvl[0] > 0 && PlayerData.PD.gaugesLvl[1] > 0)
         {
 		    if (timeUntilNextEvent > .0f)
 		    {

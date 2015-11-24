@@ -56,7 +56,7 @@ public class UIManagerInGame : MonoBehaviour {
 	{
 		for (int i = 0; i < playerControler.gauges.gauges.Length; ++i)
 		{
-            if (PlayerData.PD.gaugesLvl[1] > 0)
+            if ((PlayerData.PD.gaugesLvl.Length > 0 && PlayerData.PD.gaugesLvl[1] > 0) || PlayerData.PD.gaugesLvl.Length <= 0)
             {
                 SubGauge currentGauge = playerControler.gauges.gauges[i];
                 if (currentGauge.active)

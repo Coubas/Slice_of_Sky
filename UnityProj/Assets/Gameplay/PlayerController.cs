@@ -88,8 +88,16 @@ public class PlayerController : MonoBehaviour {
 		speedUpCursor = 1.0f;
 		//goingDownTimer = .0f;
 
-        canShoot = PlayerData.PD.gaugesLvl[0] > 0;
-        canSpeed = PlayerData.PD.gaugesLvl[1] > 0;
+        if(PlayerData.PD.gaugesLvl.Length > 0)
+        {
+            canShoot = PlayerData.PD.gaugesLvl[0] > 0;
+            canSpeed = PlayerData.PD.gaugesLvl[1] > 0;
+        }
+        else
+        {
+            canShoot = true;
+            canSpeed = true;
+        }
     }
 	
 	// Update is called once per frame

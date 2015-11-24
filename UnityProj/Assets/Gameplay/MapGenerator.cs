@@ -38,14 +38,14 @@ public class MapGenerator : MonoBehaviour {
             //Spirits spawn
             //If blue lantern is < lvl 1, only blue spirit
             //Else if yellow lantern < 1 only blue and yellow spirits
-            if(PlayerData.PD.gaugesLvl[0] == 0)
+            if(PlayerData.PD.gaugesLvl.Length > 0 && PlayerData.PD.gaugesLvl[0] == 0)
             {
                 GameObject[] spiritsPrefabBis = new GameObject[1];
                 spiritsPrefabBis[0] = spiritsPrefab[0];
 
                 spawnObjects(spiritsPrefabBis, spiritsContainer, nbSpirits, spirits, -maxDist, maxDist, -maxDist, maxDist, -maxDist, maxDist);
             }
-            else if(PlayerData.PD.gaugesLvl[1] == 0)
+            else if(PlayerData.PD.gaugesLvl.Length > 0 && PlayerData.PD.gaugesLvl[1] == 0)
             {
                 GameObject[] spiritsPrefabBis = new GameObject[2];
                 spiritsPrefabBis[0] = spiritsPrefab[0];
@@ -58,7 +58,7 @@ public class MapGenerator : MonoBehaviour {
 
             //Bonus spawn
             //No bonus if blue or yellow lantern < lvl 1
-            if (PlayerData.PD.gaugesLvl[0] != 0 && PlayerData.PD.gaugesLvl[1] != 0)
+            if ((PlayerData.PD.gaugesLvl.Length > 0 && PlayerData.PD.gaugesLvl[0] != 0 && PlayerData.PD.gaugesLvl[1] != 0) || PlayerData.PD.gaugesLvl.Length <= 0)
                 spawnObjects(bonusPrefab, bonusContainer, nbBonus, bonus);
 			spawned = true;
 		}
