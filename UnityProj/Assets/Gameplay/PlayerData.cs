@@ -12,6 +12,8 @@ public class PlayerData : MonoBehaviour {
     public int[] gaugesStocks;
     public int[] gaugesLvl;
 
+    public int ammoCount;
+
     public class ScoreData
 	{
 		public int level;
@@ -75,10 +77,11 @@ public class PlayerData : MonoBehaviour {
         {
             gaugesStocks[i] += _spiritsCollected[i];
 
-            int toAdd = _spiritsCollected[i];
-            while (toAdd >= (5 + gaugesLvl[i] * 5))
+            int totalAmoutOfSpirits = gaugesStocks[i];
+            gaugesLvl[i] = 0;
+            while (totalAmoutOfSpirits >= (5 + gaugesLvl[i] * 5))
             {
-                toAdd -= 5 + gaugesLvl[i] * 5;
+                totalAmoutOfSpirits -= 5 + gaugesLvl[i] * 5;
                 gaugesLvl[i]++;
             }
         }
@@ -92,4 +95,12 @@ public class PlayerData : MonoBehaviour {
 	{
 		return (ScoreData)scores[scores.Count - 1];
 	}
+
+    public void ComputeAmmoAmount()
+    {
+        if(gaugesLvl.Length > 0)
+        {
+            ammoCount = gaugesLvl[0] * 5 + 5;
+        }
+    }
 }

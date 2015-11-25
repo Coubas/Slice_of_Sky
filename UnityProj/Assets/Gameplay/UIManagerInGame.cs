@@ -11,13 +11,26 @@ public class UIManagerInGame : MonoBehaviour {
 	private int prevCombo = 0;
 	public Image[] speedGaugeFill;
 	public Image[] speedGaugeBorder;
+    public Color willReloadColor;
+    public Color activeColor;
+    public Color inactiveColor;
+    public Text Ammo;
 
-	private PlayerController playerControler;
+    private PlayerController playerControler;
 
 	void Start()
 	{
 		playerControler = GameMaster.GM.dragon.GetComponent<PlayerController>() as PlayerController;
-	}
+
+        if ((PlayerData.PD.gaugesLvl.Length > 0 && PlayerData.PD.gaugesLvl[0] > 0) || PlayerData.PD.gaugesLvl.Length <= 0)
+        {
+            Ammo.transform.parent.gameObject.SetActive(true);
+        }
+        else
+        {
+            Ammo.transform.parent.gameObject.SetActive(false);
+        }
+    }
 
 	void Update()
 	{
@@ -47,6 +60,12 @@ public class UIManagerInGame : MonoBehaviour {
 				Combo.text = "";
                 prevCombo = 0;
             }
+
+            //Ammo
+            if ((PlayerData.PD.gaugesLvl.Length > 0 && PlayerData.PD.gaugesLvl[0] > 0) || PlayerData.PD.gaugesLvl.Length <= 0)
+            {
+                Ammo.text = PlayerData.PD.ammoCount.ToString();
+            }
 		}
 
 		UpdateSpeedGauges();
@@ -59,14 +78,19 @@ public class UIManagerInGame : MonoBehaviour {
             if ((PlayerData.PD.gaugesLvl.Length > 0 && PlayerData.PD.gaugesLvl[1] > 0) || PlayerData.PD.gaugesLvl.Length <= 0)
             {
                 SubGauge currentGauge = playerControler.gauges.gauges[i];
-                if (currentGauge.active)
+                if (currentGauge.willReload)
                 {
-                    speedGaugeBorder[i].color = Color.white;
+                    speedGaugeBorder[i].color = willReloadColor;
+                    speedGaugeFill[i].fillAmount = (currentGauge.currentAmount / currentGauge.totalAmount);
+                }
+                else if (currentGauge.active)
+                {
+                    speedGaugeBorder[i].color = activeColor;
                     speedGaugeFill[i].fillAmount = (currentGauge.currentAmount / currentGauge.totalAmount);
                 }
                 else
                 {
-                    speedGaugeBorder[i].color = Color.grey;
+                    speedGaugeBorder[i].color = inactiveColor;
                     speedGaugeFill[i].fillAmount = .0f;
                 }
             }

@@ -15,19 +15,25 @@ public class Projectile : MonoBehaviour {
 	{
 		if (GameMaster.GM.gamePaused)
 		{
-			if (!GetComponent<Rigidbody>().IsSleeping())
+			if (GetComponent<Rigidbody>().velocity != Vector3.zero)
 			{
-				savedVelocity = GetComponent<Rigidbody>().velocity;
-				GetComponent<Rigidbody>().Sleep();
+				
+                savedVelocity = GetComponent<Rigidbody>().velocity;
+                GetComponent<Rigidbody>().velocity = Vector3.zero;
+                //GetComponent<Rigidbody>().Sleep();
 			}
 			
 			return;
 		}
-		else if (GetComponent<Rigidbody>().IsSleeping())
+		else if (GetComponent<Rigidbody>().velocity == Vector3.zero)
 		{
-			GetComponent<Rigidbody>().WakeUp();
-			GetComponent<Rigidbody>().velocity = savedVelocity;
-		}
+            if (GetComponent<Rigidbody>().velocity == Vector3.zero)
+            {
+                //GetComponent<Rigidbody>().WakeUp();
+                GetComponent<Rigidbody>().velocity = savedVelocity;
+                savedVelocity = Vector3.zero;
+            }
+        }
 
 		lifeTime += Time.deltaTime;
 

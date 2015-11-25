@@ -5,12 +5,14 @@ using System.Collections;
 public class SubGauge
 {
 	public bool active;
+    public bool willReload;
 	public float totalAmount;
 	public float currentAmount;
 
 	public SubGauge()
 	{
 		active = false;
+        willReload = false;
 		totalAmount = 2.0f;
 		currentAmount = .0f;
 	}
@@ -19,13 +21,35 @@ public class SubGauge
 public class SpeedBoostGauge : MonoBehaviour {
 	public SubGauge[] gauges;
 	public int nbActive = 1;
+    public int minNbActive;
 	float boostCost;
 	bool speedBoostLock = false;
 
 	// Use this for initialization
 	void Start () {
 		boostCost = Time.fixedDeltaTime;
-	}
+
+        if (PlayerData.PD.gaugesLvl.Length > 0 && PlayerData.PD.gaugesLvl[1] > 0)
+        {
+            int lvl = PlayerData.PD.gaugesLvl[1];
+            minNbActive = 1 + lvl / 3;
+            nbActive = 1 + lvl / 2;
+
+            if (minNbActive > 6)
+                minNbActive = 6;
+            if (nbActive > 6)
+                nbActive = 6;
+        }
+
+        for (int i = 0; i < gauges.Length; ++i)
+        {
+            gauges[i].willReload = i < minNbActive;
+            gauges[i].active = i < nbActive;
+
+            if (i < minNbActive || i < nbActive)
+                gauges[i].currentAmount = gauges[i].totalAmount;
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -51,8 +75,9 @@ public class SpeedBoostGauge : MonoBehaviour {
 			gauges[nbActive - 1].currentAmount -= boostCost;
 			if (nbActive > 1 && gauges[nbActive - 1].currentAmount == .0f)
 			{
+                if(nbActive > minNbActive)
+    				gauges[nbActive - 1].active = false;
 				nbActive--;
-				gauges[nbActive - 1].active = false;
 			}
 		}
 		else if (gauges[nbActive - 1].currentAmount < boostCost)
@@ -60,7 +85,8 @@ public class SpeedBoostGauge : MonoBehaviour {
 			if (nbActive > 1)
 			{
 				float rest = boostCost - gauges[nbActive - 1].currentAmount;
-				gauges[nbActive - 1].active = false;
+                if (nbActive > minNbActive)
+                    gauges[nbActive - 1].active = false;
 				nbActive--;
 				
 				gauges[nbActive - 1].currentAmount -= rest;
@@ -77,6 +103,12 @@ public class SpeedBoostGauge : MonoBehaviour {
 
 		if (gauges[nbActive - 1].currentAmount < gauges[nbActive-1].totalAmount)
 			gauges[nbActive - 1].currentAmount += Time.fixedDeltaTime * .5f;
+        else if(nbActive < minNbActive)
+        {
+            nbActive++;
+            gauges[nbActive - 1].active = true;
+            gauges[nbActive - 1].currentAmount += Time.fixedDeltaTime * .5f;
+        }
 	}
 
 	public void addGauge()
