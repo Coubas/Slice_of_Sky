@@ -1,0 +1,45 @@
+Mono path[0] = 'D:/Coubas/Documents/Slice_of_Sky/Builds/25_11_2015_Data/Managed'
+Mono path[1] = 'D:/Coubas/Documents/Slice_of_Sky/Builds/25_11_2015_Data/Mono'
+Mono config path = 'D:/Coubas/Documents/Slice_of_Sky/Builds/25_11_2015_Data/Mono/etc'
+PlayerConnection initialized from D:/Coubas/Documents/Slice_of_Sky/Builds/25_11_2015_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55413
+Multi-casting "[IP] 192.168.1.13 [Port] 55413 [Flags] 3 [Guid] 2380056739 [EditorId] 2215958584 [Version] 1048832 [Id] WindowsPlayer(The-Rainbow-Maker) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [192.168.1.13:55413]...
+PlayerConnection accepted from [192.168.1.13] handle:0x274
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56739
+PlayerConnection already initialized - listening to [192.168.1.13:55413]
+Initialize engine version: 5.2.2f1 (3757309da7e7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 980 (ID=0x13c0)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Coubas\Documents\Slice_of_Sky\Builds\25_11_2015_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Coubas\Documents\Slice_of_Sky\Builds\25_11_2015_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Coubas\Documents\Slice_of_Sky\Builds\25_11_2015_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Coubas\Documents\Slice_of_Sky\Builds\25_11_2015_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Coubas\Documents\Slice_of_Sky\Builds\25_11_2015_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Coubas\Documents\Slice_of_Sky\Builds\25_11_2015_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Coubas\Documents\Slice_of_Sky\Builds\25_11_2015_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Coubas\Documents\Slice_of_Sky\Builds\25_11_2015_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Coubas\Documents\Slice_of_Sky\Builds\25_11_2015_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.038 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: D:\Coubas\Documents\Slice_of_Sky\Builds\25_11_2015_Data\Managed\System.dll (this message is harmless)
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1724 -> priority: 1 
+  Thread -> id: 206c -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.835649 ms
+System memory in use before: 27.6 MB.
+System memory in use after: 27.7 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1709.
+Total: 0.642816 ms (FindLiveObjects: 0.049664 ms CreateObjectMapping: 0.045056 ms MarkObjects: 0.530944 ms  DeleteObjects: 0.016640 ms)
+
+Waiting for finish

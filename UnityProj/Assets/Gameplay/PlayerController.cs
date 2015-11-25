@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour {
 	public GUIText debugText;
@@ -91,11 +92,18 @@ public class PlayerController : MonoBehaviour {
         if(PlayerData.PD.gaugesLvl.Length > 0)
         {
             canShoot = PlayerData.PD.gaugesLvl[0] > 0;
+            if(canShoot)
+            {
+                PlayerData.PD.ComputeAmmoAmount();
+            }
+
             canSpeed = PlayerData.PD.gaugesLvl[1] > 0;
         }
         else
         {
             canShoot = true;
+            PlayerData.PD.ammoCount = 666;
+
             canSpeed = true;
         }
     }
@@ -488,11 +496,12 @@ public class PlayerController : MonoBehaviour {
         //------------------------------------------------------------------------------------------------------------------------------------------------------------
         //Shoot
         //------------------------------------------------------------------------------------------------------------------------------------------------------------
-        if (canShoot && Input.GetButton("Fire1") && Time.time > nextShotTimer)
+        if (canShoot && Input.GetButton("Fire1") && !EventSystem.current.IsPointerOverGameObject() && Time.time > nextShotTimer && PlayerData.PD.ammoCount > 0)
 		{
 			nextShotTimer = Time.time + shootTimer;
 			GameObject clone = Instantiate(projectile, projectileSpawner.position, projectileSpawner.rotation) as GameObject;
 			clone.GetComponent<Rigidbody>().AddForce(clone.transform.forward * shootForce);
+            PlayerData.PD.ammoCount--;
 		}
 	}
 
