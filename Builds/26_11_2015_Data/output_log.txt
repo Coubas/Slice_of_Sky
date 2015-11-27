@@ -1,0 +1,161 @@
+Initialize engine version: 5.2.2f1 (3757309da7e7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 980 (ID=0x13c0)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Coubas\Documents\Slice_of_Sky\Builds\26_11_2015_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Coubas\Documents\Slice_of_Sky\Builds\26_11_2015_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Coubas\Documents\Slice_of_Sky\Builds\26_11_2015_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Coubas\Documents\Slice_of_Sky\Builds\26_11_2015_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Coubas\Documents\Slice_of_Sky\Builds\26_11_2015_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Coubas\Documents\Slice_of_Sky\Builds\26_11_2015_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Coubas\Documents\Slice_of_Sky\Builds\26_11_2015_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Coubas\Documents\Slice_of_Sky\Builds\26_11_2015_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Coubas\Documents\Slice_of_Sky\Builds\26_11_2015_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.040 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: D:\Coubas\Documents\Slice_of_Sky\Builds\26_11_2015_Data\Managed\System.dll (this message is harmless)
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2090 -> priority: 1 
+  Thread -> id: 3244 -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.914561 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1708.
+Total: 0.659712 ms (FindLiveObjects: 0.070400 ms CreateObjectMapping: 0.046080 ms MarkObjects: 0.528384 ms  DeleteObjects: 0.014592 ms)
+
+Data : GameData 
+ { 
+	 Invert Y = True
+	 High score = 10500
+	 Spirits collected = 50000
+	 Lantern lvl = 10000
+} 
+
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Data saved here : C:/Users/Coubas/AppData/LocalLow/DefaultCompany/Assets
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.313217 ms
+
+Unloading 596 unused Assets to reduce memory usage. Loaded Objects now: 705.
+Total: 3.731713 ms (FindLiveObjects: 0.100352 ms CreateObjectMapping: 0.131328 ms MarkObjects: 1.290752 ms  DeleteObjects: 2.207745 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.054208 ms
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 644.
+Total: 0.594688 ms (FindLiveObjects: 0.039680 ms CreateObjectMapping: 0.016384 ms MarkObjects: 0.526848 ms  DeleteObjects: 0.011520 ms)
+
+Data Loaded from : C:/Users/Coubas/AppData/LocalLow/DefaultCompany/Assets
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Data : GameData 
+ { 
+	 Invert Y = True
+	 High score = 10500
+	 Spirits collected = 50000
+	 Lantern lvl = 10000
+} 
+
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.747008 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1712.
+Total: 0.881152 ms (FindLiveObjects: 0.079616 ms CreateObjectMapping: 0.037632 ms MarkObjects: 0.747776 ms  DeleteObjects: 0.015616 ms)
+
+Data : GameData 
+ { 
+	 Invert Y = True
+	 High score = 66000
+	 Spirits collected = 87000
+	 Lantern lvl = 11000
+} 
+
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Data saved here : C:/Users/Coubas/AppData/LocalLow/DefaultCompany/Assets
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.480258 ms
+
+Unloading 594 unused Assets to reduce memory usage. Loaded Objects now: 707.
+Total: 3.976706 ms (FindLiveObjects: 0.090624 ms CreateObjectMapping: 0.126464 ms MarkObjects: 1.818368 ms  DeleteObjects: 1.940224 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.747008 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1712.
+Total: 0.875520 ms (FindLiveObjects: 0.054528 ms CreateObjectMapping: 0.035328 ms MarkObjects: 0.776192 ms  DeleteObjects: 0.009472 ms)
+
+Data : GameData 
+ { 
+	 Invert Y = True
+	 High score = 66000
+	 Spirits collected = 108210
+	 Lantern lvl = 11000
+} 
+
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Data saved here : C:/Users/Coubas/AppData/LocalLow/DefaultCompany/Assets
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.069505 ms
+
+Unloading 594 unused Assets to reduce memory usage. Loaded Objects now: 707.
+Total: 2.105857 ms (FindLiveObjects: 0.045056 ms CreateObjectMapping: 0.048384 ms MarkObjects: 1.073664 ms  DeleteObjects: 0.938496 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.698112 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1712.
+Total: 1.173504 ms (FindLiveObjects: 0.068608 ms CreateObjectMapping: 0.035840 ms MarkObjects: 1.060096 ms  DeleteObjects: 0.008704 ms)
+
+Data : GameData 
+ { 
+	 Invert Y = True
+	 High score = 90500
+	 Spirits collected = 109435
+	 Lantern lvl = 11001
+} 
+
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Data saved here : C:/Users/Coubas/AppData/LocalLow/DefaultCompany/Assets
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.879745 ms
+
+Unloading 594 unused Assets to reduce memory usage. Loaded Objects now: 707.
+Total: 3.185153 ms (FindLiveObjects: 0.063488 ms CreateObjectMapping: 0.075520 ms MarkObjects: 1.666304 ms  DeleteObjects: 1.379072 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.885248 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 648.
+Total: 1.199872 ms (FindLiveObjects: 0.048640 ms CreateObjectMapping: 0.017152 ms MarkObjects: 1.124608 ms  DeleteObjects: 0.008960 ms)
+
