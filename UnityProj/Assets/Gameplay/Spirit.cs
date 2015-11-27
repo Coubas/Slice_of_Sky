@@ -26,7 +26,9 @@ public class Spirit : MonoBehaviour {
 	private float waitBeforeFall;
 
     private float maxDist;
+    private Vector3 newDestination;
     private Vector3 destination;
+    private float turnTimer;
     public float speedMin;
     public float speedMax;
     private float speed;
@@ -54,10 +56,12 @@ public class Spirit : MonoBehaviour {
 
         maxDist = GameMaster.GM.maxDistDecor;
         speed = Random.Range(speedMin, speedMax);
-        getDestination();
+        destination = getDestination();
 
         collectedTimer = .0f;
-	}
+
+        initnialScale = freezeEffect.localScale;
+    }
 	
 	void Update () 
 	{
@@ -114,11 +118,22 @@ public class Spirit : MonoBehaviour {
 
             Vector3 toDest = destination - transform.position;
             toDest.Normalize();
-            
-            transform.LookAt(destination);
 
-            if (Vector3.Distance(transform.position, destination) > 1.0f)
+            float dist = Vector3.Distance(transform.position, destination);
+            if (newDestination == Vector3.zero)
             {
+                if (dist < 10.0f)
+                {
+                    do
+                    {
+                        newDestination = getDestination();
+                    } while (Vector3.Distance(transform.position, newDestination) < 5.0f);
+
+                    turnTimer = 2.0f;
+                }
+
+                transform.LookAt(transform.position + toDest * 2.0f);
+
                 Quaternion xRot = Quaternion.AngleAxis(25.0f, Vector3.Cross(toDest, Vector3.up));
                 Quaternion roundRot = Quaternion.AngleAxis(Mathf.RoundToInt(Time.time * 272.0f) % 360, toDest);
                 toDest = xRot * toDest;
@@ -126,9 +141,29 @@ public class Spirit : MonoBehaviour {
                 toDest.Normalize();
                 transform.Translate(toDest * speed, Space.World);
             }
+            else if(newDestination != Vector3.zero && turnTimer > .0f)
+            {
+                Vector3 toNewDest = newDestination - transform.position;
+                toNewDest.Normalize();
+
+                Vector3 smoothTurn = Vector3.Lerp(toDest, toNewDest, 1.0f - (turnTimer * 0.5f));
+                smoothTurn.Normalize();
+
+                transform.LookAt(transform.position + smoothTurn * 2.0f);
+
+                Quaternion xRot = Quaternion.AngleAxis(25.0f, Vector3.Cross(smoothTurn, Vector3.up));
+                Quaternion roundRot = Quaternion.AngleAxis(Mathf.RoundToInt(Time.time * 272.0f) % 360, smoothTurn);
+                smoothTurn = xRot * smoothTurn;
+                smoothTurn = roundRot * smoothTurn;
+                smoothTurn.Normalize();
+                transform.Translate(smoothTurn * speed, Space.World);
+
+                turnTimer -= Time.deltaTime;
+            }
             else
             {
-                getDestination();
+                destination = newDestination;
+                newDestination = Vector3.zero;
             }
 		}
 	}
@@ -146,14 +181,13 @@ public class Spirit : MonoBehaviour {
 			    freezed = true;
 			    unfreezeTime = Time.time + freezeDuration;
                 freezeEffect.gameObject.SetActive(true);
-                initnialScale = freezeEffect.localScale;
             }
 
             Destroy(other.gameObject);
 		}
-        else
+        else if (other.CompareTag("Island"))
         {
-            getDestination();
+            destination = getDestination();
         }
 	}
 
@@ -174,9 +208,9 @@ public class Spirit : MonoBehaviour {
 		getAfraidTarget();
 	}
 
-    void getDestination()
+    Vector3 getDestination()
     {
-        destination = new Vector3(Random.Range(-maxDist, maxDist), Random.Range(-maxDist, maxDist), Random.Range(-maxDist, maxDist));
+        return new Vector3(Random.Range(-maxDist, maxDist), Random.Range(-maxDist, maxDist), Random.Range(-maxDist, maxDist));
     }
 
 	void makeAfraidMove()

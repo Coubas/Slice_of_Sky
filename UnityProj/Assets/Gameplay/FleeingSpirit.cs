@@ -4,7 +4,8 @@ using System.Collections;
 public class FleeingSpirit : MonoBehaviour {
 	public float speed;
 	public float distanceOfFlee;
-
+    
+    private float wasFleeingTimer;
 	private Vector3 initialPos;
 	// Use this for initialization
 	void Start () {
@@ -27,11 +28,17 @@ public class FleeingSpirit : MonoBehaviour {
 			if (distance < distanceOfFlee)
 			{
 				Flee();
+                wasFleeingTimer = 1.0f;
 			}
-			else
-			{
-				backToInitialPos();
-			}
+            else if(wasFleeingTimer > .0f)
+            {
+                wasFleeingTimer -= Time.deltaTime;
+                Flee();
+            }
+			//else
+			//{
+			//	backToInitialPos();
+			//}
 		}
 	}
 
@@ -46,12 +53,6 @@ public class FleeingSpirit : MonoBehaviour {
 
 		if (Vector3.Dot(realDir, dir) > 0.0f)
 		{
-			Quaternion xRot = Quaternion.AngleAxis(25.0f, Vector3.Cross(realDir, Vector3.up));
-			Quaternion roundRot = Quaternion.AngleAxis(Mathf.RoundToInt(Time.time * 272.0f) % 360, realDir);
-			realDir = xRot * realDir;
-			realDir = roundRot * realDir;
-			realDir.Normalize();
-
 			//Don't let it go to far away
 			float distFromMid = Vector3.Distance(transform.position, Vector3.zero);
 			float maxDist = (GameMaster.GM.maxDistDecor + GameMaster.GM.maxDistDragon) / 2.0f;
@@ -59,13 +60,19 @@ public class FleeingSpirit : MonoBehaviour {
 			Vector3 dirToMid = Vector3.zero - transform.position;
 			dirToMid.y = .0f;
 
-			if (distFromMid > maxDist * 0.75f)
-			{
-				realDir = realDir + dirToMid * multiplier;
-				realDir.Normalize();
-			}
+            //if (multiplier >= 0.75f)
+            {
+                realDir = realDir + dirToMid * (multiplier + 0.1f);
+                realDir.Normalize();
+            }
 
             transform.LookAt(transform.position + realDir);
+
+            Quaternion xRot = Quaternion.AngleAxis(25.0f, Vector3.Cross(realDir, Vector3.up));
+            Quaternion roundRot = Quaternion.AngleAxis(Mathf.RoundToInt(Time.time * 272.0f) % 360, realDir);
+            realDir = xRot * realDir;
+            realDir = roundRot * realDir;
+            realDir.Normalize();
 			transform.Translate(realDir * speed * Time.timeScale, Space.World);
 		}
 	}

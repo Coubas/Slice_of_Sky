@@ -6,7 +6,9 @@ public class MonsterEvent : GameEvent {
 	public float monsterRadius;
 	public ObjectivePointer pointer;
 
-	private GameObject currentMonster;
+    public Vector3 maxDistFromDragon;
+
+    private GameObject currentMonster;
 	// Use this for initialization
 	void Start () {
 	
@@ -20,20 +22,21 @@ public class MonsterEvent : GameEvent {
 	public override void Begin()
 	{
 		//Instantiate the monster
-		float maxDist = GameMaster.GM.maxDistDecor;
+        Vector3 dragonPos = GameMaster.GM.dragon.transform.position;
 		Vector3 pos;
 		Quaternion rot = Quaternion.Euler(.0f, .0f, .0f);
 
 		do
 		{
-			pos = new Vector3(Random.Range(-maxDist, maxDist), Random.Range(-maxDist, maxDist), Random.Range(-maxDist, maxDist));
+			pos = new Vector3(Random.Range(dragonPos.x - maxDistFromDragon.x, dragonPos.x + maxDistFromDragon.x), Random.Range(dragonPos.y - maxDistFromDragon.y, dragonPos.y + maxDistFromDragon.y), Random.Range(dragonPos.z - maxDistFromDragon.z, dragonPos.z + maxDistFromDragon.z));
 		} while (Physics.CheckSphere(pos, monsterRadius));
 
 		currentMonster = Instantiate(monster, pos, rot) as GameObject;
 		((Monster)currentMonster.GetComponent<Monster>()).master = this;
 
-		//Start tracking it
-		pointer.target = currentMonster;
+        //Start tracking it
+        pointer.SetPointer(ObjectivePointer.Pointers.Monster_Pointer);
+        pointer.target = currentMonster;
 	}
 
 	public override void End()

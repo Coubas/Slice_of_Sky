@@ -499,7 +499,7 @@ public class PlayerController : MonoBehaviour {
         if (canShoot && Input.GetButton("Fire1") && !EventSystem.current.IsPointerOverGameObject() && Time.time > nextShotTimer && PlayerData.PD.ammoCount > 0)
 		{
 			nextShotTimer = Time.time + shootTimer;
-			GameObject clone = Instantiate(projectile, projectileSpawner.position, projectileSpawner.rotation) as GameObject;
+			GameObject clone = Instantiate(projectile, projectileSpawner.position, Quaternion.Lerp(projectileSpawner.rotation, Camera.main.transform.rotation, 0.5f)) as GameObject;
 			clone.GetComponent<Rigidbody>().AddForce(clone.transform.forward * shootForce);
             PlayerData.PD.ammoCount--;
 		}

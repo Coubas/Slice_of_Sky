@@ -16,6 +16,8 @@ public class SnakeAI : MonoBehaviour
 	private ArrayList forwards;
 	private int maxLenght;
 
+    public SpiritGate spiritGate;
+
 	void Start()
 	{
 		//body = new ArrayList();
@@ -204,6 +206,8 @@ public class SnakeAI : MonoBehaviour
                     form1.gameObject.SetActive(false);
                     form2.gameObject.SetActive(true);
                 }
+
+                spiritGate.spiritGathered();
 
                 return;
 			}

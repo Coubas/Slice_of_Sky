@@ -6,6 +6,8 @@ public class Projectile : MonoBehaviour {
 	private float lifeTime;
 	private Vector3 savedVelocity;
 
+    public GameObject HitEffect;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -42,4 +44,17 @@ public class Projectile : MonoBehaviour {
 			Destroy(gameObject);
 		}
 	}
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Island"))
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void OnDestroy()
+    {
+        Instantiate(HitEffect, transform.position, transform.rotation);
+    }
 }

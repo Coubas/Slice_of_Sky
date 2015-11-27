@@ -64,9 +64,9 @@ public class MapGenerator : MonoBehaviour {
 		}
 		else if(!allGood)
 		{
-			checkForCollision(islands);
-			checkForCollision(spirits, -maxDist, maxDist, -maxDist, maxDist, -maxDist, maxDist);
-			checkForCollision(bonus);
+			checkForCollision(islands, true);
+			checkForCollision(spirits);
+			checkForCollision(bonus, true);
 			allGood = true;
 		}
 	}
@@ -91,12 +91,12 @@ public class MapGenerator : MonoBehaviour {
 		}
 	}
 
-	private void checkForCollision(ArrayList _objects)
+	private void checkForCollision(ArrayList _objects, bool _notCloseToCenter = false)
 	{
-		checkForCollision(_objects, -maxDist, maxDist, -maxDist, maxDist, -maxDist, maxDist);
+		checkForCollision(_objects, -maxDist, maxDist, -maxDist, maxDist, -maxDist, maxDist, _notCloseToCenter);
 	}
 
-	private void checkForCollision(ArrayList _objects, float _xMin, float _xMax, float _yMin, float _yMax, float _zMin, float _zMax)
+	private void checkForCollision(ArrayList _objects, float _xMin, float _xMax, float _yMin, float _yMax, float _zMin, float _zMax, bool _notCloseToCenter = false)
 	{
 		for (int i = 0; i < _objects.Count; ++i)
 		{
@@ -106,6 +106,8 @@ public class MapGenerator : MonoBehaviour {
 			Collider[] hitColliders = Physics.OverlapSphere(obj.transform.position + (obj.GetComponent<Collider>() as SphereCollider).center, radius, LayerMask.GetMask("randomGen"));
 			
 			int nbHit = 0;
+            if (_notCloseToCenter && (Mathf.Abs(obj.transform.position.x) < 15.0f || Mathf.Abs(obj.transform.position.y) < 15.0f || Mathf.Abs(obj.transform.position.x) < 15.0f))
+                nbHit++;
 			foreach(Collider col in hitColliders)
 			{
 				if (col.gameObject != obj)
@@ -118,7 +120,9 @@ public class MapGenerator : MonoBehaviour {
 				hitColliders = Physics.OverlapSphere(obj.transform.position + (obj.GetComponent<Collider>() as SphereCollider).center, radius, LayerMask.GetMask("randomGen"));
 
 				nbHit = 0;
-				foreach (Collider col in hitColliders)
+                if (_notCloseToCenter && (Mathf.Abs(obj.transform.position.x) < 15.0f || Mathf.Abs(obj.transform.position.y) < 15.0f || Mathf.Abs(obj.transform.position.x) < 15.0f))
+                    nbHit++;
+                foreach (Collider col in hitColliders)
 				{
 					if (col.gameObject != obj)
 						nbHit++;

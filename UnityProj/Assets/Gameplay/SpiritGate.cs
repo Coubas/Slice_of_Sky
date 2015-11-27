@@ -3,6 +3,10 @@ using System.Collections;
 
 public class SpiritGate : MonoBehaviour {
 	private Transform allTheGatePart;
+
+    private int nbBlueSpirit;
+    public ObjectivePointer pointer;
+
 	// Use this for initialization
 	void Start () {
 		allTheGatePart = transform.parent.parent;
@@ -29,6 +33,9 @@ public class SpiritGate : MonoBehaviour {
 			GameMaster.GM.spirits.Remove(spirit);
 			GameMaster.GM.spiritCount--;
 			Destroy(spirit);
+
+            nbBlueSpirit = 0;
+            pointer.target = null;
 		}
 	}
 
@@ -36,4 +43,15 @@ public class SpiritGate : MonoBehaviour {
 	{
 		GameMaster.GM.addScore(_points, _spiritType);
 	}
+
+    public void spiritGathered()
+    {
+        nbBlueSpirit++;
+
+        if (nbBlueSpirit == 1)
+        {
+            pointer.SetPointer(ObjectivePointer.Pointers.SpiritGate_Pointer);
+            pointer.target = gameObject;
+        }
+    }
 }

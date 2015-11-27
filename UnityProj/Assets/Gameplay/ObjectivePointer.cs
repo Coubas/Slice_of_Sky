@@ -6,6 +6,14 @@ public class ObjectivePointer : MonoBehaviour {
 	public GameObject pointer;
 	public Camera activeCamera;
 
+    public GameObject monsterPointer;
+    public GameObject spiritGatePointer;
+    public enum Pointers
+    {
+        Monster_Pointer = 0,
+        SpiritGate_Pointer
+    }
+
 	private Vector2 targetPos; //Screen space
 	private bool isBehind;
 	private float screenHeight;
@@ -145,4 +153,17 @@ public class ObjectivePointer : MonoBehaviour {
 
 		return pointerPos;
 	}
+
+    public void SetPointer(Pointers _pointer)
+    {
+        switch(_pointer)
+        {
+            case Pointers.Monster_Pointer:
+                pointer = monsterPointer;
+                break;
+            case Pointers.SpiritGate_Pointer:
+                pointer = spiritGatePointer;
+                break;
+        }
+    }
 }

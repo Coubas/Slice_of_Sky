@@ -100,7 +100,7 @@ public class PlayerData : MonoBehaviour {
     {
         if(gaugesLvl.Length > 0)
         {
-            ammoCount = gaugesLvl[0] * 5 + 5;
+            ammoCount = gaugesLvl[0] * 10 + 5;
         }
     }
 }
