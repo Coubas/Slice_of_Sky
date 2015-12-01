@@ -183,8 +183,9 @@ public class Spirit : MonoBehaviour {
                 freezeEffect.gameObject.SetActive(true);
             }
 
-            Destroy(other.gameObject);
-		}
+            //Destroy(other.gameObject);
+            ((Projectile) other.GetComponent<Projectile>()).DestroyWithEffect();
+        }
         else if (other.CompareTag("Island"))
         {
             destination = getDestination();

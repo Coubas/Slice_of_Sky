@@ -2,9 +2,9 @@
 using System.Collections;
 
 public abstract class Bonus : MonoBehaviour {
-	
+    
 	void Start () {
-	
+
 	}
 	
 	void Update () {

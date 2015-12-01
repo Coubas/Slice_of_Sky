@@ -49,12 +49,17 @@ public class Projectile : MonoBehaviour {
     {
         if (other.CompareTag("Island"))
         {
-            Destroy(gameObject);
+            DestroyWithEffect();
         }
     }
 
     void OnDestroy()
     {
+    }
+
+    public void DestroyWithEffect()
+    {
         Instantiate(HitEffect, transform.position, transform.rotation);
+        Destroy(gameObject);
     }
 }

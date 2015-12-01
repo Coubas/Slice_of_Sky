@@ -6,6 +6,8 @@ public class UIManagerInGame : MonoBehaviour {
 	public Text Score;
 	public Text Timer;
 	public Animator TimerAnimator;
+    public Text TimerBonus;
+    public Animator TimerBonusAnimator;
 	public Text Combo;
 	public Animator ComboAnimator;
 	private int prevCombo = 0;
@@ -101,4 +103,14 @@ public class UIManagerInGame : MonoBehaviour {
             }
 		}
 	}
+
+    public void PickedUpTimerBonus(float _amount)
+    {
+        int timeBonus = Mathf.RoundToInt(_amount);
+        if (timeBonus % 60 >= 10)
+            TimerBonus.text = "+ " + timeBonus / 60 + " : " + timeBonus % 60;
+        else
+            TimerBonus.text = "+ " + timeBonus / 60 + " : 0" + timeBonus % 60;
+        TimerBonusAnimator.SetTrigger("BonusPickedUp");
+    }
 }

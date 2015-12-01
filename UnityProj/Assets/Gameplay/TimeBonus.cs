@@ -7,5 +7,6 @@ public class TimeBonus : Bonus {
 	protected override void applyBonus(GameObject _player)
 	{
 		GameMaster.GM.levelTimer += timeToAdd;
-	}
+        GameMaster.GM.uiMgr.PickedUpTimerBonus(timeToAdd);
+    }
 }

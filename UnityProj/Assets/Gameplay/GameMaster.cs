@@ -24,8 +24,10 @@ public class GameMaster : MonoBehaviour {
 	public float levelTimer;
 	public GameObject facebookController;
 
-	//For tests
-	public GameObject dragon;
+    public UIManagerInGame uiMgr;
+
+    //For tests
+    public GameObject dragon;
 	private float timer = .0f;
 
 	void Update()
