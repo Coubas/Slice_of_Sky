@@ -40,8 +40,8 @@ public class PlayerController : MonoBehaviour {
 	//private float goingDownTimer;
 
     public bool canSpeed;
-	public float boostedSpeed;
-	public float normalSpeed;
+	private float boostedSpeed;
+	private float normalSpeed;
 	public float speedBoostCursor;
 	private float speedBoostTimer;
 	//public float speedAmount = 1.0f;
@@ -91,6 +91,8 @@ public class PlayerController : MonoBehaviour {
 
         if(PlayerData.PD.gaugesLvl.Length > 0)
         {
+            speed += PlayerData.PD.gaugesLvl[2];
+
             canShoot = PlayerData.PD.gaugesLvl[0] > 0;
             if(canShoot)
             {
@@ -106,6 +108,9 @@ public class PlayerController : MonoBehaviour {
 
             canSpeed = true;
         }
+
+        normalSpeed = speed;
+        boostedSpeed = speed + 10;
     }
 	
 	// Update is called once per frame

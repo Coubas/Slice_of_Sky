@@ -30,6 +30,14 @@ public class GameMaster : MonoBehaviour {
     public GameObject dragon;
 	private float timer = .0f;
 
+    void Start()
+    {
+        if (PlayerData.PD.gaugesLvl.Length > 0)
+        {
+            levelTimer += PlayerData.PD.gaugesLvl[3] * 15;
+        }
+    }
+
 	void Update()
 	{
 		if (GameMaster.GM.gamePaused)

@@ -7,7 +7,7 @@ public class SnakeAI : MonoBehaviour
 	public GameObject prefabBodyPart;
 	public int initialLenght;
 	public float bodyMargin;
-	public int spiritSpacing = 1;
+	//public int spiritSpacing = 1;
 
 	private int currentLenght;
 	//private ArrayList body;
@@ -16,6 +16,8 @@ public class SnakeAI : MonoBehaviour
 	private ArrayList forwards;
 	private int maxLenght;
 
+    public int nbMaxSpirit;
+    public int nbSpiritGathered;
     public SpiritGate spiritGate;
 
 	void Start()
@@ -27,6 +29,11 @@ public class SnakeAI : MonoBehaviour
 		forwards = new ArrayList();
 		forwards.Add(transform.forward);
 
+        if (PlayerData.PD.gaugesLvl.Length > 0)
+        {
+            nbMaxSpirit += PlayerData.PD.gaugesLvl[4] * 2;
+        }
+        nbSpiritGathered = 0;
 		//for (int i = 0; i < initialLenght; ++i)
 		//{
 		//	//GameObject bodyPart = (GameObject)Instantiate(prefabBodyPart);
@@ -184,10 +191,11 @@ public class SnakeAI : MonoBehaviour
 
 	public void addSpirit(GameObject _spirit)
 	{
+        if(nbSpiritGathered < nbMaxSpirit)
 		//for (int i = 0; i < body.Count - 1; i += spiritSpacing)
-		for (int i = 0; i < body.Length - 1; i += spiritSpacing)
+		//for (int i = 0; i < body.Length - 1; i += spiritSpacing)
 		{
-			GameObject bodyPart = (GameObject)body[i];
+			GameObject bodyPart = (GameObject)body[nbSpiritGathered];
 			if (!bodyPart.GetComponentInChildren<Spirit>())
 			{
 				_spirit.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
@@ -207,6 +215,7 @@ public class SnakeAI : MonoBehaviour
                     form2.gameObject.SetActive(true);
                 }
 
+                nbSpiritGathered++;
                 spiritGate.spiritGathered();
 
                 return;

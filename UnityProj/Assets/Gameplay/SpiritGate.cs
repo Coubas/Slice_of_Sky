@@ -6,6 +6,7 @@ public class SpiritGate : MonoBehaviour {
 
     private int nbBlueSpirit;
     public ObjectivePointer pointer;
+    public SnakeAI snakeAI;
 
 	// Use this for initialization
 	void Start () {
@@ -36,6 +37,8 @@ public class SpiritGate : MonoBehaviour {
 
             nbBlueSpirit = 0;
             pointer.target = null;
+
+            snakeAI.nbSpiritGathered = 0;
 		}
 	}
 
