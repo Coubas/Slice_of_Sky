@@ -39,6 +39,7 @@ public class SpiritGate : MonoBehaviour {
             pointer.target = null;
 
             snakeAI.nbSpiritGathered = 0;
+            snakeAI.nbSpiritIndicator.value = .0f;
 		}
 	}
 

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class SnakeAI : MonoBehaviour
@@ -20,7 +21,9 @@ public class SnakeAI : MonoBehaviour
     public int nbSpiritGathered;
     public SpiritGate spiritGate;
 
-	void Start()
+    public Slider nbSpiritIndicator;
+
+    void Start()
 	{
 		//body = new ArrayList();
 		positions = new ArrayList();
@@ -50,7 +53,9 @@ public class SnakeAI : MonoBehaviour
 			mult = bodyMargin;
 
 		maxLenght = Mathf.FloorToInt((currentLenght + 2) * mult);
-	}
+
+        nbSpiritIndicator.value = .0f;
+    }
 
 	void Update()
 	{
@@ -218,6 +223,7 @@ public class SnakeAI : MonoBehaviour
                 nbSpiritGathered++;
                 spiritGate.spiritGathered();
 
+                nbSpiritIndicator.value = (float) nbSpiritGathered / (float) nbMaxSpirit;
                 return;
 			}
 		}

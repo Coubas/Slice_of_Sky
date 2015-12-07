@@ -8,6 +8,7 @@ public class UIManagerInGame : MonoBehaviour {
 	public Animator TimerAnimator;
     public Text TimerBonus;
     public Animator TimerBonusAnimator;
+    public Animator ProjectileBonusAnimator;
 	public Text Combo;
 	public Animator ComboAnimator;
 	private int prevCombo = 0;
@@ -112,5 +113,10 @@ public class UIManagerInGame : MonoBehaviour {
         else
             TimerBonus.text = "+ " + timeBonus / 60 + " : 0" + timeBonus % 60;
         TimerBonusAnimator.SetTrigger("BonusPickedUp");
+    }
+
+    public void PickedUpProjectileBonus()
+    {
+        ProjectileBonusAnimator.SetTrigger("BonusPickedUp");
     }
 }
