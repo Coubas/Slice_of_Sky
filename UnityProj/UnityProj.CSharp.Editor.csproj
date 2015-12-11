@@ -5,16 +5,16 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{4D7EC146-20D5-C9B0-CD41-636DDAF77F99}</ProjectGuid>
+    <ProjectGuid>{E5B6FF8E-5B3A-DBC7-AF03-CCF1925F8600}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.2.3f1</UnityVersion>
     <RootNamespace></RootNamespace>
@@ -51,14 +51,59 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\UnityAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor">
-      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WP8.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.WP8.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Metro.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Metro.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Tizen.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Tizen.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SamsungTV.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.SamsungTV.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.WebGL.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.OSXStandalone.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
@@ -68,42 +113,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AnimScript\AnimFloattingObject.cs" />
-    <Compile Include="Assets\Gameplay\AIUtils.cs" />
-    <Compile Include="Assets\Gameplay\AutoDestroyParticleSystem.cs" />
-    <Compile Include="Assets\Gameplay\BodyCollider.cs" />
-    <Compile Include="Assets\Gameplay\Bonus.cs" />
-    <Compile Include="Assets\Gameplay\CreditsText.cs" />
-    <Compile Include="Assets\Gameplay\DragonAI.cs" />
-    <Compile Include="Assets\Gameplay\DragonCamera.cs" />
-    <Compile Include="Assets\Gameplay\EventManager.cs" />
-    <Compile Include="Assets\Gameplay\FleeingSpirit.cs" />
-    <Compile Include="Assets\Gameplay\GUIHandler.cs" />
-    <Compile Include="Assets\Gameplay\GameEvent.cs" />
-    <Compile Include="Assets\Gameplay\GameMaster.cs" />
-    <Compile Include="Assets\Gameplay\MapGenerator.cs" />
-    <Compile Include="Assets\Gameplay\MenuButton.cs" />
-    <Compile Include="Assets\Gameplay\Monster.cs" />
-    <Compile Include="Assets\Gameplay\MonsterEvent.cs" />
-    <Compile Include="Assets\Gameplay\ObjectivePointer.cs" />
-    <Compile Include="Assets\Gameplay\PlayerController.cs" />
-    <Compile Include="Assets\Gameplay\PlayerData.cs" />
-    <Compile Include="Assets\Gameplay\Projectile.cs" />
-    <Compile Include="Assets\Gameplay\ProjectileBonus.cs" />
-    <Compile Include="Assets\Gameplay\SaveLoadManager.cs" />
-    <Compile Include="Assets\Gameplay\ScoreRecapManager.cs" />
-    <Compile Include="Assets\Gameplay\SingingSpirit.cs" />
-    <Compile Include="Assets\Gameplay\SizeBonus.cs" />
-    <Compile Include="Assets\Gameplay\SnakeAI.cs" />
-    <Compile Include="Assets\Gameplay\SpeedBoostGauge.cs" />
-    <Compile Include="Assets\Gameplay\SpeedGaugeBonus.cs" />
-    <Compile Include="Assets\Gameplay\Spirit.cs" />
-    <Compile Include="Assets\Gameplay\SpiritGate.cs" />
-    <Compile Include="Assets\Gameplay\TimeBonus.cs" />
-    <Compile Include="Assets\Gameplay\UIManagerInGame.cs" />
-    <Compile Include="Assets\Gameplay\UIManagerStartMenu.cs" />
-    <Compile Include="Assets\Gameplay\WindStream.cs" />
-    <Compile Include="Assets\OneMinuteGui\Scripts\MenuManager.cs" />
+    <ProjectReference Include="UnityProj.CSharp.csproj">
+      <Project>{4D7EC146-20D5-C9B0-CD41-636DDAF77F99}</Project>
+      <Name>UnityProj.CSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Editor\ImageEffects\AntialiasingEditor.cs" />
+    <Compile Include="Assets\Editor\ImageEffects\BloomAndFlaresEditor.cs" />
+    <Compile Include="Assets\Editor\ImageEffects\BloomEditor.cs" />
+    <Compile Include="Assets\Editor\ImageEffects\CameraMotionBlurEditor.cs" />
+    <Compile Include="Assets\Editor\ImageEffects\ColorCorrectionCurvesEditor.cs" />
+    <Compile Include="Assets\Editor\ImageEffects\ColorCorrectionLookupEditor.cs" />
+    <Compile Include="Assets\Editor\ImageEffects\CreaseShadingEditor.cs" />
+    <Compile Include="Assets\Editor\ImageEffects\DepthOfFieldDeprecatedEditor.cs" />
+    <Compile Include="Assets\Editor\ImageEffects\DepthOfFieldEditor.cs" />
+    <Compile Include="Assets\Editor\ImageEffects\EdgeDetectionEditor.cs" />
+    <Compile Include="Assets\Editor\ImageEffects\NoiseAndGrainEditor.cs" />
+    <Compile Include="Assets\Editor\ImageEffects\SunShaftsEditor.cs" />
+    <Compile Include="Assets\Editor\ImageEffects\TonemappingEditor.cs" />
+    <Compile Include="Assets\Editor\ImageEffects\VignetteAndChromaticAberrationEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Materials\Shader and Mat\GaugeFluid.shader" />
