@@ -47,7 +47,7 @@ public class ObjectivePointer : MonoBehaviour {
 				pointer.GetComponent<GUITexture>().enabled = false;
 			}
 		}
-		else if (pointer.GetComponent<GUITexture>().enabled)
+		else if (pointer != null && pointer.GetComponent<GUITexture>().enabled)
 		{
 			pointer.GetComponent<GUITexture>().enabled = false;
 		}
@@ -109,18 +109,20 @@ public class ObjectivePointer : MonoBehaviour {
 			//Pointer on top of the screen
 			float x = screenHeight * .5f / m;
 
-			if (x > screenWidth * .5f)
+			if (x - pointer.GetComponent<GUITexture>().pixelInset.x > screenWidth * .5f)
 			{
 				//Off-screen on the right side
 				pointerPos.x = screenWidth * .5f - pointer.GetComponent<GUITexture>().pixelInset.width / 2.0f;
-				pointerPos.y = screenWidth * .5f * m;
+				//pointerPos.y = screenWidth * .5f * m;
+                pointerPos.y = Mathf.Clamp(screenWidth * .5f * m, .0f, screenHeight * .5f + pointer.GetComponent<GUITexture>().pixelInset.y);
 			}
-			else if (x < -screenWidth * .5f)
+			else if (x + pointer.GetComponent<GUITexture>().pixelInset.x < -screenWidth * .5f)
 			{
 				//Off-screen on the left side
 				pointerPos.x = -screenWidth * .5f + pointer.GetComponent<GUITexture>().pixelInset.width / 2.0f;
-				pointerPos.y = -screenWidth * .5f * m;
-			}
+                //pointerPos.y = -screenWidth * .5f * m;
+                pointerPos.y = Mathf.Clamp(-screenWidth * .5f * m, .0f, screenHeight * .5f + pointer.GetComponent<GUITexture>().pixelInset.y);
+            }
 			else
 			{
 				pointerPos.x = x;
@@ -132,18 +134,20 @@ public class ObjectivePointer : MonoBehaviour {
 			//Pointer on bottom of the screen
 			float x = -screenHeight * .5f / m;
 
-			if (x > screenWidth * .5f)
+			if (x - pointer.GetComponent<GUITexture>().pixelInset.x > screenWidth * .5f)
 			{
 				//Off-screen on the right side
 				pointerPos.x = screenWidth * .5f - pointer.GetComponent<GUITexture>().pixelInset.width / 2.0f;
-				pointerPos.y = screenWidth * .5f * m;
-			}
-			else if (x < -screenWidth * .5f)
+                //pointerPos.y = screenWidth * .5f * m;
+                pointerPos.y = Mathf.Clamp(screenWidth * .5f * m, -screenHeight * .5f - pointer.GetComponent<GUITexture>().pixelInset.y, .0f);
+            }
+			else if (x + pointer.GetComponent<GUITexture>().pixelInset.x < -screenWidth * .5f)
 			{
 				//Off-screen on the left side
 				pointerPos.x = -screenWidth * .5f + pointer.GetComponent<GUITexture>().pixelInset.width / 2.0f;
-				pointerPos.y = -screenWidth * .5f * m;
-			}
+                //pointerPos.y = -screenWidth * .5f * m;
+                pointerPos.y = Mathf.Clamp(-screenWidth * .5f * m, -screenHeight * .5f - pointer.GetComponent<GUITexture>().pixelInset.y, .0f);
+            }
 			else
 			{
 				pointerPos.x = x;
