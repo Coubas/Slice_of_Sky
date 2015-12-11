@@ -27,19 +27,24 @@ public class SpiritGate : MonoBehaviour {
 	{
 		if (other.CompareTag("Body") && other.GetComponentInChildren<Spirit>())
 		{
-			GameObject spirit = other.GetComponentInChildren<Spirit>().gameObject;
-			if(spirit.GetComponent<SingingSpirit>())
-				((DragonAI)GameMaster.GM.dragon.GetComponent<DragonAI>()).stopSinging();
-			freeSpririt(spirit.GetComponent<Spirit>().value, (int)spirit.GetComponent<Spirit>().spiritType);
-			GameMaster.GM.spirits.Remove(spirit);
-			GameMaster.GM.spiritCount--;
-			Destroy(spirit);
+            Component[] spirits = other.GetComponentsInChildren<Spirit>();
+            GameObject spirit;
+            foreach(Component c in spirits)
+            {
+                spirit = c.gameObject;
+                if (spirit.GetComponent<SingingSpirit>())
+                    ((DragonAI)GameMaster.GM.dragon.GetComponent<DragonAI>()).stopSinging();
+                freeSpririt(spirit.GetComponent<Spirit>().value, (int)spirit.GetComponent<Spirit>().spiritType);
+                GameMaster.GM.spirits.Remove(spirit);
+                GameMaster.GM.spiritCount--;
+                Destroy(spirit);
 
-            nbBlueSpirit = 0;
-            pointer.target = null;
+                nbBlueSpirit = 0;
+                pointer.target = null;
 
-            snakeAI.nbSpiritGathered = 0;
-            snakeAI.nbSpiritIndicator.value = .0f;
+                snakeAI.nbSpiritGathered = 0;
+                snakeAI.nbSpiritIndicator.value = .0f;
+            }
 		}
 	}
 

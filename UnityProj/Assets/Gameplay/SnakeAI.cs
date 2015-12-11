@@ -200,8 +200,9 @@ public class SnakeAI : MonoBehaviour
 		//for (int i = 0; i < body.Count - 1; i += spiritSpacing)
 		//for (int i = 0; i < body.Length - 1; i += spiritSpacing)
 		{
-			GameObject bodyPart = (GameObject)body[nbSpiritGathered];
-			if (!bodyPart.GetComponentInChildren<Spirit>())
+            int bodyPartToFixOn = nbSpiritGathered % initialLenght;
+			GameObject bodyPart = (GameObject)body[bodyPartToFixOn];
+			//if (!bodyPart.GetComponentInChildren<Spirit>())
 			{
 				_spirit.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
 
