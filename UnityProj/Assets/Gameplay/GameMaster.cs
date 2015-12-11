@@ -21,6 +21,7 @@ public class GameMaster : MonoBehaviour {
 	public float waitBeforeNextLevel;
 	//GUI
 	public bool gamePaused = false;
+    public bool gameOn;
 	public float levelTimer;
 	public GameObject facebookController;
 
@@ -32,9 +33,16 @@ public class GameMaster : MonoBehaviour {
 
     void Start()
     {
+        gameOn = true;
+
         if (PlayerData.PD.gaugesLvl.Length > 0)
         {
-            levelTimer += PlayerData.PD.gaugesLvl[3] * 15;
+            if (PlayerData.PD.gaugesLvl[0] == 0 || PlayerData.PD.gaugesLvl[1] == 0)
+            {
+                levelTimer = .0f;
+            }
+            else
+                levelTimer += PlayerData.PD.gaugesLvl[3] * 15;
         }
     }
 
@@ -50,24 +58,48 @@ public class GameMaster : MonoBehaviour {
 
 		timer += Time.deltaTime;
 
-		if(levelTimer <= .0f || spiritCount == 0)
-		{
-			if (waitBeforeNextLevel > .0f)
-			{
-				waitBeforeNextLevel -= Time.deltaTime;
-			}
-			else
-			{
-				levelTimer = .0f;
-				PlayerData.PD.addScore(Application.loadedLevel, score, spiritsCollected);
-				Application.LoadLevel("ScoreRecap");
-			}
-		}
-		else
-			levelTimerHandler();
+        if (PlayerData.PD.gaugesLvl.Length > 0 && PlayerData.PD.gaugesLvl[0] == 0) //First lvl, only blue spirits
+        {
+            if(spiritsCollected[0] >= 5)
+            {
+                endCurrentLevel();
+            }
+        }
+        else if (PlayerData.PD.gaugesLvl.Length > 0 && PlayerData.PD.gaugesLvl[1] == 0) // Second lvl, blue and yellow spirits
+        {
+            if (spiritsCollected[1] >= 5)
+            {
+                endCurrentLevel();
+            }
+        }
+        else
+        {
+            if (levelTimer <= .0f)
+            {
+                endCurrentLevel();
+            }
+            else
+                levelTimerHandler();
+        }
 
 		comboTimerHandle();
 	}
+
+    void endCurrentLevel()
+    {
+        gameOn = false;
+
+        if (waitBeforeNextLevel > .0f)
+        {
+            waitBeforeNextLevel -= Time.deltaTime;
+        }
+        else
+        {
+            levelTimer = .0f;
+            PlayerData.PD.addScore(Application.loadedLevel, score, spiritsCollected);
+            Application.LoadLevel("ScoreRecap");
+        }
+    }
 
 	void levelTimerHandler()
 	{

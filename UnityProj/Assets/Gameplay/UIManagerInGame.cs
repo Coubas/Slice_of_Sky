@@ -37,18 +37,39 @@ public class UIManagerInGame : MonoBehaviour {
 
 	void Update()
 	{
-		if (GameMaster.GM.levelTimer > .0f)
+		if (GameMaster.GM.gameOn)
 		{
 			//Score
 			Score.text = GameMaster.GM.score.ToString();
 
-			//Timer
-			int timeLeft = Mathf.RoundToInt(GameMaster.GM.levelTimer);
-			if (timeLeft % 60 >= 10)
-				Timer.text = timeLeft / 60 + " : " + timeLeft % 60;
-			else
-				Timer.text = timeLeft / 60 + " : 0" + timeLeft % 60;
-			TimerAnimator.SetInteger("TimeLeft", timeLeft);
+            //Timer
+            if (PlayerData.PD.gaugesLvl.Length > 0 && PlayerData.PD.gaugesLvl[0] == 0)
+            {
+                int nbToFree = 5 - GameMaster.GM.spiritsCollected[0];
+                if (nbToFree > 0)
+                    Timer.text = "Free " + nbToFree + " blue spirits";
+                else
+                    Timer.text = "";
+                TimerAnimator.SetInteger("TimeLeft", 666);//No anim
+            }
+            else if (PlayerData.PD.gaugesLvl.Length > 0 && PlayerData.PD.gaugesLvl[1] == 0)
+            {
+                int nbToFree = 5 - GameMaster.GM.spiritsCollected[1];
+                if (nbToFree > 0)
+                    Timer.text = "Free " + nbToFree + " yellow spirits";
+                else
+                    Timer.text = "";
+                TimerAnimator.SetInteger("TimeLeft", 666);//No anim
+            }
+            else
+            {
+                int timeLeft = Mathf.RoundToInt(GameMaster.GM.levelTimer);
+                if (timeLeft % 60 >= 10)
+                    Timer.text = timeLeft / 60 + " : " + timeLeft % 60;
+                else
+                    Timer.text = timeLeft / 60 + " : 0" + timeLeft % 60;
+                TimerAnimator.SetInteger("TimeLeft", timeLeft);
+            }
 
 			//Combo
 			int combo = GameMaster.GM.combo;

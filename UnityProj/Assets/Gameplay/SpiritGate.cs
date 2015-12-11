@@ -18,6 +18,11 @@ public class SpiritGate : MonoBehaviour {
 		if (GameMaster.GM.gamePaused)
 			return;
 
+        if(!GameMaster.GM.gameOn)
+        {
+            transform.parent.parent.gameObject.SetActive(false);
+        }
+
 		float distance = Vector3.Distance(allTheGatePart.position, GameMaster.GM.dragon.transform.position);
 		if(distance > 25.0f)
 			allTheGatePart.LookAt(GameMaster.GM.dragon.transform);

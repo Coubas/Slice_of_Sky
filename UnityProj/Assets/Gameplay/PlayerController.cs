@@ -397,7 +397,7 @@ public class PlayerController : MonoBehaviour {
 		}
 		else
 		{
-			if (GameMaster.GM.levelTimer > .0f)
+			if (GameMaster.GM.gameOn)
 			{
 				if (turnOnX)
 				{
@@ -478,7 +478,7 @@ public class PlayerController : MonoBehaviour {
 			Camera.main.transform.parent = null;
 		}
 
-		if (GameMaster.GM.levelTimer > .0f || GameMaster.GM.spiritCount == 0)
+		if (GameMaster.GM.gameOn)
 		{
 			GetComponent<SnakeAI>().setHeadPrevPos(transform.position, transform.forward);
 			//transform.Translate(transform.forward * speed * speedUpCursor, Space.World);
