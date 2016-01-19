@@ -8,6 +8,7 @@ public class SubGauge
     public bool willReload;
 	public float totalAmount;
 	public float currentAmount;
+    public bool gotBonus;
 
 	public SubGauge()
 	{
@@ -15,6 +16,7 @@ public class SubGauge
         willReload = false;
 		totalAmount = 2.0f;
 		currentAmount = .0f;
+        gotBonus = false;
 	}
 }
 
@@ -119,5 +121,6 @@ public class SpeedBoostGauge : MonoBehaviour {
 		nbActive++;
 		gauges[nbActive - 1].active = true;
 		gauges[nbActive - 1].currentAmount = current;
+        gauges[nbActive - 1].gotBonus = true;
 	}
 }

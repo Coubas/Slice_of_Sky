@@ -4,9 +4,11 @@ using System.Collections;
 public class Monster : MonoBehaviour {
 	public MonsterEvent master;
 	public float fearDist;
+    
+    public GameObject disapearEffect;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		afraidSpirits(true);
 	}
 	
@@ -15,11 +17,15 @@ public class Monster : MonoBehaviour {
 		if (GameMaster.GM.gamePaused)
 			return;
 
+        transform.LookAt(GameMaster.GM.dragon.transform);
+
 		float distFromPlayer = Vector3.Distance(transform.position, GameMaster.GM.dragon.transform.position);
 		if (distFromPlayer < fearDist)
 		{
 			afraidSpirits(false);
-			master.End();
+            Destroy(Instantiate(disapearEffect, transform.position, transform.rotation), 5.0f);
+
+            master.End();
 		}
 
 	}

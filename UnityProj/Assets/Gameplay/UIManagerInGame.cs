@@ -13,7 +13,8 @@ public class UIManagerInGame : MonoBehaviour {
 	public Animator ComboAnimator;
 	private int prevCombo = 0;
 	public Image[] speedGaugeFill;
-	public Image[] speedGaugeBorder;
+    public Image[] speedGaugeBorder;
+	public Animator[] speedGaugeAnimator;
     public Color willReloadColor;
     public Color activeColor;
     public Color inactiveColor;
@@ -116,6 +117,13 @@ public class UIManagerInGame : MonoBehaviour {
                 {
                     speedGaugeBorder[i].color = inactiveColor;
                     speedGaugeFill[i].fillAmount = .0f;
+                }
+
+                //Bonus anim
+                if(currentGauge.gotBonus)
+                {
+                    speedGaugeAnimator[i].SetTrigger("AddGauge");
+                    currentGauge.gotBonus = false;
                 }
             }
             else
