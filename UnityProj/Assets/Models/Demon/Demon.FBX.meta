@@ -6,12 +6,118 @@ ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Demon
+    100004: Demon_OsBD0
+    100006: Demon_OsBD1
+    100008: Demon_OsBG0
+    100010: Demon_OsBG1
+    100012: Demon_OsCentre
+    100014: Demon_OsDD10
+    100016: Demon_OsDD11
+    100018: Demon_OsDD12
+    100020: Demon_OsDD20
+    100022: Demon_OsDD21
+    100024: Demon_OsDD30
+    100026: Demon_OsDD31
+    100028: Demon_OsDD40
+    100030: Demon_OsDD41
+    100032: Demon_OsDG10
+    100034: Demon_OsDG11
+    100036: Demon_OsDG12
+    100038: Demon_OsDG20
+    100040: Demon_OsDG21
+    100042: Demon_OsDG30
+    100044: Demon_OsDG31
+    100046: Demon_OsDG40
+    100048: Demon_OsDG41
+    100050: Demon_OsED
+    100052: Demon_OsEG
+    100054: Demon_OsJD0
+    100056: Demon_OsJD1
+    100058: Demon_OsJG0
+    100060: Demon_OsJG1
+    100062: Demon_OsL0
+    100064: Demon_OsL1
+    100066: Demon_OsL2
+    100068: Demon_OsL3
+    100070: Demon_OsL4
+    100072: Demon_OsMaster
+    100074: Demon_OsMD
+    100076: Demon_OsMG
+    100078: Demon_OsOD10
+    100080: Demon_OsOD11
+    100082: Demon_OsOD20
+    100084: Demon_OsOD21
+    100086: Demon_OsOD30
+    100088: Demon_OsOD31
+    100090: Demon_OsOG10
+    100092: Demon_OsOG11
+    100094: Demon_OsOG20
+    100096: Demon_OsOG21
+    100098: Demon_OsOG30
+    100100: Demon_OsOG31
+    100102: Demon_OsPD
+    100104: Demon_OsPG
     400000: //RootNode
+    400002: Demon
+    400004: Demon_OsBD0
+    400006: Demon_OsBD1
+    400008: Demon_OsBG0
+    400010: Demon_OsBG1
+    400012: Demon_OsCentre
+    400014: Demon_OsDD10
+    400016: Demon_OsDD11
+    400018: Demon_OsDD12
+    400020: Demon_OsDD20
+    400022: Demon_OsDD21
+    400024: Demon_OsDD30
+    400026: Demon_OsDD31
+    400028: Demon_OsDD40
+    400030: Demon_OsDD41
+    400032: Demon_OsDG10
+    400034: Demon_OsDG11
+    400036: Demon_OsDG12
+    400038: Demon_OsDG20
+    400040: Demon_OsDG21
+    400042: Demon_OsDG30
+    400044: Demon_OsDG31
+    400046: Demon_OsDG40
+    400048: Demon_OsDG41
+    400050: Demon_OsED
+    400052: Demon_OsEG
+    400054: Demon_OsJD0
+    400056: Demon_OsJD1
+    400058: Demon_OsJG0
+    400060: Demon_OsJG1
+    400062: Demon_OsL0
+    400064: Demon_OsL1
+    400066: Demon_OsL2
+    400068: Demon_OsL3
+    400070: Demon_OsL4
+    400072: Demon_OsMaster
+    400074: Demon_OsMD
+    400076: Demon_OsMG
+    400078: Demon_OsOD10
+    400080: Demon_OsOD11
+    400082: Demon_OsOD20
+    400084: Demon_OsOD21
+    400086: Demon_OsOD30
+    400088: Demon_OsOD31
+    400090: Demon_OsOG10
+    400092: Demon_OsOG11
+    400094: Demon_OsOG20
+    400096: Demon_OsOG21
+    400098: Demon_OsOG30
+    400100: Demon_OsOG31
+    400102: Demon_OsPD
+    400104: Demon_OsPG
     2300000: //RootNode
     3300000: //RootNode
     4300000: Demon
-    7400000: Take 001
+    7400000: Idle
     9500000: //RootNode
+    11100000: //RootNode
+    13700000: Demon
   materials:
     importMaterials: 1
     materialName: 0
@@ -32,7 +138,141 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 5
+      lastFrame: 65
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Demon
+        weight: 1
+      - path: Demon_OsMaster
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0/Demon_OsBD1
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0/Demon_OsBD1/Demon_OsMD
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0/Demon_OsBD1/Demon_OsMD/Demon_OsDD10
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0/Demon_OsBD1/Demon_OsMD/Demon_OsDD10/Demon_OsDD11
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0/Demon_OsBD1/Demon_OsMD/Demon_OsDD10/Demon_OsDD11/Demon_OsDD12
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0/Demon_OsBD1/Demon_OsMD/Demon_OsDD20
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0/Demon_OsBD1/Demon_OsMD/Demon_OsDD20/Demon_OsDD21
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0/Demon_OsBD1/Demon_OsMD/Demon_OsDD30
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0/Demon_OsBD1/Demon_OsMD/Demon_OsDD30/Demon_OsDD31
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0/Demon_OsBD1/Demon_OsMD/Demon_OsDD40
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0/Demon_OsBD1/Demon_OsMD/Demon_OsDD40/Demon_OsDD41
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0/Demon_OsBG1
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0/Demon_OsBG1/Demon_OsMG
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0/Demon_OsBG1/Demon_OsMG/Demon_OsDG10
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0/Demon_OsBG1/Demon_OsMG/Demon_OsDG10/Demon_OsDG11
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0/Demon_OsBG1/Demon_OsMG/Demon_OsDG10/Demon_OsDG11/Demon_OsDG12
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0/Demon_OsBG1/Demon_OsMG/Demon_OsDG20
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0/Demon_OsBG1/Demon_OsMG/Demon_OsDG20/Demon_OsDG21
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0/Demon_OsBG1/Demon_OsMG/Demon_OsDG30
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0/Demon_OsBG1/Demon_OsMG/Demon_OsDG30/Demon_OsDG31
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0/Demon_OsBG1/Demon_OsMG/Demon_OsDG40
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0/Demon_OsBG1/Demon_OsMG/Demon_OsDG40/Demon_OsDG41
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJD0
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJD0/Demon_OsJD1
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJD0/Demon_OsJD1/Demon_OsPD
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJD0/Demon_OsJD1/Demon_OsPD/Demon_OsOD10
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJD0/Demon_OsJD1/Demon_OsPD/Demon_OsOD10/Demon_OsOD11
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJD0/Demon_OsJD1/Demon_OsPD/Demon_OsOD20
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJD0/Demon_OsJD1/Demon_OsPD/Demon_OsOD20/Demon_OsOD21
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJD0/Demon_OsJD1/Demon_OsPD/Demon_OsOD30
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJD0/Demon_OsJD1/Demon_OsPD/Demon_OsOD30/Demon_OsOD31
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJG0
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJG0/Demon_OsJG1
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJG0/Demon_OsJG1/Demon_OsPG
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJG0/Demon_OsJG1/Demon_OsPG/Demon_OsOG10
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJG0/Demon_OsJG1/Demon_OsPG/Demon_OsOG10/Demon_OsOG11
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJG0/Demon_OsJG1/Demon_OsPG/Demon_OsOG20
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJG0/Demon_OsJG1/Demon_OsPG/Demon_OsOG20/Demon_OsOG21
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJG0/Demon_OsJG1/Demon_OsPG/Demon_OsOG30
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJG0/Demon_OsJG1/Demon_OsPG/Demon_OsOG30/Demon_OsOG31
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsL1
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsL1/Demon_OsL0
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsL2
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsL3
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsL4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -70,7 +310,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
