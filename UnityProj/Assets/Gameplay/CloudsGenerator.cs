@@ -46,7 +46,7 @@ public class CloudsGenerator : MonoBehaviour {
                     for (int j = 0; j < nbComponent; ++j)
                     {
                         Vector3 cpos = pos + new Vector3(Random.Range(-spaceBetweenComponent, spaceBetweenComponent), Random.Range(-spaceBetweenComponent, spaceBetweenComponent), Random.Range(-spaceBetweenComponent, spaceBetweenComponent));
-                        Quaternion crot = Quaternion.Euler(Random.Range(-45.0f, 45.0f), Random.Range(-45.0f, 45.0f), Random.Range(-45.0f, 45.0f));
+                        Quaternion crot = Quaternion.Euler(Random.Range(-15.0f, 15.0f), Random.Range(-45.0f, 45.0f), Random.Range(-15.0f, 15.0f));
                         int cid = Random.Range(0, CloudsPrefab.Length);
                         GameObject obj = Instantiate(CloudsPrefab[cid], cpos, crot) as GameObject;
                         obj.transform.parent = cloudMaster.transform;
