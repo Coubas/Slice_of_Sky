@@ -115,6 +115,7 @@ ModelImporter:
     3300000: //RootNode
     4300000: Demon
     7400000: Idle
+    7400002: Fly
     9500000: //RootNode
     11100000: //RootNode
     13700000: Demon
@@ -149,6 +150,140 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 1
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Demon
+        weight: 1
+      - path: Demon_OsMaster
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0/Demon_OsBD1
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0/Demon_OsBD1/Demon_OsMD
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0/Demon_OsBD1/Demon_OsMD/Demon_OsDD10
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0/Demon_OsBD1/Demon_OsMD/Demon_OsDD10/Demon_OsDD11
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0/Demon_OsBD1/Demon_OsMD/Demon_OsDD10/Demon_OsDD11/Demon_OsDD12
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0/Demon_OsBD1/Demon_OsMD/Demon_OsDD20
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0/Demon_OsBD1/Demon_OsMD/Demon_OsDD20/Demon_OsDD21
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0/Demon_OsBD1/Demon_OsMD/Demon_OsDD30
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0/Demon_OsBD1/Demon_OsMD/Demon_OsDD30/Demon_OsDD31
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0/Demon_OsBD1/Demon_OsMD/Demon_OsDD40
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsED/Demon_OsBD0/Demon_OsBD1/Demon_OsMD/Demon_OsDD40/Demon_OsDD41
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0/Demon_OsBG1
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0/Demon_OsBG1/Demon_OsMG
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0/Demon_OsBG1/Demon_OsMG/Demon_OsDG10
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0/Demon_OsBG1/Demon_OsMG/Demon_OsDG10/Demon_OsDG11
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0/Demon_OsBG1/Demon_OsMG/Demon_OsDG10/Demon_OsDG11/Demon_OsDG12
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0/Demon_OsBG1/Demon_OsMG/Demon_OsDG20
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0/Demon_OsBG1/Demon_OsMG/Demon_OsDG20/Demon_OsDG21
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0/Demon_OsBG1/Demon_OsMG/Demon_OsDG30
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0/Demon_OsBG1/Demon_OsMG/Demon_OsDG30/Demon_OsDG31
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0/Demon_OsBG1/Demon_OsMG/Demon_OsDG40
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsEG/Demon_OsBG0/Demon_OsBG1/Demon_OsMG/Demon_OsDG40/Demon_OsDG41
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJD0
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJD0/Demon_OsJD1
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJD0/Demon_OsJD1/Demon_OsPD
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJD0/Demon_OsJD1/Demon_OsPD/Demon_OsOD10
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJD0/Demon_OsJD1/Demon_OsPD/Demon_OsOD10/Demon_OsOD11
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJD0/Demon_OsJD1/Demon_OsPD/Demon_OsOD20
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJD0/Demon_OsJD1/Demon_OsPD/Demon_OsOD20/Demon_OsOD21
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJD0/Demon_OsJD1/Demon_OsPD/Demon_OsOD30
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJD0/Demon_OsJD1/Demon_OsPD/Demon_OsOD30/Demon_OsOD31
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJG0
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJG0/Demon_OsJG1
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJG0/Demon_OsJG1/Demon_OsPG
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJG0/Demon_OsJG1/Demon_OsPG/Demon_OsOG10
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJG0/Demon_OsJG1/Demon_OsPG/Demon_OsOG10/Demon_OsOG11
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJG0/Demon_OsJG1/Demon_OsPG/Demon_OsOG20
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJG0/Demon_OsJG1/Demon_OsPG/Demon_OsOG20/Demon_OsOG21
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJG0/Demon_OsJG1/Demon_OsPG/Demon_OsOG30
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsJG0/Demon_OsJG1/Demon_OsPG/Demon_OsOG30/Demon_OsOG31
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsL1
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsL1/Demon_OsL0
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsL2
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsL3
+        weight: 1
+      - path: Demon_OsMaster/Demon_OsCentre/Demon_OsL4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Fly
+      takeName: Take 001
+      firstFrame: 75
+      lastFrame: 170
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
