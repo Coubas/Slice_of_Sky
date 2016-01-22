@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
-	public GUIText debugText;
+	public Text debugText;
 
 	public float speed;
 	public float hRotSpeed;
@@ -187,7 +188,7 @@ public class PlayerController : MonoBehaviour {
 				xTimer += Time.fixedDeltaTime;
 			}
 
-			xSmooth = AIUtils.QuadEaseOut(Mathf.Abs(x), .0f, 1.0f, 1.0f);
+			xSmooth = AIUtils.QuadEaseIn(Mathf.Abs(x), .0f, 1.0f, 1.0f);
 			if (xSmooth > 1.0f)
 				xSmooth = 1.0f;
 		}
@@ -217,7 +218,7 @@ public class PlayerController : MonoBehaviour {
 				yTimer += Time.fixedDeltaTime;
 			}
 
-			ySmooth = AIUtils.QuadEaseOut(Mathf.Abs(y), .0f, 1.0f, 1.0f);
+			ySmooth = AIUtils.QuadEaseIn(Mathf.Abs(y), .0f, 1.0f, 1.0f);
 			if (ySmooth > 1.0f)
 				ySmooth = 1.0f;
 		}
@@ -231,7 +232,7 @@ public class PlayerController : MonoBehaviour {
 		x *= xSmooth;
 		y *= ySmooth;
 
-		debugText.text = "refRot = " + referenceRotation + " roll = " + x + " pitch = " + y;
+		//debugText.text = "\n refRot = " + referenceRotation + " roll = " + x + " pitch = " + y;
 		
 #endif
 #else
@@ -300,25 +301,25 @@ public class PlayerController : MonoBehaviour {
 		bool turnOnX = true;
 
 		//Stream handling
-		if (isInStream)
-		{
-			if (adjustXRot)
-				adjustXRot = false;
+		//if (isInStream)
+		//{
+		//	if (adjustXRot)
+		//		adjustXRot = false;
 
-			inStreamTimer += Time.fixedDeltaTime;
-			streamCursor = AIUtils.ExpoEaseOut(inStreamTimer, .0f, streamModifier, 10.0f);
-			if (streamCursor > streamModifier)
-				streamCursor = streamModifier;
-		}
-		else if (inStreamTimer != .0f)
-		{
-			inStreamTimer = .0f;
-			streamCursor = .0f;
+		//	inStreamTimer += Time.fixedDeltaTime;
+		//	streamCursor = AIUtils.ExpoEaseOut(inStreamTimer, .0f, streamModifier, 10.0f);
+		//	if (streamCursor > streamModifier)
+		//		streamCursor = streamModifier;
+		//}
+		//else if (inStreamTimer != .0f)
+		//{
+		//	inStreamTimer = .0f;
+		//	streamCursor = .0f;
 
-			adjustXRot = true;
-			adjustXRotTimer = .0f;
-			adjustXRotCursor = .0f;
-		}
+		//	adjustXRot = true;
+		//	adjustXRotTimer = .0f;
+		//	adjustXRotCursor = .0f;
+		//}
 
 		//Debug.Log((upAngle+streamCursor));
 
@@ -447,26 +448,28 @@ public class PlayerController : MonoBehaviour {
 		
 		speed = normalSpeed + boostedSpeed * speedBoostCursor;
 
-		//Speed up when going down
-		//if (transform.forward.y <= -0.4)
-		//{
-		//	if (speedUpCursor <= 3.0f) goingDownTimer += Time.fixedDeltaTime;
-		//	speedUpCursor = AIUtils.QuadEaseIn(goingDownTimer, 1.0f, 3.0f, 3.0f);
-		//}
-		//else if (speedUpCursor - 1.0f > .01f)
-		//{
-		//	goingDownTimer -= Time.fixedDeltaTime;
-		//	speedUpCursor = AIUtils.QuadEaseIn(goingDownTimer, 1.0f, 3.0f, 3.0f);
-		//}
-		//else
-		//{
-		//	speedUpCursor = 1.0f;
-		//	goingDownTimer = .0f;
-		//}
-		//Debug.Log(speedUpCursor);
+        //debugText.text += "\n Speed = " + speed;
 
-		//Teleport back when close to the world limit
-		float distance = Vector3.Distance(Vector3.zero, transform.position);
+        //Speed up when going down
+        //if (transform.forward.y <= -0.4)
+        //{
+        //	if (speedUpCursor <= 3.0f) goingDownTimer += Time.fixedDeltaTime;
+        //	speedUpCursor = AIUtils.QuadEaseIn(goingDownTimer, 1.0f, 3.0f, 3.0f);
+        //}
+        //else if (speedUpCursor - 1.0f > .01f)
+        //{
+        //	goingDownTimer -= Time.fixedDeltaTime;
+        //	speedUpCursor = AIUtils.QuadEaseIn(goingDownTimer, 1.0f, 3.0f, 3.0f);
+        //}
+        //else
+        //{
+        //	speedUpCursor = 1.0f;
+        //	goingDownTimer = .0f;
+        //}
+        //Debug.Log(speedUpCursor);
+
+        //Teleport back when close to the world limit
+        float distance = Vector3.Distance(Vector3.zero, transform.position);
 		if (distance > GameMaster.GM.maxDistDragon)
 		{
 			Vector3 modifier = transform.forward * 50.0f;
@@ -484,7 +487,9 @@ public class PlayerController : MonoBehaviour {
 			//transform.Translate(transform.forward * speed * speedUpCursor, Space.World);
 			GetComponent<Rigidbody>().velocity = transform.forward * speed * speedUpCursor;
 			GetComponent<SnakeAI>().placeBodyPart(speed);
-		}
+
+            //debugText.text += "\n Game on, speed applied";
+        }
 		else
 		{
 			GetComponent<Rigidbody>().velocity = transform.forward * .0f;
