@@ -4,12 +4,18 @@ using System.Collections;
 public class Monster : MonoBehaviour {
 	public MonsterEvent master;
 	public float fearDist;
-    
+    public int life;
+    public Vector2 minMaxTimeIfShot;
+    public Vector2 minMaxTimeIfFeared;
+
     public GameObject disapearEffect;
+
+    private int currentLife;
 
     // Use this for initialization
     void Start () {
 		afraidSpirits(true);
+        currentLife = life;
 	}
 	
 	// Update is called once per frame
@@ -20,17 +26,35 @@ public class Monster : MonoBehaviour {
         transform.LookAt(GameMaster.GM.dragon.transform);
 
 		float distFromPlayer = Vector3.Distance(transform.position, GameMaster.GM.dragon.transform.position);
-		if (distFromPlayer < fearDist)
+        if (currentLife <= 0)
+        {
+            afraidSpirits(false);
+            Destroy(Instantiate(disapearEffect, transform.position, transform.rotation), 5.0f);
+
+            master.End(minMaxTimeIfShot.x, minMaxTimeIfShot.y);
+        }
+        else if (distFromPlayer < fearDist)
 		{
 			afraidSpirits(false);
             Destroy(Instantiate(disapearEffect, transform.position, transform.rotation), 5.0f);
 
-            master.End();
+            master.End(minMaxTimeIfFeared.x, minMaxTimeIfFeared.y);
 		}
 
 	}
 
-	void afraidSpirits( bool _afraid)
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Projectile"))
+        {
+            currentLife--;
+
+            //Destroy(other.gameObject);
+            ((Projectile)other.GetComponent<Projectile>()).DestroyWithEffect();
+        }
+    }
+
+        void afraidSpirits( bool _afraid)
 	{
 		for (int i = 0; i < GameMaster.GM.spiritCount; ++i)
 		{

@@ -34,9 +34,16 @@ public class EventManager : MonoBehaviour {
         }
 	}
 
-	public void eventEnded()
+    public void eventEnded(float _min = -1.0f, float _max = -1.0f)
 	{
-		timeUntilNextEvent = Random.Range(minTimeBetweenEvents, maxTimeBetweenEvents);
+        if(minTimeBetweenEvents == -1.0f || _max == -1.0f)
+        {
+		    timeUntilNextEvent = Random.Range(minTimeBetweenEvents, maxTimeBetweenEvents);
+        }
+        else
+        {
+            timeUntilNextEvent = Random.Range(_min, _max);
+        }
 		eventCurrentlyHappening = false;
 	}
 }

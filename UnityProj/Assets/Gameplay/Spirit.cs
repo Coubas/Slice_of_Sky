@@ -176,7 +176,7 @@ public class Spirit : MonoBehaviour {
 		}
 		else if (other.CompareTag("Projectile") && !collected)
 		{
-            if(!GetComponent<FleeingSpirit>())
+            if(!GetComponent<FleeingSpirit>() || ((DragonAI)GameMaster.GM.dragon.GetComponent<DragonAI>()).isSinging)
             {
 			    freezed = true;
 			    unfreezeTime = Time.time + freezeDuration;

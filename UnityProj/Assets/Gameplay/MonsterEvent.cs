@@ -39,11 +39,11 @@ public class MonsterEvent : GameEvent {
         pointer.target = currentMonster;
 	}
 
-	public override void End()
+	public override void End(float _minTimeUntilNext = .0f, float _maxTimeUntilNext = .0f)
 	{
 		pointer.target = null;
 		Destroy(currentMonster);
-		manager.eventEnded();
+		manager.eventEnded(_minTimeUntilNext, _maxTimeUntilNext);
 	}
 
 }
