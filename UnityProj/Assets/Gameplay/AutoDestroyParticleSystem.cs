@@ -2,21 +2,21 @@
 using System.Collections;
 
 public class AutoDestroyParticleSystem : MonoBehaviour {
-    private ParticleSystem ps;
+    public float timeBeforeDestroy;
+    private float timer;
 
 	// Use this for initialization
 	void Start () {
-        ps = GetComponent<ParticleSystem>();
+        timer = .0f;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (ps)
+        timer += Time.deltaTime;
+
+        if (timer >= timeBeforeDestroy)
         {
-            if (!ps.IsAlive())
-            {
-                Destroy(gameObject);
-            }
+            Destroy(gameObject);
         }
     }
 }
