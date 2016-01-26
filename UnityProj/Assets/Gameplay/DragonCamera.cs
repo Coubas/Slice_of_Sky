@@ -44,13 +44,17 @@ public class DragonCamera : MonoBehaviour
 		}
 		else
 		{
-			angleX = .0f;
-		}
+			//angleX = .0f;
+            angleX = target.transform.eulerAngles.x;
+            if (angleX != .0f && angleX < 305.0f)
+                angleX = 305.0f;
+        }
 
 		Quaternion rotationY = Quaternion.Euler(angleX, angleY, .0f);
-
+        
 		Vector3 desiredPosition = target.transform.position - (rotationY * offset);
-		Vector3 position = Vector3.Lerp(transform.position, desiredPosition, Time.fixedDeltaTime * posDamping);
+        desiredPosition += target.transform.up * target.GetComponent<PlayerController>().speedBoostCursor * 3;
+        Vector3 position = Vector3.Lerp(transform.position, desiredPosition, Time.fixedDeltaTime * posDamping);
 		transform.position = position;
 
 		transform.LookAt(target.transform);
