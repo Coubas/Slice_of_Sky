@@ -7,18 +7,25 @@ public class DragonAI : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
-	}
+        ParticleSystem.EmissionModule em = singEffect.emission;
+        em.enabled = false;
+    }
 	
 	// Update is called once per frame
 	void Update () {
 		if (GameMaster.GM.gamePaused)
 			return;
 
-		if (isSinging && !singEffect.enableEmission)
-			singEffect.enableEmission = true;
-		else if (!isSinging && singEffect.enableEmission)
-			singEffect.enableEmission = false;
+		if (isSinging && !singEffect.emission.enabled)
+        {
+            ParticleSystem.EmissionModule em = singEffect.emission;
+            em.enabled = true;
+        }
+		else if (!isSinging && singEffect.emission.enabled)
+        {
+            ParticleSystem.EmissionModule em = singEffect.emission;
+            em.enabled = false;
+        }
 	}
 
 	public void startSinging()

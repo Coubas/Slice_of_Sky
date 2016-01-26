@@ -21,7 +21,10 @@ public class DragonCamera : MonoBehaviour
 
 		activeCamera = 0;
 		GameObject.Find("HeadCamera").GetComponent<Camera>().enabled = false;
-	}
+
+        ParticleSystem.EmissionModule em = speedEffect.emission;
+        em.enabled = false;
+    }
 
 	void FixedUpdate()
 	{
@@ -62,13 +65,15 @@ public class DragonCamera : MonoBehaviour
 		//	speedEffect.enableEmission = false;
 		//}
 
-		if (target.GetComponent<PlayerController>().speedBoostCursor > .3f && !speedEffect.enableEmission)
+		if (target.GetComponent<PlayerController>().speedBoostCursor > .3f && !speedEffect.emission.enabled)
 		{
-			speedEffect.enableEmission = true;
-		}
-		else if (target.GetComponent<PlayerController>().speedBoostCursor < .3f && speedEffect.enableEmission)
+            ParticleSystem.EmissionModule em = speedEffect.emission;
+            em.enabled = true;
+        }
+		else if (target.GetComponent<PlayerController>().speedBoostCursor < .3f && speedEffect.emission.enabled)
 		{
-			speedEffect.enableEmission = false;
+            ParticleSystem.EmissionModule em = speedEffect.emission;
+            em.enabled = false;
 		}
 
 		if (Input.GetKeyDown("tab"))

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using beffio.OneMinuteGUI;
 
 //The use of the singleton allow us to set public variable in the inspector and still use them anywhere we want in the code
 
@@ -24,6 +25,8 @@ public class GameMaster : MonoBehaviour {
     public bool gameOn;
 	public float levelTimer;
 	public GameObject facebookController;
+    public MenuManager menuManager;
+    public GameObject tutoPanel;
 
     public UIManagerInGame uiMgr;
 
@@ -40,6 +43,10 @@ public class GameMaster : MonoBehaviour {
             if (PlayerData.PD.gaugesLvl[0] == 0 || PlayerData.PD.gaugesLvl[1] == 0)
             {
                 levelTimer = .0f;
+
+                //Put on the tutoMenu and pause the game
+                gamePaused = true;
+                menuManager.GoToMenu(tutoPanel);
             }
             else
                 levelTimer += PlayerData.PD.gaugesLvl[3] * 15;

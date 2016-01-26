@@ -54,6 +54,7 @@ public class SnakeAI : MonoBehaviour
 
 		maxLenght = Mathf.FloorToInt((currentLenght + 2) * mult);
 
+
         nbSpiritIndicator.value = .0f;
     }
 
@@ -61,6 +62,15 @@ public class SnakeAI : MonoBehaviour
 	{
 		
 	}
+
+    public void InitHeadPositions(Vector3 _initialPos, Vector3 _initialForward)
+    {
+        for (int i = 1; i <= maxLenght; ++i)
+        {
+            positions.Insert(0, _initialPos + i * bodyMargin * -_initialForward);
+            forwards.Insert(0, _initialForward);
+        }
+    }
 
 	public void setHeadPrevPos( Vector3 _prevPos, Vector3 _forward)
 	{

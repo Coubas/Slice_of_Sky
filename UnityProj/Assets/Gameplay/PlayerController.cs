@@ -112,6 +112,8 @@ public class PlayerController : MonoBehaviour {
 
         normalSpeed = speed;
         boostedSpeed = speed + 10;
+
+        GetComponent<SnakeAI>().InitHeadPositions(transform.position, transform.forward);
     }
 	
 	// Update is called once per frame
