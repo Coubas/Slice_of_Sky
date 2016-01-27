@@ -7,7 +7,8 @@ public class PlayerData : MonoBehaviour {
 	public ArrayList scores;
 	public int highScore;
     public bool isHighScore;
-	public bool invertYAxis = false;
+	public bool invertYAxis = true;
+    public bool alwaysShowControls = true;
 
     public int[] gaugesStocks;
     public int[] gaugesLvl;
@@ -44,7 +45,10 @@ public class PlayerData : MonoBehaviour {
 		//----------------
 
 		scores = new ArrayList();
-	}
+
+        //Load the saved data
+        Load();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -54,7 +58,7 @@ public class PlayerData : MonoBehaviour {
     public void Load()
     {
         SaveLoadManager.Load();
-        SaveLoadManager.GetSavedData(ref invertYAxis, ref highScore, ref gaugesStocks, ref gaugesLvl);
+        SaveLoadManager.GetSavedData(ref invertYAxis, ref alwaysShowControls, ref highScore, ref gaugesStocks, ref gaugesLvl);
     }
 
 	public void addScore(int _level, int _score, int[] _spiritsCollected)
@@ -87,7 +91,7 @@ public class PlayerData : MonoBehaviour {
         }
 
         //Save the game
-        SaveLoadManager.SetSavedData(invertYAxis, highScore, gaugesStocks, gaugesLvl);
+        SaveLoadManager.SetSavedData(invertYAxis, alwaysShowControls, highScore, gaugesStocks, gaugesLvl);
         SaveLoadManager.Save();
 	}
 

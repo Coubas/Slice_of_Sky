@@ -8,6 +8,7 @@ using System.IO;
 public class GameData
 {
     public bool     invertYAxis;
+    public bool     alwaysShowControls;
     public int      highScore;
     public int[]    gaugesStocks;
     public int[]    gaugesLvl;
@@ -15,6 +16,7 @@ public class GameData
     public GameData()
     {
         invertYAxis = false;
+        alwaysShowControls = true;
         highScore = 0;
         gaugesStocks = new int[5];
         gaugesLvl = new int[5];
@@ -24,6 +26,7 @@ public class GameData
     {
         string output = "GameData \n { \n";
         output += "\t Invert Y = " + invertYAxis.ToString() + "\n";
+        output += "\t Always show controls = " + alwaysShowControls.ToString() + "\n";
         output += "\t High score = " + highScore.ToString() + "\n";
         output += "\t Spirits collected = " + gaugesStocks[0] + gaugesStocks[1] + gaugesStocks[2] + gaugesStocks[3] + gaugesStocks[4] + "\n";
         output += "\t Lantern lvl = " + gaugesLvl[0] + gaugesLvl[1] + gaugesLvl[2] + gaugesLvl[3] + gaugesLvl[4] + "\n";
@@ -38,17 +41,19 @@ public static class SaveLoadManager
 
     public static GameData savedData = new GameData();
 
-    public static void SetSavedData(bool _invertYAxis, int _highScore, int[] _gaugesStocks, int[] _gaugesLvl)
+    public static void SetSavedData(bool _invertYAxis, bool _alwaysShowControls, int _highScore, int[] _gaugesStocks, int[] _gaugesLvl)
     {
         savedData.invertYAxis = _invertYAxis;
+        savedData.alwaysShowControls = _alwaysShowControls;
         savedData.highScore = _highScore;
         savedData.gaugesStocks = _gaugesStocks;
         savedData.gaugesLvl = _gaugesLvl;
     }
 
-    public static void GetSavedData(ref bool _invertYAxis, ref int _highScore, ref int[] _gaugesStocks, ref int[] _gaugesLvl)
+    public static void GetSavedData(ref bool _invertYAxis, ref bool _alwaysShowControls, ref int _highScore, ref int[] _gaugesStocks, ref int[] _gaugesLvl)
     {
         _invertYAxis = savedData.invertYAxis;
+        _alwaysShowControls = savedData.alwaysShowControls;
         _highScore = savedData.highScore;
         _gaugesStocks = savedData.gaugesStocks;
         _gaugesLvl = savedData.gaugesLvl;
@@ -68,6 +73,7 @@ public static class SaveLoadManager
 
     public static void Load()
     {
+        Debug.Log("Trying to load from " + Application.persistentDataPath);
         if (File.Exists(Application.persistentDataPath + "/savedData.gd"))
         {
             BinaryFormatter bf = new BinaryFormatter();

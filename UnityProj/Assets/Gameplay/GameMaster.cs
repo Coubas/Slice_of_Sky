@@ -27,6 +27,8 @@ public class GameMaster : MonoBehaviour {
 	public GameObject facebookController;
     public MenuManager menuManager;
     public GameObject tutoPanel;
+    public bool showControls = false;
+    public GameObject controlsPanel;
 
     public UIManagerInGame uiMgr;
 
@@ -40,6 +42,25 @@ public class GameMaster : MonoBehaviour {
 
         if (PlayerData.PD.gaugesLvl.Length > 0)
         {
+            //Show controls depending on the player advencement
+            if (PlayerData.PD.gaugesLvl[0] == 0)
+            {
+                menuManager.setUpControlsTuto(1);
+            }
+            else if (PlayerData.PD.gaugesLvl[1] == 0)
+            {
+                menuManager.setUpControlsTuto(2);
+            }
+            else
+            {
+                menuManager.setUpControlsTuto(3);
+            }
+
+            if (PlayerData.PD.alwaysShowControls)
+            {
+                showControls = true;
+            }
+
             if (PlayerData.PD.gaugesLvl[0] == 0 || PlayerData.PD.gaugesLvl[1] == 0)
             {
                 levelTimer = .0f;
@@ -64,6 +85,13 @@ public class GameMaster : MonoBehaviour {
 #endif
 
 		timer += Time.deltaTime;
+
+        if (PlayerData.PD.gaugesLvl.Length > 0 && showControls)
+        {
+            gamePaused = true;
+            menuManager.GoToMenu(controlsPanel);
+            showControls = false;
+        }
 
         if (PlayerData.PD.gaugesLvl.Length > 0 && PlayerData.PD.gaugesLvl[0] == 0) //First lvl, only blue spirits
         {
