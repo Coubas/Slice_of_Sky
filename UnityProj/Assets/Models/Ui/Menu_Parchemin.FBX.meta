@@ -1,0 +1,271 @@
+fileFormatVersion: 2
+guid: 2bcedb93e4cbc684e8f740c2a7e7b9fe
+timeCreated: 1453994969
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Parchemin_Os0
+    100004: Parchemin_Os1
+    100006: Parchemin_Os2
+    100008: Parchemin_OsM
+    100010: Parchemin_OsMaster
+    100012: PhysCamera001.Target
+    100014: RouleauParchemin
+    400000: //RootNode
+    400002: Parchemin_Os0
+    400004: Parchemin_Os1
+    400006: Parchemin_Os2
+    400008: Parchemin_OsM
+    400010: Parchemin_OsMaster
+    400012: PhysCamera001.Target
+    400014: RouleauParchemin
+    4300000: RouleauParchemin
+    7400000: None
+    7400002: Show
+    7400004: Hide
+    7400006: Stay
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: RouleauParchemin
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: None
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 3
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Parchemin_OsMaster
+        weight: 1
+      - path: Parchemin_OsMaster/Parchemin_OsM
+        weight: 1
+      - path: Parchemin_OsMaster/Parchemin_OsM/Parchemin_Os0
+        weight: 1
+      - path: Parchemin_OsMaster/Parchemin_OsM/Parchemin_Os1
+        weight: 1
+      - path: Parchemin_OsMaster/Parchemin_OsM/Parchemin_Os2
+        weight: 1
+      - path: PhysCamera001.Target
+        weight: 1
+      - path: RouleauParchemin
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Show
+      takeName: Take 001
+      firstFrame: 5
+      lastFrame: 35
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Parchemin_OsMaster
+        weight: 1
+      - path: Parchemin_OsMaster/Parchemin_OsM
+        weight: 1
+      - path: Parchemin_OsMaster/Parchemin_OsM/Parchemin_Os0
+        weight: 1
+      - path: Parchemin_OsMaster/Parchemin_OsM/Parchemin_Os1
+        weight: 1
+      - path: Parchemin_OsMaster/Parchemin_OsM/Parchemin_Os2
+        weight: 1
+      - path: PhysCamera001.Target
+        weight: 1
+      - path: RouleauParchemin
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hide
+      takeName: Take 001
+      firstFrame: 40
+      lastFrame: 70
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Parchemin_OsMaster
+        weight: 1
+      - path: Parchemin_OsMaster/Parchemin_OsM
+        weight: 1
+      - path: Parchemin_OsMaster/Parchemin_OsM/Parchemin_Os0
+        weight: 1
+      - path: Parchemin_OsMaster/Parchemin_OsM/Parchemin_Os1
+        weight: 1
+      - path: Parchemin_OsMaster/Parchemin_OsM/Parchemin_Os2
+        weight: 1
+      - path: PhysCamera001.Target
+        weight: 1
+      - path: RouleauParchemin
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Stay
+      takeName: Take 001
+      firstFrame: 36
+      lastFrame: 37
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Parchemin_OsMaster
+        weight: 1
+      - path: Parchemin_OsMaster/Parchemin_OsM
+        weight: 1
+      - path: Parchemin_OsMaster/Parchemin_OsM/Parchemin_Os0
+        weight: 1
+      - path: Parchemin_OsMaster/Parchemin_OsM/Parchemin_Os1
+        weight: 1
+      - path: Parchemin_OsMaster/Parchemin_OsM/Parchemin_Os2
+        weight: 1
+      - path: PhysCamera001.Target
+        weight: 1
+      - path: RouleauParchemin
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
