@@ -60,7 +60,6 @@ namespace beffio.OneMinuteGUI
 		        if (m_navigationHistory.Count > 1)
 		        {
                     int index = m_navigationHistory.Count - 1;
-			        Animate(m_navigationHistory[index - 1], true);
 
                     //Slice Of Sky
                     //When controls are showed in the begin of a level the back button goes to the initial menu so the pause must go off
@@ -72,6 +71,9 @@ namespace beffio.OneMinuteGUI
                     GameObject target = m_navigationHistory[index];
 			        m_navigationHistory.RemoveAt(index);
 			        Animate(target, false);
+
+
+			        Animate(m_navigationHistory[index - 1], true);
 		        }
 	        }
 
