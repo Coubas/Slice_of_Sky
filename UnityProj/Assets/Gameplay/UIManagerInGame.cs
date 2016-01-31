@@ -4,8 +4,9 @@ using UnityEngine.UI;
 
 public class UIManagerInGame : MonoBehaviour {
 	public Text Score;
+	public Text TimerLabel;
 	public Text Timer;
-	public Animator TimerAnimator;
+    public Animator TimerAnimator;
     public Text TimerBonus;
     public Animator TimerBonusAnimator;
     public Animator ProjectileBonusAnimator;
@@ -46,6 +47,8 @@ public class UIManagerInGame : MonoBehaviour {
             //Timer
             if (PlayerData.PD.gaugesLvl.Length > 0 && PlayerData.PD.gaugesLvl[0] == 0)
             {
+                TimerLabel.text = "";
+
                 int nbToFree = 5 - GameMaster.GM.spiritsCollected[0];
                 if (nbToFree > 0)
                     Timer.text = "Free " + nbToFree + " blue spirits";
@@ -55,6 +58,8 @@ public class UIManagerInGame : MonoBehaviour {
             }
             else if (PlayerData.PD.gaugesLvl.Length > 0 && PlayerData.PD.gaugesLvl[1] == 0)
             {
+                TimerLabel.text = "";
+
                 int nbToFree = 5 - GameMaster.GM.spiritsCollected[1];
                 if (nbToFree > 0)
                     Timer.text = "Free " + nbToFree + " yellow spirits";

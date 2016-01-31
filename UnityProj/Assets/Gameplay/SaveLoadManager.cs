@@ -71,7 +71,7 @@ public static class SaveLoadManager
         file.Close();
     }
 
-    public static void Load()
+    public static bool Load()
     {
         Debug.Log("Trying to load from " + Application.persistentDataPath);
         if (File.Exists(Application.persistentDataPath + "/savedData.gd"))
@@ -83,6 +83,9 @@ public static class SaveLoadManager
 
             Debug.Log("Data Loaded from : " + Application.persistentDataPath);
             Debug.Log("Data : " + savedData.ToString());
+            return true;
         }
+
+        return false;
     }
 }
