@@ -139,6 +139,7 @@ namespace beffio.OneMinuteGUI
 
 	    public void StartGame()
 	    {
+            PlayerData.PD.NewGame();
 		    Application.LoadLevel(1);
 	    }
 

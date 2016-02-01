@@ -70,10 +70,19 @@ public class UIManagerInGame : MonoBehaviour {
             else
             {
                 int timeLeft = Mathf.RoundToInt(GameMaster.GM.levelTimer);
-                if (timeLeft % 60 >= 10)
-                    Timer.text = timeLeft / 60 + " : " + timeLeft % 60;
+                if(timeLeft / 60 > 10)
+                {
+                    Timer.text = timeLeft / 60 + ":";
+                }
                 else
-                    Timer.text = timeLeft / 60 + " : 0" + timeLeft % 60;
+                {
+                    Timer.text = "0" + timeLeft / 60 + ":";
+                }
+                if (timeLeft % 60 >= 10)
+                    Timer.text += timeLeft % 60;
+                else
+                    Timer.text += "0" + timeLeft % 60;
+
                 TimerAnimator.SetInteger("TimeLeft", timeLeft);
             }
 

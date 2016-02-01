@@ -61,6 +61,11 @@ public class PlayerData : MonoBehaviour {
             SaveLoadManager.GetSavedData(ref invertYAxis, ref alwaysShowControls, ref highScore, ref gaugesStocks, ref gaugesLvl);
     }
 
+    public void NewGame()
+    {
+        SaveLoadManager.GetSavedData(ref invertYAxis, ref alwaysShowControls, ref highScore, ref gaugesStocks, ref gaugesLvl);
+    }
+
 	public void addScore(int _level, int _score, int[] _spiritsCollected)
 	{
 		scores.Add(new ScoreData(_level, _score, _spiritsCollected));
