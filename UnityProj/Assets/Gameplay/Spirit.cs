@@ -63,7 +63,7 @@ public class Spirit : MonoBehaviour {
         initnialScale = freezeEffect.localScale;
     }
 	
-	void Update () 
+	void FixedUpdate() 
 	{
 		if (GameMaster.GM.gamePaused)
 			return;
