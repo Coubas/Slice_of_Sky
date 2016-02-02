@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using beffio.OneMinuteGUI;
 
@@ -27,6 +28,7 @@ public class GameMaster : MonoBehaviour {
 	public GameObject facebookController;
     public MenuManager menuManager;
     public GameObject tutoPanel;
+    public Text tutoPanelText;
     public bool showControls = false;
     public GameObject controlsPanel;
 
@@ -67,6 +69,11 @@ public class GameMaster : MonoBehaviour {
 
                 //Put on the tutoMenu and pause the game
                 gamePaused = true;
+                if (PlayerData.PD.gaugesLvl[0] == 0)
+                    tutoPanelText.text = "To complete this level you need cacth a least 5 <color=#5BA3DFFF>blue</color> spirits and bring them to the red spirit's gate.";
+                else
+                    tutoPanelText.text = "To complete this level you need cacth a least 5 <color=#F5DD1BFF>yellow</color> spirits and bring them to the red spirit's gate.";
+
                 menuManager.GoToMenu(tutoPanel);
             }
             else
